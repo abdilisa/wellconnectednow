@@ -1,0 +1,69 @@
+body {
+	line-height: 1.7143;
+}
+*:last-child {
+	margin-bottom: 0;
+}
+p, ol, ul, pre {
+	margin-bottom: 20px;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+@media ( min-width: 768px ) {
+	.container {
+		max-width: 720px;
+	}
+}
+.container {
+	max-width: 720px !important;
+}
+
+.navbar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	max-width: 720px;
+	margin-left: -15px;
+	border-radius: 0 0 4px 4px;
+}
+.navbar-form {
+	margin: 0;
+	padding: 10px 15px;
+}
+.navbar select {
+	width: 100% !important;
+	font-weight: bold;
+}
+
+.header {
+	margin: 80px -15px 30px;
+}
+.header .lead {
+	margin-bottom: 40px;
+}
+.header small {
+	font-size: 12px;
+	color: #999;
+}
+
+.faq {
+	list-style: none;
+	margin: 0;
+}
+.faq-group {
+	margin: 60px 0;
+}
+.faq-group > h2 {
+	background-color: #eee;
+	margin: 0 -15px 40px;
+	padding: 15px;
+	border-radius: 4px;
+}
+.faq-group > h4 {
+	margin: 40px 0 20px;
+	padding-bottom: 15px;
+	border-bottom: 1px dashed #ccc;
+}
