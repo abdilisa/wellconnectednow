@@ -746,7 +746,6 @@ h5{
 	background-color: #222;
 }
 .navbar-logo {
-	width: 60%;  /* adjusted logo width for mobile devices*/
 	height: 80px;
 	line-height: 50px;
 	margin-left: 0 !important;
@@ -1053,6 +1052,9 @@ h5{
 	}
 }
 @media ( max-width: 479px ) {
+	.navbar-logo {
+		width: 60%;
+	}
 	.hero-layout-simple .hero-title {
 		font-size: 40px;
 	}
