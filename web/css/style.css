@@ -1508,6 +1508,13 @@ h5{
 	max-width: 720px;
 	margin-left: auto;
 }
+
+@media ( min-width: 1200px ) {
+	.team-member-text {
+		min-height: 225px; /* vertically aligns team member bio's when browser is >= 1200px */
+	}
+}
+
 @media ( max-width: 991px ) {
 	.two-cols-description-image {
 		padding-top: 75%;
