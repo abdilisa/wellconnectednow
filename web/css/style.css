@@ -910,7 +910,7 @@ h5{
  * ========================================
  */
 .hero-section {
-	padding: 160px 0;
+	padding: 120px 0;
 	text-align: center;
 }
 .hero-section:after {
@@ -1061,8 +1061,14 @@ h5{
 	}
 }
 @media ( max-width: 479px ) {
+	.hero-section {
+		padding: 90px 0;
+	}
 	.navbar-logo {
 		width: 60%;
+	}
+	.wcn-header-logo {
+		width: 80%;
 	}
 	.hero-layout-simple .hero-title {
 		font-size: 40px;
