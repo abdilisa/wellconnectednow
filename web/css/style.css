@@ -303,7 +303,16 @@ h5{
 	right: 0;
 	z-index: 0;
 }
-.section-background-image {
+
+#hero {
+	background: url("../images/backgrounds/standingbysm.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-color: rgba(34, 34, 34, .5);
+}
+/*.section-background-image {
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -317,7 +326,7 @@ h5{
 	min-height: 100%;
 	top: 0;
 	left: 0;
-}
+}*/
 .section-background-video {
 	position: absolute;
 	top: 0;
@@ -456,13 +465,13 @@ h5{
 	color: #888;
 }
 .form-control:-moz-placeholder {
-	color: #888;  
+	color: #888;
 }
 .form-control::-moz-placeholder {
-	color: #888;  
+	color: #888;
 }
 .form-control:-ms-input-placeholder {
-	color: #888;  
+	color: #888;
 }
 .form-control:focus {
 	-webkit-box-shadow: none;
@@ -925,7 +934,7 @@ h5{
 	position: relative;
 	z-index: 1;
 	vertical-align: middle;
-	display: inline-block;	
+	display: inline-block;
 }
 .hero-section form {
 	background-color: #f6f6f6;
@@ -1052,6 +1061,9 @@ h5{
 	}
 }
 @media ( max-width: 479px ) {
+	.navbar-logo {
+		width: 60%;
+	}
 	.hero-layout-simple .hero-title {
 		font-size: 40px;
 	}
@@ -1351,7 +1363,7 @@ h5{
 .section-dark .hiw-item-icon {
 	border-color: #222;
 }
-.section-dark .hiw-item.even .hiw-item-icon {	
+.section-dark .hiw-item.even .hiw-item-icon {
 	border-color: #292929;
 }
 .section-accent .hiw-item-icon {
@@ -1505,6 +1517,13 @@ h5{
 	max-width: 720px;
 	margin-left: auto;
 }
+
+@media ( min-width: 1200px ) {
+	.team-member-text {
+		min-height: 225px; /* vertically aligns team member bio's when browser is >= 1200px */
+	}
+}
+
 @media ( max-width: 991px ) {
 	.two-cols-description-image {
 		padding-top: 75%;
