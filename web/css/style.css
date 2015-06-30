@@ -303,7 +303,16 @@ h5{
 	right: 0;
 	z-index: 0;
 }
-.section-background-image {
+
+#hero {
+	background: url("../images/backgrounds/standingbysm.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-color: rgba(34, 34, 34, .5);
+}
+/*.section-background-image {
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -317,7 +326,7 @@ h5{
 	min-height: 100%;
 	top: 0;
 	left: 0;
-}
+}*/
 .section-background-video {
 	position: absolute;
 	top: 0;
