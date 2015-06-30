@@ -33,6 +33,7 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,700,700italic,900,900italic,400italic,300italic,300">
 
 		<!-- LIBRARIES CSS -->
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/animate.min.css">
@@ -53,17 +54,13 @@
 	</head>
 
 	<body class="enable-animations enable-preloader">
-
 		<div id="document" class="document">
 
 			<!-- HEADER
 			================================= -->
 			<header id="header" class="header-section section section-dark navbar navbar-fixed-top">
-
 				<div class="container-fluid">
-
 					<div class="navbar-header navbar-left">
-
 						<!-- RESPONSIVE MENU BUTTON -->
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
 							<span class="sr-only">Toggle navigation</span>
@@ -71,46 +68,45 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-
 						<!-- HEADER LOGO -->
 						<a class="navbar-logo navbar-brand anchor-link" href="#hero">
 							<img src="images/logos/WCNhelp-logo-wc@2x.png" srcset="images/logos/WCNhelp-logo-wc@2x.png, images/logos/header-logo.png, images/logos/WCNhelp-logo-wc.png" alt="WCN">
 						</a>
-
 					</div>
 
 					<nav id="navigation" class="navigation navbar-collapse collapse navbar-right">
-
 						<!-- NAVIGATION LINKS -->
 						<ul id="header-nav" class="nav navbar-nav">
-
-							<li><a href="#hero" class="hidden">Top</a></li>
-
-							<li><a href="#about">About</a></li>
-							<li><a href="#benefits">Benefits</a></li>
-							<li><a href="#how-it-works">How It Works</a></li>
+							<li>
+								<a href="#hero" class="hidden">Top</a>
+							</li>
+							<li>
+								<a href="#about">About</a>
+							</li>
+							<li>
+								<a href="#benefits">Benefits</a>
+							</li>
+							<li>
+								<a href="#how-it-works">How It Works</a>
+							</li>
 							<!-- <li><a href="#pricing">Pricing</a></li> -->
-
 							<!-- HEADER ACTION BUTTON -->
-							<li class="header-action-button"><a href="#" class="btn btn-primary">Join Beta</a></li>
-
+							<li class="header-action-button">
+								<a href="#" class="btn btn-primary">Join Beta</a>
+							</li>
 						</ul>
-
 					</nav>
 
 				</div>
-
 			</header>
 
 			<!-- HERO
 			================================= -->
 			<section id="hero" class="hero-section hero-layout-simple hero-layout-fullscreen-subscription-form hero-fullscreen section section-dark">
-
 				<div class="section-background">
-
 					<!-- IMAGE BACKGROUND -->
 					<div class="section-background-image parallax" data-stellar-ratio="0.4">
-						<img src="images/backgrounds/standingbysm.jpg" alt="" style="opacity: 0.5;">
+						<img src="images/backgrounds/rainbow-jump.jpg" alt="" style="opacity: 0.5;">
 					</div>
 
 					<!-- VIDEO BACKGROUND -->
@@ -128,54 +124,45 @@
 						<li><img src="images/backgrounds/hero-bg-slideshow-2.jpg" alt="" style="opacity: 0.25;"></li>
 						<li><img src="images/backgrounds/hero-bg-slideshow-3.jpg" alt="" style="opacity: 0.2;"></li>
 					</ul> -->
-
 				</div>
 
 				<div class="container">
-
 					 <div class="hero-content">
 						<div class="hero-content-inner">
-											<div class="col-md-10 col-md-offset-1">
-
+							<div class="col-md-10 col-md-offset-1">
 								<div class="hero-heading" data-animation="fadeIn">
-
-									<h1 class="hero-title"><img src="images/contents/WCNheader-site-whitecolor.png" alt="Well Connected Now connects professionals to professional help: mentors, coaches, and therapists"/> </h1>
-
-
-
+									<h1 class="hero-title">
+										<img src="images/contents/WCNheader-site-whitecolor.png" alt="Well Connected Now connects professionals to professional help: mentors, coaches, and therapists"/>
+									</h1>
 									<div class="row">
 										<div class="col-md-10 col-md-offset-1">
-
 										<!-- <p class="hero-tagline">Mentors, Coaches, and Therapists</p> --!>
 
-		<!-- SUBSCRIPTION FORM -->
+										<!-- SUBSCRIPTION FORM -->
 											<form action="modules/subscribe-mailchimp.php" method="post" id="subscription-form" class="subscription-form form-ajax-submit" role="form">
 												<div class="form-validation alert"></div>
 												<div class="form-group subscription-form-wrapper">
 													<span class="subscription-form-input">
-														<input type="email" name="email" id="subscribe-form-email" class="subscribe-form-email form-control form-control-lg" placeholder="Enter TEST email address" autocomplete="off">
+														<input type="email" name="email" id="subscribe-form-email" class="subscribe-form-email form-control form-control-lg" placeholder="Enter email address" autocomplete="off">
 													</span>
 													<span class="subscription-form-submit">
-														<button class="btn btn-primary btn-lg" data-loading-text="Action Button">Request Info</button>
+														<button class="btn btn-primary btn-lg" data-loading-text="Email Confirmation Sent">Request Info</button>
 													</span>
 												</div>
 											</form>
 
-
-
 										</div>
 									</div>
-
 								</div>
 							</div>
-
 						</div>
 					</div>
-
 				</div>
 
 				<!-- HERO START LINK -->
-				<a href="#headline" class="hero-start-link anchor-link"><span class="fa fa-angle-double-down"></span></a>
+				<a href="#about" class="hero-start-link anchor-link">
+					<span class="fa fa-angle-double-down"></span>
+				</a>
 
 			</section>
 
@@ -214,98 +201,79 @@
 			<section id="about" class="about-section section">
 
 				<div class="container">
-
 					<h2 class="section-heading text-center">Rebranding Mental Health</h2>
-
 					<div class="about-row row">
-
 						<!-- DESCRIPTION IMAGE -->
 						<div class="about-image col-md-6" data-animation="fadeIn">
+							<p class="talk"></p>
+							<img src="images/contents/aboutme.jpg" alt="Lisa Abdilova">
+							<div class="row">
+								<address class="contact">
+									<strong>Lisa Abdilova, Founder/CEO</strong>
+									<ul class="fa-ul">
+										<li><i class="fa-li fa fa-fax"></i><a href="http://calendly.com/abdilisa">Schedule WCN Consultation</a></li>
+										<li><i class="fa-li fa fa-home"></i>500 Yale Ave N <br> Attn: Well Connected Now <br> Seattle, WA, USA</li>
+										<li><i class="fa-li fa fa-phone"></i>415.860.5415</li>
+									</ul>
+								</address>
+								<!--- <address class="col-sm-6">
+												<strong>Workshop &amp; Store</strong>
+												<ul class="fa-ul">
+													<li><i class="fa-li fa fa-home"></i>Jalan Legian, Kuta<br>Bali, Indonesia</li>
+													<li><i class="fa-li fa fa-phone"></i>Phone: +62 109 876543</li>
+													<li><i class="fa-li fa fa-fax"></i>Fax: +62 109 876543</li>
+												</ul>
+											</address> --!>
+										</div>
 
-
-							<p class="talk"></p><img src="images/contents/aboutme.jpg" alt="Lisa Abdilova">
-							</p>
-								<div class="row">
-
-									<address class="contact">
-										<strong>Lisa Abdilova, Founder/CEO</strong>
-										<ul class="fa-ul">
-											<li><i class="fa-li fa fa-fax"></i><a href="http://calendly.com/abdilisa">Schedule WCN Consultation</a></li>
-											<li><i class="fa-li fa fa-home"></i>500 Yale Ave N <br> Attn: Well Connected Now <br> Seattle, WA, USA</li>
-											<li><i class="fa-li fa fa-phone"></i>415.860.5415</li>
-										</ul>
-									</address>
-									<!--- <address class="col-sm-6">
-										<strong>Workshop &amp; Store</strong>
-										<ul class="fa-ul">
-											<li><i class="fa-li fa fa-home"></i>Jalan Legian, Kuta<br>Bali, Indonesia</li>
-											<li><i class="fa-li fa fa-phone"></i>Phone: +62 109 876543</li>
-											<li><i class="fa-li fa fa-fax"></i>Fax: +62 109 876543</li>
-										</ul>
-									</address> --!>
 								</div>
 
-
-						</div>
-
-						<!-- DESCRIPTION TEXT -->
-						<div class="about-text col-md-6">
-
-						<p class="lead"><strong>Well Connected Now connects millennials & entrepreneurs
-						<br>to top-tier mentors, coaches, and therapists.</strong>
-
-							<p class="smallerdetails">WCN aspires to rebrand mental health, treat depression & anxiety before early symptoms spiral,
-								and help professionals address their core career related challenges.
-							  	<br><br>
-							  	Matches specially selected by clients' circumstances, budget, & preferences. Referrals encouraged. Telehealth options available.
-
-							</p>
-						</p>
-
-
-
-						 	<ul class="icon-list">
-								<li>
-									<span class="icon-list-icon fa fa-crosshairs" data-animation="bounceIn"></span>
-									<h4 class="icon-list-title">Cross-Industry Mentors</h4>
-									<p class="valueprop">
-										<em>Strategize your next career steps
-										<br>with a specially matched mentor.</em>
-										</p>
-								</li>
-								<li>
-									<span class="icon-list-icon fa fa-line-chart" data-animation="bounceIn"></span>
-									<h4 class="icon-list-title">Business Coaches</h4>
-									<p class="valueprop">
-										<em>Strive towards your goals
-										<br>with an experienced, certified coach.</em>
-										</p>
-							    </li>
-								<li>
-									<span class="icon-list-icon fa fa-key" data-animation="bounceIn"></span>
-									<h4 class="icon-list-title">Therapists</h4>
-									<p class="valueprop"><em>Improve your relationships
-									<br> with discreet, specially selected therapists.</em>
-
+								<!-- DESCRIPTION TEXT -->
+								<div class="about-text col-md-6">
+									<p class="lead">
+										<strong>Well Connected Now connects millennials & entrepreneurs<br>to top-tier mentors, coaches, and therapists.</strong>
 									</p>
-								</li>
-							</ul>
+									<p class="smallerdetails">WCN aspires to rebrand mental health, treat depression & anxiety before early symptoms spiral, and help professionals address their core career related challenges.</p>
+									<br>
+									<p class="smallerdetails">Matches specially selected by clients' circumstances, budget, & preferences. Referrals encouraged. Telehealth options available.</p>
+
+								 	<ul class="icon-list">
+										<li>
+											<span class="icon-list-icon fa fa-crosshairs" data-animation="bounceIn"></span>
+											<h4 class="icon-list-title">Cross-Industry Mentors</h4>
+											<p class="valueprop">
+												<em>Strategize your next career steps
+												<br>with a specially matched mentor.</em>
+											</p>
+										</li>
+										<li>
+											<span class="icon-list-icon fa fa-line-chart" data-animation="bounceIn"></span>
+											<h4 class="icon-list-title">Business Coaches</h4>
+											<p class="valueprop">
+												<em>Strive towards your goals
+												<br>with an experienced, certified coach.</em>
+											</p>
+									  </li>
+										<li>
+											<span class="icon-list-icon fa fa-key" data-animation="bounceIn"></span>
+											<h4 class="icon-list-title">Therapists</h4>
+											<p class="valueprop"><em>Improve your relationships
+												<br> with discreet, specially selected therapists.</em>
+											</p>
+										</li>
+									</ul>
+								</div>
+							</div>
 						</div>
-
 					</div>
-
 				</div>
-
 			</section>
 
 			<!-- BENEFITS
 			================================= -->
 			<section id="benefits" class="benefits-section section-gray section">
-
 				<div class="container">
-
 					<h2 class="section-heading text-center"> WCN Benefits</h2>
-
 					<div class="benefits-row row">
 
 						<!-- BENEFIT 1 -->
@@ -314,12 +282,12 @@
 								<h4 class="benefit-title">Feel Healthier</h4>
 								<span class="benefit-icon fa  fa-heartbeat" data-animation="bounceIn"></span>
 								<p class="benefit-description">
-
 									<ul class="benefitbox">
 										<li class="benefitline">Weight loss or gain.</li>
 										<li class="benefitline">Stiff neck / shoulders.</li>
 										<li class="benefitline">Back pain / muscle tension.</li>
 									</ul>
+								</p>
 							</div>
 						</div>
 
@@ -329,13 +297,12 @@
 								<h4 class="benefit-title">Relax More</h4>
 								<span class="benefit-icon fa fa-bed" data-animation="bounceIn"></span>
 								<p class="benefit-description">
-
 									<ul class="benefitbox">
 										<li class="benefitline">Low energy.</li>
 										<li class="benefitline">Insomnia / lethargy.</li>
 										<li class="benefitline">Feeling wound up / on edge.</li>
-
 									</ul>
+								</p>
 							</div>
 						</div>
 
@@ -347,13 +314,12 @@
 								<h4 class="benefit-title">Cheer Up</h4>
 								<span class="benefit-icon fa fa-smile-o" data-animation="bounceIn"></span>
 								<p class="benefit-description">
-
 									<ul class="benefitbox">
-
 										<li class="benefitline">Increased irritability.</li>
 										<li class="benefitline">Overwhelming despair.</li>
 										<li class="benefitline">Persistent negativity / worry.</li>
 									</ul>
+								</p>
 							</div>
 						</div>
 
@@ -365,7 +331,6 @@
 								<h4 class="benefit-title">Gain Confidence</h4>
 								<span class="benefit-icon fa fa-child" data-animation="bounceIn"></span>
 								<p class="benefit-description">
-
 									<ul class="benefitbox">
 										<li class="benefitline">Achieve your goals</li>
 										<li class="benefitline">Receive encouragement</li>
@@ -411,19 +376,16 @@
 						</div>
 
 					</div>
-
 				</div>
-
 			</section>
+			<!-- End Benefits Section -->
+
 
 			<!-- HOW IT WORKS
 			================================= -->
 			<section id="how-it-works" class="how-it-works-section section">
-
 				<div class="container-fluid">
-
 					<h2 class="section-heading text-center">How it Works</h2>
-
 					<div class="hiw-row row">
 
 						<!-- HOW IT WORKS - ITEM 1 -->
@@ -433,8 +395,7 @@
 								<div class="hiw-item-text">
 									<span class="hiw-item-icon">1</span>
 									<h4 class="hiw-item-title">WCN Consultation</h4>
-									<p class="hiw-item-description">Confidential call with trained peer counselor.
-									Discuss circumstances, preferences, and budget. </p>
+									<p class="hiw-item-description">Confidential call with trained peer counselor. Discuss circumstances, preferences, and budget. </p>
 								</div>
 							</div>
 						</div>
@@ -478,47 +439,37 @@
 						</div>
 
 					</div>
-
 				</div>
-
 			</section>
-
+			<!-- End HIW Section -->
 
 			<!-- VIDEO SECTION
 			================================= -->
 			<section id="video" class="video-section section-gray section">
-
 				<div class="container">
-
 					<h2 class="section-heading text-center">Watch the Video</h2>
-
 					<div class="row">
+
 						<div class="col-md-10 col-md-offset-1">
-
 							<div class="video-embed">
-
 								<!-- VIDEO EMBED FROM VIMEO -->
 								<!-- <iframe class="video-async" data-source="vimeo" data-video="115134273" data-color="f3ae73" allowfullscreen></iframe>
-
 								<!-- VIDEO EMBED FROM YOUTUBE -->
 								<!--<iframe class="video-async" data-source="youtube" data-video="7UAy8E3e9f8" allowfullscreen></iframe> -->
 								<iframe width="420" height="315" src="https://www.youtube.com/embed/YqyCnrOu5oA" frameborder="0" allowfullscreen></iframe>
 							</div>
-
 						</div>
-					</div>
 
+					</div>
 				</div>
 			</section>
+			<!-- End Video Section -->
 
 			<!-- TEAM
 			================================= -->
 			<section id="team" class="team-section section">
-
 				<div class="container-fluid">
-
 					<h2 class="section-heading text-center">Meet the Team</h2>
-
 					<div class="team-row row">
 
 						<!-- TEAM MEMBER 1 -->
@@ -578,7 +529,7 @@
 						<!-- TEAM MEMBER 5 -->
 						<div class="col-lg-2 col-md-4 col-sm-6" data-animation="fadeIn">
 							<div class="team-member">
-								<img class="team-member-picture" src="images/contents/robinhood.jpg" alt="">
+								<img class="team-member-picture" src="images/contents/nate.jpg" alt="">
 								<div class="team-member-text">
 									<h4 class="team-member-name">Nate Rodland</h4>
 									<div class="team-member-position">Advisor</div>
@@ -590,20 +541,20 @@
 						<!-- TEAM MEMBER 6 -->
 						<div class="col-lg-2 col-md-4 col-sm-6" data-animation="fadeIn">
 							<div class="team-member even">
-								<img class="team-member-picture" src="images/contents/GaryS3.jpg" alt="">
+								<img class="team-member-picture" src="images/contents/noah.jpg" alt="">
 								<div class="team-member-text">
-									<h4 class="team-member-name">Gary Shumakher</h4>
-									<div class="team-member-position">Marketing & Research Analyst Intern</div>
+									<h4 class="team-member-name">Noah Heller</h4>
+									<div class="team-member-position">Advisor</div>
 									<p class="team-member-description"></p>
 								</div>
 							</div>
 						</div>
 
 					</div>
-
+					<!-- End Team Row -->
 				</div>
-
 			</section>
+			<!-- End Team Section  -->
 
 			<!-- TWO COLS DESCRIPTION SECTION
 			================================= -->
@@ -639,7 +590,7 @@
 
 				</div> -->
 
-			</section>
+			<!-- </section> -->
 
 			<!-- PRICING SECTION
 			================================= -->
@@ -702,8 +653,8 @@
 									<li><del>Premium Themes Access</del></li>
 									<li>24/7 Customer Support</li>
 								</ul>
-							</div> -->
-						</div>
+							</div>
+						</div> -->
 
 						<!-- PRICING PACKAGE 3 -->
 						<!-- <div class="col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3" data-animation="fadeInUp">
@@ -731,8 +682,8 @@
 					</div>
 
 				</div>
--->
 			</section>
+-->
 
 			<!-- TESTIMONIALS
 			================================= -->
@@ -787,9 +738,9 @@
 
 					</div>
 
-				</div> -->
-
+				</div>
 			</section>
+		-->
 
 
 
@@ -798,23 +749,21 @@
 			<section id="closing" class="closing-section section-dark section">
 
 				<div class="section-background">
-
 					<!-- IMAGE BACKGROUND -->
 					<div class="section-background-image parallax" data-stellar-ratio="0.4">
 						<img src="images/backgrounds/closing-bg.jpg" alt="" style="opacity: 0.15;">
 					</div>
-
 				</div>
 
 				<div class="container">
-
 					<h3 class="closing-shout">Ready to get better?</h3>
-
-
-					<div class="closing-buttons" data-animation="tada"><a href="#hero" class="anchor-link btn btn-lg btn-primary">Schedule Consultation</a></div>
-
-					<h4 class="closer"><br>WCN connects smart millennials
-					<br>to mentors, coaches, and therapists</h4>
+					<div class="closing-buttons" data-animation="tada">
+						<a href="#hero" class="anchor-link btn btn-lg btn-primary">Schedule Consultation</a>
+					</div>
+					<h4 class="closer">
+						<br>WCN connects smart millennials
+						<br>to mentors, coaches, and therapists
+					</h4>
 				</div>
 
 			</section>
@@ -822,7 +771,6 @@
 			<!-- FOOTER
 			================================= -->
 			<section id="footer" class="footer-section section">
-
 				<div class="container">
 
 					<h3 class="footer-logo">
@@ -841,26 +789,24 @@
 					</div>
 
 				</div>
-
 			</section>
 
+			<!-- JAVASCRIPT
+			================================= -->
+			<script src="js/jquery-1.11.2.min.js"></script>
+			<script src="js/bootstrap.min.js"></script>
+			<script src="js/respimage.min.js"></script>
+			<script src="js/jpreloader.min.js"></script>
+			<script src="js/smoothscroll.min.js"></script>
+			<script src="js/jquery.nav.min.js"></script>
+			<script src="js/jquery.inview.min.js"></script>
+			<script src="js/jquery.counterup.min.js"></script>
+			<script src="js/jquery.stellar.min.js"></script>
+			<script src="js/maplace-0.1.3.min.js"></script>
+			<script src="js/script.js"></script>
+			<script src="js/favicon.js"></script>
+
 		</div>
-
-		<!-- JAVASCRIPT
-		================================= -->
-		<script src="js/jquery-1.11.2.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/respimage.min.js"></script>
-		<script src="js/jpreloader.min.js"></script>
-		<script src="js/smoothscroll.min.js"></script>
-		<script src="js/jquery.nav.min.js"></script>
-		<script src="js/jquery.inview.min.js"></script>
-		<script src="js/jquery.counterup.min.js"></script>
-		<script src="js/jquery.stellar.min.js"></script>
-		<script src="js/maplace-0.1.3.min.js"></script>
-		<script src="js/script.js"></script>
-		<script src="js/favicon.js"></script>
-
 	</body>
 
 </html>

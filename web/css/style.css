@@ -456,13 +456,13 @@ h5{
 	color: #888;
 }
 .form-control:-moz-placeholder {
-	color: #888;  
+	color: #888;
 }
 .form-control::-moz-placeholder {
-	color: #888;  
+	color: #888;
 }
 .form-control:-ms-input-placeholder {
-	color: #888;  
+	color: #888;
 }
 .form-control:focus {
 	-webkit-box-shadow: none;
@@ -746,6 +746,7 @@ h5{
 	background-color: #222;
 }
 .navbar-logo {
+	width: 60%;  /* adjusted logo width for mobile devices*/
 	height: 80px;
 	line-height: 50px;
 	margin-left: 0 !important;
@@ -925,7 +926,7 @@ h5{
 	position: relative;
 	z-index: 1;
 	vertical-align: middle;
-	display: inline-block;	
+	display: inline-block;
 }
 .hero-section form {
 	background-color: #f6f6f6;
@@ -1351,7 +1352,7 @@ h5{
 .section-dark .hiw-item-icon {
 	border-color: #222;
 }
-.section-dark .hiw-item.even .hiw-item-icon {	
+.section-dark .hiw-item.even .hiw-item-icon {
 	border-color: #292929;
 }
 .section-accent .hiw-item-icon {
