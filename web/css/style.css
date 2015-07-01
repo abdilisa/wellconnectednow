@@ -1061,8 +1061,22 @@ h5{
 	}
 }
 @media ( max-width: 479px ) {
+	.subscription-form-wrapper {
+		margin: 0px;
+	}
+	#subscribe-form-submit {
+		font-size: 12px;
+	  line-height: 15px;
+	  height: 30px;
+	  padding: 0px 24px;
+	}
+	#subscribe-form-email{
+		font-size: 12px;
+  	line-height: 15px;
+  	height: 30px;
+	}
 	.hero-section {
-		padding: 90px 0;
+		padding: 70px 0 120px 0;
 	}
 	.navbar-logo {
 		width: 60%;
