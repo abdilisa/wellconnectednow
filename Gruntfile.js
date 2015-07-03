@@ -275,6 +275,18 @@ module.exports = function (grunt) {
     //   dist: {}
     // },
 
+    compress: {
+      main: {
+        options: {
+          archive: 'dist.zip'
+        },
+        cwd: 'dist',
+        expand: true,
+        src: ['**/*'],
+        dest: '/'
+      }
+    },
+
     // Copies remaining files to places other tasks can use
     copy: {
       dist: {
@@ -296,6 +308,15 @@ module.exports = function (grunt) {
           cwd: 'bower_components/bootstrap/dist',
           src: 'fonts/*',
           dest: '<%= config.dist %>'
+        },
+        {
+          expand: true,
+          dot: true,
+          cwd: 'node',
+          dest: '<%= config.dist %>',
+          src: [
+            '{,*/}*.js'
+          ]
         }]
       },
       styles: {
@@ -359,6 +380,11 @@ module.exports = function (grunt) {
       'mocha'
     ]);
   });
+
+  grunt.registerTask('package', [
+    'build',
+    'compress'
+  ]);
 
   grunt.registerTask('build', [
     'clean:dist',
