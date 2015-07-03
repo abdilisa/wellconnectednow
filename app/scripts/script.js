@@ -282,12 +282,12 @@
 
 							// custom callback
 							$el.trigger( 'form-ajax-response', response );
-							
+
 							// error
 							if ( response.status == 'error' ) {
 								$alert.html( response.message );
 								$alert.addClass( 'alert-danger' ).fadeIn( 500 );
-							} 
+							}
 							// success
 							else if ( response.status == 'error' ) {
 								$el.trigger( 'reset' );
