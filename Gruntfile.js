@@ -121,7 +121,14 @@ module.exports = function(grunt) {
           ]
         }]
       },
-      server: '.tmp'
+      server: '.tmp',
+      node_dist: {
+        files: [{
+          src: [
+            'node_dist'
+          ]
+        }]
+      }
     },
 
     // Make sure code styles are up to par and there are no obvious mistakes
@@ -288,11 +295,11 @@ module.exports = function(grunt) {
     compress: {
       main: {
         options: {
-          archive: 'node.zip'
+          archive: './node.zip'
         },
-        cwd: 'node',
+        cwd: 'node_dist',
         expand: true,
-        src: ['**/*'],
+        src: ['./**/*'],
         dest: '/'
       }
     },
@@ -324,6 +331,16 @@ module.exports = function(grunt) {
         },
         files: [{
           src: '{,*/}*',
+          exclude: 'index.html',
+          params: {CacheControl: 'max-age=32850000000'},
+          expand: true,
+          cwd: 'dist',
+          dest: '/',
+          action: 'upload'
+        },
+        {
+          src: 'index.html',
+          params: {CacheControl: 'no-cache'},
           expand: true,
           cwd: 'dist',
           dest: '/',
@@ -451,7 +468,8 @@ module.exports = function(grunt) {
     'copy:node',
     'copy:node_modules',
     'shell:npm_install',
-    'compress'
+    'compress',
+    'clean:node_dist'
   ]);
 
   grunt.registerTask('build', [
