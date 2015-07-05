@@ -10,14 +10,18 @@
 // If you want to recursively match all subfolders, use:
 // 'test/spec/**/*.js'
 
-module.exports = function (grunt) {
+function getUserHome() {
+  return process.env[(process.platform === 'win32') ? 'USERPROFILE' : 'HOME'];
+}
+
+module.exports = function(grunt) {
 
   // Time how long tasks take. Can help when optimizing build times
   require('time-grunt')(grunt);
 
   // Automatically load required grunt tasks
   require('jit-grunt')(grunt, {
-      useminPrepare: 'grunt-usemin'
+    useminPrepare: 'grunt-usemin'
   });
 
   // Configurable paths
@@ -52,6 +56,12 @@ module.exports = function (grunt) {
       styles: {
         files: ['<%= config.app %>/styles/{,*/}*.css'],
         tasks: ['newer:copy:styles', 'postcss']
+      }
+    },
+
+    env: {
+      dev: {
+        src: getUserHome() + "/.wellconnectednow/dev.json"
       }
     },
 
@@ -278,12 +288,47 @@ module.exports = function (grunt) {
     compress: {
       main: {
         options: {
-          archive: 'dist.zip'
+          archive: 'node.zip'
         },
-        cwd: 'dist',
+        cwd: 'node',
         expand: true,
         src: ['**/*'],
         dest: '/'
+      }
+    },
+
+    ebDeploy: {
+      options: {
+        application: 'wellconnected',
+        environment: 'wellconnected-env'
+      },
+      files: [{
+        src: ['package.json']
+      }, {
+        cwd: 'node_dist',
+        src: ['**'],
+        expand: true
+      }]
+    },
+
+    aws: grunt.file.readJSON(getUserHome() + '/.wellconnectednow/dev.json'),
+    aws_s3: {
+      production: {
+        options: {
+          accessKeyId: '<%= aws.AWSAccessKeyId %>',
+          secretAccessKey: '<%= aws.AWSSecretKey %>',
+          bucket: 'wellconnectedassets',
+          region: 'us-west-2',
+          uploadConcurrency: 5, // 5 simultaneous uploads,
+          differential: true
+        },
+        files: [{
+          src: '{,*/}*',
+          expand: true,
+          cwd: 'dist',
+          dest: '/',
+          action: 'upload'
+        }]
       }
     },
 
@@ -308,15 +353,6 @@ module.exports = function (grunt) {
           cwd: 'bower_components/bootstrap/dist',
           src: 'fonts/*',
           dest: '<%= config.dist %>'
-        },
-        {
-          expand: true,
-          dot: true,
-          cwd: 'node',
-          dest: '<%= config.dist %>',
-          src: [
-            '{,*/}*.js'
-          ]
         }]
       },
       styles: {
@@ -325,6 +361,31 @@ module.exports = function (grunt) {
         cwd: '<%= config.app %>/styles',
         dest: '.tmp/styles/',
         src: '{,*/}*.css'
+      },
+      node: {
+        expand: true,
+        dot: true,
+        cwd: 'server',
+        dest: 'node_dist',
+        src: [
+          '{,*/}*.js'
+        ]
+      },
+      node_modules: {
+        expand: true,
+        src: ['package.json'],
+        dest: 'node_dist'
+      }
+    },
+
+    shell: {
+      npm_install: {
+        options: {
+          execOptions: {
+            cwd: 'node_dist'
+          }
+        },
+        command: 'NODE_ENV=production npm install'
       }
     },
 
@@ -345,7 +406,7 @@ module.exports = function (grunt) {
   });
 
 
-  grunt.registerTask('serve', 'start the server and preview your app', function (target) {
+  grunt.registerTask('serve', 'start the server and preview your app', function(target) {
 
     if (target === 'dist') {
       return grunt.task.run(['build', 'browserSync:dist']);
@@ -361,12 +422,12 @@ module.exports = function (grunt) {
     ]);
   });
 
-  grunt.registerTask('server', function (target) {
+  grunt.registerTask('server', function(target) {
     grunt.log.warn('The `server` task has been deprecated. Use `grunt serve` to start a server.');
     grunt.task.run([target ? ('serve:' + target) : 'serve']);
   });
 
-  grunt.registerTask('test', function (target) {
+  grunt.registerTask('test', function(target) {
     if (target !== 'watch') {
       grunt.task.run([
         'clean:server',
@@ -381,8 +442,15 @@ module.exports = function (grunt) {
     ]);
   });
 
-  grunt.registerTask('package', [
+  grunt.registerTask('deployFrontEnd', [
     'build',
+    'aws_s3:production'
+  ]);
+
+  grunt.registerTask('deployServer', [
+    'copy:node',
+    'copy:node_modules',
+    'shell:npm_install',
     'compress'
   ]);
 
