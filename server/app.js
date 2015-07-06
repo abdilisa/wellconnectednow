@@ -3,6 +3,7 @@ path = require('path'),
 logger = require('morgan'),
 bodyParser = require('body-parser'),
 indexRoute = require('./routes/index'),
+compression = require('compression'),
 debug = require('debug')('expressapp');
 
 var app = express();
@@ -14,6 +15,9 @@ app.use(bodyParser.urlencoded({
 
 // view engine setup
 app.set('view engine', null);
+
+// compress all requests
+app.use(compression());
 
 app.use('/', indexRoute);
 

@@ -11,7 +11,7 @@ function IndexFileUtility(params) {
 
   this.s3 = new S3(params);
 
-  this.updateIndexEvery = process.env.updateIndexEvery || 5000;
+  this.updateIndexEvery = process.env.updateIndexEvery || (1000*60*7);
 };
 
 IndexFileUtility.prototype.listIndexFiles = function(cb) {
