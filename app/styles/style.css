@@ -2243,21 +2243,21 @@ h5{
  * FOOTER
  * ========================================
  */
-body.enable-preloader > .document {
+body.  > .document {
 	opacity: 0;
 	-webkit-transition: all ease 0.25s;
 	transition: all ease 0.25s;
 }
-body.enable-preloader.done-preloader > .document {
+body. .done-preloader > .document {
 	opacity: 1;
 }
-body.enable-preloader.preloader-dark {
+body. .preloader-dark {
 	background-color: #222;
 }
 #jpreOverlay {
 	background-color: #fff;
 }
-body.enable-preloader.preloader-dark #jpreOverlay {
+body. .preloader-dark #jpreOverlay {
 	background-color: #222;
 }
 #jpreButton, #jprePercentage {
@@ -2272,7 +2272,7 @@ body.enable-preloader.preloader-dark #jpreOverlay {
 	height: 8px;
 	background-color: #eee;
 }
-body.enable-preloader.preloader-dark #jpreLoader {
+body. .preloader-dark #jpreLoader {
 	background-color: #444;
 }
 #jpreBar {

@@ -312,7 +312,7 @@
 		 * Preloader
 		 * =======================================
 		 */
-		if ( $.fn.jpreLoader && $body.hasClass( 'enable-preloader' ) ) {
+		if ( $.fn.jpreLoader && $body.hasClass( ' ' ) ) {
 
 			$body.jpreLoader({
 				showSplash : false,
