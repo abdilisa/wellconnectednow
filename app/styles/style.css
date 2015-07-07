@@ -101,7 +101,7 @@ iframe {
 	display: inline-block;
 }
 .lead {
-	font-family:"Source Sans Pro"; sans-serif;
+	font-family:"Source Sans Pro", sans-serif;
 	position: relative;
 	font-size: 20px;
 	line-height: inherit;
@@ -2179,6 +2179,7 @@ h5{
 	.footer-text {
 		display: none;
 	}
+}
 
 @media ( max-width: 400px ) {
 	.footer-link {
