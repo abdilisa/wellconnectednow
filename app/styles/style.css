@@ -1031,8 +1031,8 @@ h5{
 .hero-tagline {
 	/*font-family: "Source Sans Pro", sans-serif;*/
 	position: relative;
-	margin-top: 20px;
-	line-height: 1.3em;
+	margin: 0px;
+	line-height: 1.6em;
 	letter-spacing: 0.02em;
 	font-size: 25px;
 	font-weight: normal;
