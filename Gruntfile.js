@@ -10,6 +10,8 @@
 // If you want to recursively match all subfolders, use:
 // 'test/spec/**/*.js'
 
+var currentVersion = require('./package.json').version;
+
 function getUserHome() {
   return process.env[(process.platform === 'win32') ? 'USERPROFILE' : 'HOME'];
 }
@@ -331,15 +333,18 @@ module.exports = function(grunt) {
         files: [{
           src: '**/*',
           exclude: 'index.html',
-          params: {CacheControl: 'max-age=32850000000'},
+          params: {
+            CacheControl: 'max-age=32850000000'
+          },
           expand: true,
           cwd: 'dist',
           dest: '/',
           action: 'upload'
-        },
-        {
+        }, {
           src: 'index.html',
-          params: {CacheControl: 'no-cache'},
+          params: {
+            CacheControl: 'no-cache'
+          },
           expand: true,
           cwd: 'dist',
           dest: '/',
@@ -405,6 +410,27 @@ module.exports = function(grunt) {
       }
     },
 
+    awsebtdeploy: {
+      production: {
+        options: {
+          region: 'us-west-2',
+          s3: {
+            bucket: 'elasticbeanstalk-us-west-2-029191796824',
+            key: 'node-' + currentVersion + '-' + (new Date()).getTime() + '.zip'
+          },
+          versionLabel: currentVersion + '-' + (new Date()).getTime(),
+          applicationName: 'wellconnected',
+          environmentCNAME: 'wellconnected-prod-env.elasticbeanstalk.com',
+          sourceBundle: "node.zip",
+
+          // or via the AWS_ACCESS_KEY_ID environment variable
+          accessKeyId: '<%= aws.AWSAccessKeyId %>',
+          // or via the AWS_SECRET_ACCESS_KEY environment variable
+          secretAccessKey: '<%= aws.AWSSecretKey %>',
+        }
+      }
+    },
+
     // Run some tasks in parallel to speed up build process
     concurrent: {
       server: [
@@ -464,11 +490,13 @@ module.exports = function(grunt) {
   ]);
 
   grunt.registerTask('deployServer', [
+    'env:dev',
     'copy:node',
     'copy:node_modules',
     'shell:npm_install',
     'compress',
-    'clean:node_dist'
+    'clean:node_dist',
+    'awsebtdeploy'
   ]);
 
   grunt.registerTask('build', [
