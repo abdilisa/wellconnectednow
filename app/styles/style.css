@@ -340,12 +340,11 @@ h5{
 }
 
 #hero {
-	background: url("../images/backgrounds/green-journey.jpg") no-repeat center center fixed;
+	background: url("../images/backgrounds/green-journey.jpg") no-repeat center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	background-color: rgba(34, 34, 34, .5);
 }
 /*.section-background-image {
 	position: absolute;
