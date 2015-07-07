@@ -9,7 +9,7 @@ router.get('/', function(req, res) {
     if (err) return next(err);
     res.status(200);
     res.set('Content-Type', 'text/html');
-    res.set('Cache-Control', 'max-age=300000');
+    res.set('Cache-Control', 'no-cache');
     res.send(data);
   });
 });

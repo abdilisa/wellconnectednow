@@ -326,11 +326,10 @@ module.exports = function(grunt) {
           secretAccessKey: '<%= aws.AWSSecretKey %>',
           bucket: 'wellconnectedassets',
           region: 'us-west-2',
-          uploadConcurrency: 5, // 5 simultaneous uploads,
-          differential: true
+          uploadConcurrency: 5 // 5 simultaneous uploads,
         },
         files: [{
-          src: '{,*/}*',
+          src: '**/*',
           exclude: 'index.html',
           params: {CacheControl: 'max-age=32850000000'},
           expand: true,
