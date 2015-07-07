@@ -1413,7 +1413,7 @@ h5{
 .hiw-item-text {
 	position: relative;
 	padding: 50px 40px;
-	text-align: center;
+	min-height: 297px;
 }
 .hiw-item-icon {
 	position: absolute;
@@ -1452,7 +1452,6 @@ h5{
 }
 .hiw-item-description {
 	font-size: 13px;
-	text-align: center;
 }
 
 /**
