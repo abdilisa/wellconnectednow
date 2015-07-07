@@ -159,9 +159,11 @@
 		var toggleHeaderFloating = function() {
 			// Floating Header
 			if ( $window.scrollTop() > 80 ) {
-				$( '.header-section' ).addClass( 'floating' );
+				$('.index-footer').addClass('floating-footer');
+				$( '.index-header' ).addClass( 'floating' );
 			} else {
-				$( '.header-section' ).removeClass( 'floating' );
+				$('.index-footer').removeClass	('floating-footer');
+				$( '.index-header' ).removeClass( 'floating' );
 			};
 		};
 
@@ -326,6 +328,29 @@
 		} else {
 			$body.trigger( 'pageStart' );
 		};
+
+
+		/* =======================================
+		 * Twitter Share Plugin
+		 * =======================================
+		 */
+		!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+
+
+		/* =======================================
+		 * Bootstrap TABS
+		 * =======================================
+		 */
+		// $('#mentors a').click(function (e) {
+		//   e.preventDefault()
+		//   $(this).tab('show')
+		// })
+		//
+		// $('#professionals a').click(function (e) {
+		//   e.preventDefault()
+		//   $(this).tab('show')
+		// })
+
 
 		$window.trigger( 'resize' );
 		$window.trigger( 'scroll' );
