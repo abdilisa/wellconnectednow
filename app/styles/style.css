@@ -1846,9 +1846,7 @@ h5{
 }
 
 .schedule-section {
-	background: url("../images/backgrounds/standing-alone.jpg") no-repeat center center fixed;
-	background-position: center center;
-	background-repeat: no-repeat;
+	background: url("../images/backgrounds/standing-alone.jpg") no-repeat center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
