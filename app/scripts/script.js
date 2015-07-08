@@ -336,10 +336,26 @@
 		 */
 		!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
 
-
+		/* =======================================
+		* Show/Hide Scheduling an Appointment
+		* =======================================
+		*/
 
 		$window.trigger( 'resize' );
 		$window.trigger( 'scroll' );
+
+		var newClientButton = $('.schedule-new');
+		var returnClientButton = $('.schedule-return');
+
+		newClientButton.on('click', function () {
+			$('.typeform-question').hide();
+			$('.new-client').show();
+		})
+		returnClientButton.on('click', function () {
+			$('.typeform-question').hide();
+			$('.return-client').show();
+		})
+
 
 	});
 

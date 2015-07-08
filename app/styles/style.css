@@ -1841,6 +1841,12 @@ h5{
  * SCHEDULE AN APPOINTMENT
  * ========================================
  */
+
+.new-client,
+.return-client {
+	display: none;
+}
+
 .OR {
 	padding: 20px;
 }
