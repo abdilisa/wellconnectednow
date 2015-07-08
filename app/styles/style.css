@@ -451,6 +451,12 @@ h5{
  * ========================================
  */
 
+#typeform-full {
+	margin: 0;
+	height: 350px;
+	overflow: hidden;
+}
+
 .email-form {
 	padding-top: 20px;
 }
