@@ -1753,7 +1753,7 @@ h5{
 	padding: 27px 30px 17px;
 	color: #fff;
 	font-family: "Merriweather", sans-serif;
-	font-weight: bold;
+	font-weight: 800;
 	line-height: 0.7;
 	letter-spacing: 0.05em;
 }
@@ -1763,7 +1763,7 @@ h5{
 }
 .price-number {
 	vertical-align: bottom;
-	font-size: 40px;
+	font-size: 55px;
 }
 .price-decimal {
 	vertical-align: top;
@@ -1783,7 +1783,10 @@ h5{
 	padding: 0;
 }
 .pricing-package-items li {
-	padding: 10px 30px;
+	/*font-family: 'Source Sans Pro';*/
+	font-style: italic;
+	font-size: 12px;
+	padding: 15px 15px;
 	border-top-width: 1px;
 	border-top-style: solid;
 	border-top-color: rgba(0,0,0,0.05);
@@ -1791,7 +1794,7 @@ h5{
 .pricing-package-items li:first-child {
 	border-top: none;
 }
-.pricing-package-items del {
+.pricing-package-items del {``
 	text-decoration: none;
 	opacity: 0.4;
 }
@@ -1835,7 +1838,7 @@ h5{
 }
 
 .OR {
-	padding: 20px;
+	padding: 25px;
 }
 
 .schedule-section {
