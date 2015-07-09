@@ -109,16 +109,7 @@ iframe {
 	font-weight: normal;
 	padding: 10px 0 25px;
 }
-.lead:after {
-	content: "";
-	position: absolute;
-	margin-right: 30px;
-	bottom: 0;
-	display: block;
-	height: 2px;
-	width: 80px;
-	background-color: rgba(0,0,0,0.1);
-}
+
 .lead.text-center:after {
 	left: 50%;
 	margin-left: -40px;
@@ -1271,9 +1262,7 @@ h5{
 .mission-row {
 	margin-top: 30px;
 }
-#mission{
-	padding-bottom: 50px;
-}
+
 .mission-image {
 	text-align: center;
 }
@@ -1473,9 +1462,7 @@ h5{
 }
 
 .carousel-inner{
-	background: url("../images/backgrounds/yoga-view.jpg") no-repeat center center fixed;
-	background-position: center center;
-	background-repeat: no-repeat;
+	background: url("../images/backgrounds/hands-testimonial.jpg") no-repeat center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -2118,6 +2105,17 @@ h5{
 }
 .footer-text {
 	padding: 20px;
+	color: #ccc;
+	display: inline-block;
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 11px;
+	line-height: 1.819;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+}
+
+.address-text {
+	vertical-align: bottom;
 	color: #ccc;
 	display: inline-block;
 	font-family: "Source Sans Pro", sans-serif;
