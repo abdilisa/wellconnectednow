@@ -1500,11 +1500,16 @@ h5{
 	line-height: inherit;
 	/*font-style: italic;*/
 	/*font-weight: 600;*/
-	padding: 20px 10px 20px 10px;
+	padding: 20px 10px 0px 10px;
 	text-align: left;
-	margin-bottom: 20px;
 	text-shadow: 0px;
 
+}
+
+@media ( max-width: 991px ) {
+	.carousel-indicators {
+		display: none;
+	}
 }
 
 @media ( max-width: 850px ) {
@@ -1512,7 +1517,7 @@ h5{
 		padding: 250px;
 	}
 	.carousel-inner{
-		height: 500px;
+		height: 520px;
 	}
 	.carousel-text {
 		font-size: 17px;
@@ -1527,7 +1532,7 @@ h5{
 
 @media ( max-width: 450px ) {
 	#carousel {
-		padding: 180px 0;
+		padding: 220px 0;
 	}
 	.carousel-text {
 		font-size: 13px;
@@ -1869,6 +1874,11 @@ h5{
  * TESTIMONIAL
  * ========================================
  */
+.transparency {
+	background-color: rgba(255, 255, 255, 0.2);
+	padding: 10px;
+}
+
 .testimonial {
 	padding: 30px;
 	margin: 15px 0;
@@ -2143,7 +2153,7 @@ h5{
 }
 .pinterest {
 	vertical-align: top;
-	padding-top: 17px; /* size of pinterest button is diff than linkedin and twitter */
+	padding-top: 17px !important; /* size of pinterest button is diff than linkedin and twitter */
 }
 .footer-text {
 	padding: 20px;
@@ -2157,6 +2167,7 @@ h5{
 }
 
 .address-text {
+	text-align: center;
 	vertical-align: middle;
 	color: #ccc;
 	display: inline-block;
