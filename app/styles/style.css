@@ -1025,11 +1025,12 @@ h5{
 	border-bottom-color: #ffcc00;
 }
 .hero-tagline {
+	font-family: 'Source Sans Pro';
 	-webkit-transform: translate3d(0, 0, 0);
 	-webkit-backface-visibility: hidden;
 	position: relative;
 	margin: 0px;
-	line-height: 1.6em;
+	line-height: 1.5em;
 	letter-spacing: 0.02em;
 	font-size: 25px;
 	font-weight: normal;
@@ -1384,6 +1385,13 @@ h5{
 	padding: 50px 40px;
 	min-height: 320px;
 }
+
+@media ( max-width: 1166px ) and ( min-width: 991px  ) {
+	.hiw-item-text {
+		min-height: 341px;
+	}
+}
+
 .hiw-item-icon {
 	position: absolute;
 	top: 0;
@@ -1953,10 +1961,12 @@ h5{
 	opacity: 0.8;
 }
 .matches-item-text {
+	width: 100% !important;
+	height: 100% !important;
+	border: 2px solid #ffcc00;
 	position: absolute;
 	left: 0;
 	bottom: 0;
-	width: 100%;
 	padding: 30px;
 	background-color: #222;
 	color: #ccc;
@@ -1964,6 +1974,12 @@ h5{
 	transition: all ease 0.25s;
 	-webkit-transform: translate(0,100%);
 	transform: translate(0,100%);
+}
+@media ( max-width: 1166px ) and ( min-width: 991px  ) {
+	.matches-item-text  {
+		font-size: 12px;
+		padding: 35px 5px;
+	}
 }
 .section-accent .matches-item-text,
 .section-dark .matches-item-text {
@@ -2118,7 +2134,7 @@ h5{
 }
 
 .address-text {
-	vertical-align: bottom;
+	vertical-align: middle;
 	color: #ccc;
 	display: inline-block;
 	font-family: "Source Sans Pro", sans-serif;
@@ -2160,7 +2176,8 @@ h5{
 }
 
 @media ( max-width: 891px ) {
-	.footer-text {
+	.footer-text,
+	.address-text {
 		display: none;
 	}
 }
