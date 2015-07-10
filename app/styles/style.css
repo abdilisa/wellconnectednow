@@ -1802,7 +1802,7 @@ h5{
 .pricing-package-items li:first-child {
 	border-top: none;
 }
-.pricing-package-items del {``
+.pricing-package-items del {
 	text-decoration: none;
 	opacity: 0.4;
 }
@@ -1975,10 +1975,33 @@ h5{
 	-webkit-transform: translate(0,100%);
 	transform: translate(0,100%);
 }
-@media ( max-width: 1166px ) and ( min-width: 991px  ) {
-	.matches-item-text  {
+
+@media ( max-width: 1694px ) and ( min-width: 1600px  ) {
+	.matches-item-description  {
+		font-size: 13px;
+	}
+}
+@media ( max-width: 1600px ) and ( min-width: 1510px  ) {
+	.matches-item-description  {
 		font-size: 12px;
-		padding: 35px 5px;
+	}
+}
+@media ( max-width: 1510px ) and ( min-width: 991px  ) {
+	.matches-item-description  {
+		font-size: 10px;
+	}
+}
+@media ( max-width: 1340px ) and ( min-width: 991px  ) {
+	.matches-item-title  {
+		margin: 0px;
+	}
+	.matches-item-text  {
+		padding: 10px;
+	}
+}
+@media ( max-width: 1175px ) and ( min-width: 991px  ) {
+	.hide-long-li  {
+		display: none;
 	}
 }
 .section-accent .matches-item-text,
