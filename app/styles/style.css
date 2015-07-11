@@ -73,6 +73,10 @@ h1, h2, h3, h4, h5, h6,
 .section-accent h6, .section-accent .h6 {
 	color: #fff;
 }
+h4 {
+	font-family: 'source sans pro';
+	text-transform: uppercase;
+}
 img {
 	max-width: 100%;
 	height: auto;
@@ -90,6 +94,15 @@ iframe {
  * COMMON CLASSES
  * ========================================
  */
+
+.col-md-5 {
+	width: 20%;
+}
+@media ( max-width: 991px ) {
+	.col-md-5 {
+		width: 100%;
+	}
+}
 .padding-r-sm {
 	padding-right: 5px;
 }
@@ -108,6 +121,10 @@ iframe {
 	font-style: italic;
 	font-weight: normal;
 	padding: 10px 0 25px;
+}
+.mission-text > .lead {
+	padding: 0px;
+	margin: 0px;
 }
 
 .lead.text-center:after {
@@ -1260,6 +1277,8 @@ h5{
  * MISSION
  * ========================================
  */
+
+
 .mission-row {
 	margin-top: 30px;
 }
@@ -1874,10 +1893,10 @@ h5{
  * TESTIMONIAL
  * ========================================
  */
-.transparency {
+/*.transparency {
 	background-color: rgba(255, 255, 255, 0.2);
 	padding: 10px;
-}
+}*/
 
 .testimonial {
 	padding: 30px;
