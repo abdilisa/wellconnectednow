@@ -307,6 +307,15 @@ h5{
   letter-spacing: 0.07em;
 	text-transform: uppercase;
 }
+.specialist-heading {
+	position: relative;
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 36px;
+	font-weight: 600;
+	letter-spacing: 0.07em;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 2px rgba(255, 234, 48, 1);
+}
 .section-heading:after {
 	content: "";
 	position: absolute;
@@ -354,35 +363,14 @@ h5{
 	-o-background-size: cover;
 	background-size: cover;
 }
-/*.section-background-image {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
+#hero-specialist {
+	background: url("../images/backgrounds/standingbysm.jpg") no-repeat center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
-.section-background-image img {
-	position: absolute;
-	min-width: 100%;
-	max-width: none;
-	min-height: 100%;
-	top: 0;
-	left: 0;
-}*/
-.section-background-video {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	height: 100%;
-	width: 100%;
-	overflow: hidden;
-}
-.section-background-video > video {
-	width: 100%;
-	height: 100%;
-}
+
 .section-background-slideshow {
 	position: absolute;
 	top: 0;
@@ -1005,6 +993,10 @@ h5{
 .hero-section.hero-fullscreen .container,
 .hero-section.hero-fullscreen .container-fluid {
 	height: 100%;
+}
+
+.hero-section.hero-threefourths-sreen {
+	height: 75%;
 }
 .hero-section .container {
 	position: relative;
