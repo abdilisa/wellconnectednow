@@ -3,6 +3,7 @@ var express = require('express'),
   mcapi = require('mailchimp-api'),
   EmailSubscriptionUtility = require('../lib/emailSubscriptionUtility');
 
+console.log('using mailchimp key:', process.env.mailchimp_access_key);
 var mc = new mcapi.Mailchimp(process.env.mailchimp_access_key || '');
 
 var unverifiedSubscriptions = new EmailSubscriptionUtility({
@@ -12,7 +13,7 @@ var unverifiedSubscriptions = new EmailSubscriptionUtility({
 
 router.post('/', function(req, res, next) {
   mc.lists.subscribe({
-      id: 'email_list',
+      id: 'd24ee8d994',
       email: {
         email: req.body.email
       }
