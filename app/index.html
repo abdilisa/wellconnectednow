@@ -42,7 +42,7 @@
 
 			<!-- HEADER
 			================================= -->
-			<header id="header" class="header-section index-header section section-dark navbar navbar-fixed-top">
+			<header id="header" class="header-section index-header section section-dark navbar navbar-fixed-top floating">
 				<div class="container-fluid">
 					<div class="navbar-header navbar-left">
 						<!-- RESPONSIVE MENU BUTTON -->
@@ -82,7 +82,7 @@
 								<a href="therapists.html">Therapists</a>
 							</li>
 							<li class="header-action-button">
-								 <a href="schedule.html" class="btn btn-primary">Schedule Consultation</a>
+								 <a href="schedule.html" class="btn btn-primary black-btn-text">Get Started</a>
 							</li>
 						</ul>
 					</nav>
@@ -655,7 +655,7 @@
 						<div class="col-md-8 col-md-offset-2 email-form">
 						<p class="hiw-item-title text-center">Join Our Mailing List</p>
 						<!-- SUBSCRIPTION FORM -->
-							<form action="modules/subscribe-mailchimp.php" method="post" id="subscription-form" class="subscription-form form-ajax-submit" role="form">
+							<form action="modules/subscribe-mailchimp.js" method="post" id="subscription-form" class="subscription-form form-ajax-submit" role="form">
 								<div class="form-validation alert"></div>
 								<div class="form-group subscription-form-wrapper">
 									<span class="subscription-form-input">
@@ -693,26 +693,32 @@
 
 			<!-- FOOTER
 			================================= -->
-			<footer id="footer" class="site-footer index-footer">
-			  <div class=pull-left>
+			<footer id="footer" class="site-footer index-footer floating-footer">
+			  <div class=col-md-4 pull-left>
 					<div class="footer-button header-action-button">
 						<a href="refer.html" class="btn btn-primary btn-xs">Refer Someone</a>
 					</div>
-					<div class="footer-text">
-						<i class="fa fa-1 fa-envelope-o padding-r-sm"></i> lisa@wellconnectednow.com
+					<div class="footer-icon">
+						<a href="https://www.facebook.com/sharer/sharer.php?u=https://www.facebook.com/wellconnectednow?" target="_blank"><i class="fa fa-facebook-square"></i></a>
 					</div>
-					<div class="address-text">
+					<div class="footer-icon">
+						<a href="https://www.linkedin.com/shareArticle?mini=true&url=http://wellconnectednow.com" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+					</div>
+					<div class="footer-icon">
+						<a href="mailto:lisa@wellconnectednow.com"><i class="fa fa-3 fa-envelope-o padding-r-sm"></i></a>
+					</div>
+				</div>
+				<div class="col-md-4 text-center">
+					<div class="contact-text">
 						<div class="address">
-							SF Bay Area, CA
-							<!-- <i class="fa fa-1 fa-map-marker padding-r-sm"></i> 500 Yale Ave N, Seattle, WA, USA -->
+							<i class="fa fa-mobile padding-r-sm"></i>415.860.5415
 						</div>
 						<div class="address">
-							Seattle, WA
-							<!-- <i class="fa fa-1 fa-map-marker padding-r-sm"></i> 500 Yale Ave N, Seattle, WA, USA -->
+							lisa@wellconnectednow.com
 						</div>
 					</div>
 				</div>
-				<div class=pull-right>
+				<div class=col-md-4  "pull-right">
 					<div class="footer-link">
 						<script src="https://platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
 						<script type="IN/Share" data-url="http://www.linkedin.com/company/well-connected-now"></script>
