@@ -729,10 +729,10 @@ h5{
 .header-section.navbar-inverse.floating {
 	-webkit-box-shadow: none;
 	box-shadow: none;
-	background-color: rgba(0,0,0,0.85);
+	background-color: #000;
 }
 .header-section.navbar-default.floating {
-	background-color: rgba(255,255,255,0.95);
+	background-color: #000;
 	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.1);
 	box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
@@ -2168,7 +2168,7 @@ h5{
 }
 
 .floating-footer {
-	background-color: rgba(0, 0, 0, .85);
+	background-color: #000;
 }
 
 .footer-link {
@@ -2209,16 +2209,14 @@ h5{
 	display: inline-block;
 	text-align: center;
 	vertical-align: middle;
-	color: #ccc;
+	color: #fff !important;
 	display: inline-block;
 	font-family: "Source Sans Pro", sans-serif;
 	font-size: 11px;
 	line-height: 1.819;
 	letter-spacing: 0.05em;
-	a {
-		color: #fff;
-	}
 }
+
 
 .refer-button {
 	background-color: rgba(0,0,0,0);
