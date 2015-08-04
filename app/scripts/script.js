@@ -162,7 +162,7 @@
 		 * Anchor Link
 		 * =======================================
 		 */
-		$body.on( 'click', 'a.anchor-link', function( e ) {
+		$body.on( 'click', 'a. ', function( e ) {
 			e.preventDefault();
 
 			var $a = $( this ),

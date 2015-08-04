@@ -110,6 +110,10 @@ iframe {
 	padding-right: 5px;
 }
 
+.padding-l-sm {
+	padding-left: 5px;
+}
+
 .padding-l-md {
 	padding-left: 10px;
 }
@@ -126,7 +130,7 @@ iframe {
 	padding: 10px 0 25px;
 }
 .mission-text > .lead {
-	padding: 0px;
+	padding: 10px 0;
 	margin: 0px;
 }
 
@@ -148,7 +152,7 @@ iframe {
 	position: relative;
 	padding: 10px 0 5px 110px;
 	text-align: center;
-	font-size: 13px;
+	/*font-size: 13px;*/
 }
 .icon-list-icon {
 	position: absolute;
@@ -253,6 +257,15 @@ h5{
 .align-center {
 	text-align: center !important;
 }
+
+.bottom-section {
+	padding-bottom: 160px !important;
+}
+
+.top-section {
+	padding-top: 160px !important;
+}
+
 
 /**
  * ========================================
@@ -1630,9 +1643,8 @@ h5{
 .team-member-name {
 	margin: 0 0 5px;
 	font-family: "Source Sans Pro", sans-serif;
-	font-size: 14px;
+	font-size: 16px;
 	letter-spacing: 0.05em;
-	text-transform: uppercase;
 }
 .team-member-position {
 	opacity: 0.6;
@@ -1670,14 +1682,28 @@ h5{
  * TWO COLS DESCRIPTION
  * ========================================
  */
-.two-cols-description-image {
+
+.two-cols-description-image-about {
 	padding-top: 37.5%;
 	position: relative;
 	overflow: hidden;
+	background: url("../images/backgrounds/rainbow-jump.jpeg") no-repeat center;
+	background-size: cover;
+	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
 }
+.two-cols-description-image-opp {
+	padding-top: 37.5%;
+	position: relative;
+	overflow: hidden;
+	background: url("../images/backgrounds/standingbysm.jpg") no-repeat center;
+	background-size: cover;
+	/*box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);*/
+}
+
+
 .two-cols-description-image img {
 	position: absolute;
-	min-width: 100%;
+	/*min-width: 100%;*/
 	max-width: none;
 	min-height: 100%;
 	top: 0;
@@ -1695,14 +1721,16 @@ h5{
 }
 
 @media ( max-width: 991px ) {
-	.two-cols-description-image {
+	.two-cols-description-image-opp,
+	.two-cols-description-image-about {
 		padding-top: 75%;
 		margin-top: -90px;
 		margin-bottom: 90px;
 		margin-left: -15px;
 		margin-right: -15px;
 	}
-	.two-cols-description-text + .two-cols-description-image {
+	.two-cols-description-text + .two-cols-description-image-opp,
+	.two-cols-description-text + .two-cols-description-image-about {
 		margin-top: 90px;
 		margin-bottom: -90px;
 	}
@@ -1720,7 +1748,12 @@ h5{
 		width: 100%;
 		padding: 0;
 	}
-	.two-cols-description-image, .two-cols-description-text {
+	.two-cols-description-image-about, .two-cols-description-text {
+		width: 50%;
+		display: table-cell;
+		float: none !important;
+	}
+	.two-cols-description-image-opp, .two-cols-description-text {
 		width: 50%;
 		display: table-cell;
 		float: none !important;
@@ -1900,15 +1933,12 @@ h5{
  * TESTIMONIAL
  * ========================================
  */
-/*.transparency {
-	background-color: rgba(255, 255, 255, 0.2);
-	padding: 10px;
-}*/
 
 .testimonial {
 	padding: 30px;
 	margin: 15px 0;
 	background-color: #f6f6f6;
+	text-align: center;
 }
 .section-gray .testimonial {
 	background-color: #fff;
@@ -1917,7 +1947,7 @@ h5{
 	background-color: #444;
 }
 .testimonial-quote {
-	margin-bottom: 40px;
+	color: #222;
 	padding: 0;
 	border: none;
 	font-size: 17px;
@@ -1934,20 +1964,8 @@ h5{
 	position: relative;
 	font-style: normal;
 	font-size: 13px;
-	padding-left: 30px;
 	opacity: 0.6;
 	white-space: nowrap;
-}
-.testimonial-cite:before {
-	content: "";
-	position: absolute;
-	top: 50%;
-	left: 0;
-	width: 20px;
-	height: 1px;
-	border-top: 1px solid;
-	border-color: inherit;
-	opacity: 0.4;
 }
 
 
@@ -2269,7 +2287,7 @@ h5{
 		padding: 1px 3px;
   	margin-top: 10px;
 	}
-	.anchor-link:after {
+	. :after {
 		padding-bottom: 10px;
 	}
 	.footer-button {
@@ -2293,6 +2311,7 @@ h5{
 	font-size: 32px;
 	line-height: 1;
 	text-align: center;
+	color: #ffcc00;
 }
 .section-accent .faq-item-icon {
 	color: #222;
@@ -2303,20 +2322,25 @@ h5{
 	margin: 0 0 15px;
 }
 
-.faq-list-icon {
-	font-size: 30px;
-	/*display: inline-block;
-	background-color: #ffcc00;
-	margin: 10px 10px 0 0;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  font-size: 30px;
-  line-height: 30px;
-  vertical-align: top;
-  text-align: center;
-  color: #fff;*/
-}
+/**
+ * ========================================
+ * PUBLICATIONS
+ * ========================================
+ */
+
+ .pub-icon {
+	 font-size: 44px;
+	 text-align: center;
+	 color: #ffcc00;
+ }
+
+ .pub-icon::after {
+	 display: block;
+	 padding-top: 5px;
+	 content: "click to view";
+	 color: #666;
+	 font-size: 12px;
+ }
 
 
 /**
