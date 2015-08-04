@@ -10,6 +10,8 @@
 // If you want to recursively match all subfolders, use:
 // 'test/spec/**/*.js'
 
+var currentVersion = require('./package.json').version;
+
 function getUserHome() {
   return process.env[(process.platform === 'win32') ? 'USERPROFILE' : 'HOME'];
 }
@@ -178,7 +180,7 @@ module.exports = function(grunt) {
     // Automatically inject Bower components into the HTML file
     wiredep: {
       app: {
-        src: ['<%= config.app %>/index.html'],
+        src: ['<%= config.app %>/*.html'],
         exclude: ['bootstrap.js'],
         ignorePath: /^<%= config.app %>\/|\.\.\//
       }
@@ -192,7 +194,7 @@ module.exports = function(grunt) {
           '<%= config.dist %>/styles/{,*/}*.css',
           '<%= config.dist %>/images/{,*/}*.*',
           '<%= config.dist %>/styles/fonts/{,*/}*.*',
-          '<%= config.dist %>/*.{ico,png}'
+          '<%= config.dist %>/*.{png}'
         ]
       }
     },
@@ -204,7 +206,7 @@ module.exports = function(grunt) {
       options: {
         dest: '<%= config.dist %>'
       },
-      html: '<%= config.app %>/index.html'
+      html: '<%= config.app %>/*.html'
     },
 
     // Performs rewrites based on rev and the useminPrepare configuration
@@ -330,16 +332,19 @@ module.exports = function(grunt) {
         },
         files: [{
           src: '**/*',
-          exclude: 'index.html',
-          params: {CacheControl: 'max-age=32850000000'},
+          exclude: '*.html',
+          params: {
+            CacheControl: 'max-age=32850000000'
+          },
           expand: true,
           cwd: 'dist',
           dest: '/',
           action: 'upload'
-        },
-        {
-          src: 'index.html',
-          params: {CacheControl: 'no-cache'},
+        }, {
+          src: '*.html',
+          params: {
+            CacheControl: 'max-age=10'
+          },
           expand: true,
           cwd: 'dist',
           dest: '/',
@@ -357,6 +362,7 @@ module.exports = function(grunt) {
           cwd: '<%= config.app %>',
           dest: '<%= config.dist %>',
           src: [
+            'images/{,*/}*.ico',
             '*.{ico,png,txt}',
             'images/{,*/}*.webp',
             '{,*/}*.html',
@@ -402,6 +408,27 @@ module.exports = function(grunt) {
           }
         },
         command: 'NODE_ENV=production npm install'
+      }
+    },
+
+    awsebtdeploy: {
+      production: {
+        options: {
+          region: 'us-west-2',
+          s3: {
+            bucket: 'elasticbeanstalk-us-west-2-029191796824',
+            key: 'node-' + currentVersion + '-' + (new Date()).getTime() + '.zip'
+          },
+          versionLabel: currentVersion + '-' + (new Date()).getTime(),
+          applicationName: 'wellconnected',
+          environmentCNAME: 'wellconnected-prod-env.elasticbeanstalk.com',
+          sourceBundle: "node.zip",
+
+          // or via the AWS_ACCESS_KEY_ID environment variable
+          accessKeyId: '<%= aws.AWSAccessKeyId %>',
+          // or via the AWS_SECRET_ACCESS_KEY environment variable
+          secretAccessKey: '<%= aws.AWSSecretKey %>',
+        }
       }
     },
 
@@ -464,11 +491,13 @@ module.exports = function(grunt) {
   ]);
 
   grunt.registerTask('deployServer', [
+    'env:dev',
     'copy:node',
     'copy:node_modules',
     'shell:npm_install',
     'compress',
-    'clean:node_dist'
+    'clean:node_dist',
+    'awsebtdeploy'
   ]);
 
   grunt.registerTask('build', [

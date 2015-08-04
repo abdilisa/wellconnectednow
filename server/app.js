@@ -2,7 +2,7 @@ var express = require('express'),
 path = require('path'),
 logger = require('morgan'),
 bodyParser = require('body-parser'),
-indexRoute = require('./routes/index'),
+subscriptionRoute = require('./routes/subscription'),
 compression = require('compression'),
 debug = require('debug')('expressapp');
 
@@ -19,7 +19,7 @@ app.set('view engine', null);
 // compress all requests
 app.use(compression());
 
-app.use('/', indexRoute);
+app.use('/api/subscription', subscriptionRoute);
 
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {
