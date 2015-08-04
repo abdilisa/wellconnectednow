@@ -2215,9 +2215,10 @@ h5{
 	font-size: 11px;
 	line-height: 1.819;
 	letter-spacing: 0.05em;
-	a {
-		color: #fff;
-	}
+}
+
+.contact-text > .address-text > a {
+	color: #fff;
 }
 
 .refer-button {
