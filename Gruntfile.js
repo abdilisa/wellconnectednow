@@ -180,7 +180,7 @@ module.exports = function(grunt) {
     // Automatically inject Bower components into the HTML file
     wiredep: {
       app: {
-        src: ['<%= config.app %>/index.html'],
+        src: ['<%= config.app %>/*.html'],
         exclude: ['bootstrap.js'],
         ignorePath: /^<%= config.app %>\/|\.\.\//
       }
@@ -194,7 +194,7 @@ module.exports = function(grunt) {
           '<%= config.dist %>/styles/{,*/}*.css',
           '<%= config.dist %>/images/{,*/}*.*',
           '<%= config.dist %>/styles/fonts/{,*/}*.*',
-          '<%= config.dist %>/*.{ico,png}'
+          '<%= config.dist %>/*.{png}'
         ]
       }
     },
@@ -206,7 +206,7 @@ module.exports = function(grunt) {
       options: {
         dest: '<%= config.dist %>'
       },
-      html: '<%= config.app %>/index.html'
+      html: '<%= config.app %>/*.html'
     },
 
     // Performs rewrites based on rev and the useminPrepare configuration
@@ -332,7 +332,7 @@ module.exports = function(grunt) {
         },
         files: [{
           src: '**/*',
-          exclude: 'index.html',
+          exclude: '*.html',
           params: {
             CacheControl: 'max-age=32850000000'
           },
@@ -341,9 +341,9 @@ module.exports = function(grunt) {
           dest: '/',
           action: 'upload'
         }, {
-          src: 'index.html',
+          src: '*.html',
           params: {
-            CacheControl: 'no-cache'
+            CacheControl: 'max-age=10'
           },
           expand: true,
           cwd: 'dist',
@@ -362,6 +362,7 @@ module.exports = function(grunt) {
           cwd: '<%= config.app %>',
           dest: '<%= config.dist %>',
           src: [
+            'images/{,*/}*.ico',
             '*.{ico,png,txt}',
             'images/{,*/}*.webp',
             '{,*/}*.html',
