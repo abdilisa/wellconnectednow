@@ -126,7 +126,7 @@ iframe {
 	padding: 10px 0 25px;
 }
 .mission-text > .lead {
-	padding: 0px;
+	padding: 10px 0;
 	margin: 0px;
 }
 
@@ -1632,7 +1632,6 @@ h5{
 	font-family: "Source Sans Pro", sans-serif;
 	font-size: 14px;
 	letter-spacing: 0.05em;
-	text-transform: uppercase;
 }
 .team-member-position {
 	opacity: 0.6;
@@ -1900,10 +1899,6 @@ h5{
  * TESTIMONIAL
  * ========================================
  */
-/*.transparency {
-	background-color: rgba(255, 255, 255, 0.2);
-	padding: 10px;
-}*/
 
 .testimonial {
 	padding: 30px;
@@ -1917,7 +1912,7 @@ h5{
 	background-color: #444;
 }
 .testimonial-quote {
-	margin-bottom: 40px;
+	/*margin-bottom: 40px;*/
 	padding: 0;
 	border: none;
 	font-size: 17px;
@@ -1934,20 +1929,8 @@ h5{
 	position: relative;
 	font-style: normal;
 	font-size: 13px;
-	padding-left: 30px;
 	opacity: 0.6;
 	white-space: nowrap;
-}
-.testimonial-cite:before {
-	content: "";
-	position: absolute;
-	top: 50%;
-	left: 0;
-	width: 20px;
-	height: 1px;
-	border-top: 1px solid;
-	border-color: inherit;
-	opacity: 0.4;
 }
 
 
@@ -2293,6 +2276,7 @@ h5{
 	font-size: 32px;
 	line-height: 1;
 	text-align: center;
+	color: #ffcc00;
 }
 .section-accent .faq-item-icon {
 	color: #222;
@@ -2303,20 +2287,25 @@ h5{
 	margin: 0 0 15px;
 }
 
-.faq-list-icon {
-	font-size: 30px;
-	/*display: inline-block;
-	background-color: #ffcc00;
-	margin: 10px 10px 0 0;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  font-size: 30px;
-  line-height: 30px;
-  vertical-align: top;
-  text-align: center;
-  color: #fff;*/
-}
+/**
+ * ========================================
+ * PUBLICATIONS
+ * ========================================
+ */
+
+ .pub-icon {
+	 font-size: 44px;
+	 text-align: center;
+	 color: #ffcc00;
+ }
+
+ .pub-icon::after {
+	 display: block;
+	 padding-top: 5px;
+	 content: "click to view";
+	 color: #666;
+	 font-size: 12px;
+ }
 
 
 /**
