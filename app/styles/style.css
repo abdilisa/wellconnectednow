@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6,
 }
 h4 {
 	font-family: 'source sans pro';
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 }
 img {
 	max-width: 100%;
@@ -95,6 +95,9 @@ iframe {
  * ========================================
  */
 
+.align-right {
+	text-align: right;
+}
 .col-md-5 {
 	width: 20%;
 }
@@ -174,7 +177,7 @@ iframe {
 	/*font-weight: bold;*/
 	font-size: 18px;
 	letter-spacing: 0.05em;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	text-align: left;
 }
 .tab-title {
@@ -184,7 +187,7 @@ iframe {
 	/*font-weight: bold;*/
 	font-size: 18px;
 	letter-spacing: 0.05em;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	text-align: left;
 }
 .sub-tab-title {
@@ -239,33 +242,7 @@ h5{
 	opacity: 0.5;
 	text-align: center;
 }
-.countdown {
-	font-family: "Merriweather", sans-serif;
-	text-align: center;
-	display: table;
-	table-layout: fixed;
-	width: 100%;
-}
-.countdown-grid {
-	display: table-cell;
-	text-align: center;
-	padding: 0 10px;
-}
-.countdown-grid > * {
-	display: block;
-}
-.countdown-number {
-	font-size: 60px;
-	font-weight: bold;
-	line-height: 1;
-	margin-bottom: 10px;
-}
-.countdown-label {
-	font-size: 13px;
-	line-height: 1;
-	letter-spacing: 0.05em;
-	text-transform: uppercase;
-}
+
 
 /**
  * ========================================
@@ -309,7 +286,7 @@ h5{
 	font-size: 28px;
 	font-weight: 600;
   letter-spacing: 0.07em;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 }
 .specialist-heading {
 	position: relative;
@@ -317,7 +294,7 @@ h5{
 	font-size: 36px;
 	font-weight: 600;
 	letter-spacing: 0.07em;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	text-shadow: 0px 0px 7px rgba(255, 234, 48, 1);
 }
 .specialist-content {
@@ -495,7 +472,7 @@ h5{
 	font-family: "Source Sans Pro", sans-serif;
 	font-size: 18px;
 	letter-spacing: 0.05em;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 }
 .form-heading:after {
 	content: "";
@@ -526,7 +503,7 @@ h5{
 	font-size: 12px;
 	font-weight: normal;
 	letter-spacing: 0.05em;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 }
 .form-control {
 	border-radius: 0;
@@ -640,7 +617,7 @@ h5{
 	font-size: 11px;
 	line-height: 1.819;
 	letter-spacing: 0.05em;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 }
 .btn:active, .btn.active {
 	-webkit-box-shadow: none;
@@ -706,13 +683,10 @@ h5{
  */
 .nav-tabs {
 	position: relative;
-	/*padding-bottom: 20px;*/
 	margin: 0 0 30px;
 	 font-family: "Source Sans Pro", sans-serif;
-	/*font-family: "Montserrat", sans-serif;*/
 	font-size: 22px;
 	letter-spacing: 0.05em;
-	text-transform: uppercase;
 }
 
 .nav-tabs > li > a {
@@ -767,7 +741,7 @@ h5{
 	font-size: 11px;
 	line-height: 1.819;
 	letter-spacing: 0.05em;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 }
 .navbar-nav > li {
 	padding: 30px 15px;
@@ -1371,7 +1345,7 @@ h5{
 	font-family: "Source Sans Pro", sans-serif;
 	font-size: 18px;
 	letter-spacing: 0.05em;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	margin-bottom: 20px;
 	text-align: center;
 }
@@ -1477,7 +1451,7 @@ h5{
 	font-family: "Source Sans Pro", sans-serif;
 	font-size: 18px;
 	letter-spacing: 0.05em;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 }
 .hiw-item-description {
 	font-size: 13px;
@@ -1546,7 +1520,7 @@ h5{
 
 .carousel-author {
 	font-family: "Source Sans Pro";
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	position: relative;
 	font-size: 17px;
 	line-height: inherit;
@@ -1808,7 +1782,7 @@ h5{
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 18px;
 	letter-spacing: 0.05em;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	color: #fff;
 }
 .section-dark .price-title {
@@ -2081,7 +2055,7 @@ h5{
 	font-family: "Source Sans Pro", sans-serif;
 	font-size: 14px;
 	letter-spacing: 0.05em;
-	text-transform: uppercase;
+	text-align: center;
 }
 .section-accent .matches-item-title,
 .section-dark .matches-item-title {
@@ -2215,7 +2189,6 @@ h5{
 	font-size: 11px;
 	line-height: 1.819;
 	letter-spacing: 0.05em;
-	text-transform: uppercase;
 }
 
 .footer-icon {
@@ -2245,10 +2218,15 @@ h5{
 	text-transform: uppercase;
 }
 
+.refer-button {
+	background-color: rgba(0,0,0,0);
+}
+
 .footer-button {
-	padding: 10px 10px 10px 30px;
+	padding: 10px 10px 10px 10px;
 	display: inline-block;
 }
+
 .footer-section {
 	padding-bottom: 30px;
 	text-align: center;
