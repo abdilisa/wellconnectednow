@@ -2269,7 +2269,7 @@ h5{
 		padding: 1px 3px;
   	margin-top: 10px;
 	}
-	.anchor-link:after {
+	. :after {
 		padding-bottom: 10px;
 	}
 	.footer-button {
