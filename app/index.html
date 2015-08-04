@@ -1,10 +1,5 @@
 <!DOCTYPE html>
-<!-- Drew - A Multipurpose Landing Page Template, designed by David Rozando (http://design.davidrozando.com) -->
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
-<html lang="en"> <!--<![endif]-->
+<html lang="en">
 
 	<head>
 
@@ -20,11 +15,8 @@
 		<link rel="icon" href="images/favicons/favicon.ico">
 		<link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
 
-		<!-- CSS
-
-		<! -- EMAIL -->
+		<!-- EMAIL -->
 		<meta name="google-site-verification" content="atRWoF0gtOTc8jbJjqPTc1Ns-DXbkuOtagBybDSYJis" />
-
 
 		<!-- GOOGLE FONTS -->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Damion">
@@ -33,7 +25,7 @@
 
 		<!-- LIBRARIES CSS -->
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 		<!-- build:css(.tmp) styles/vendor.css -->
 		<link rel="stylesheet" href="styles/animate.min.css">
 		<link id="color-css" rel="stylesheet" href="styles/colors/custom.css">
@@ -45,12 +37,12 @@
 
 	</head>
 
-	<body class="enable-animations enable-preloader">
+	<body class="enable-animations">
 		<div id="document" class="document">
 
 			<!-- HEADER
 			================================= -->
-			<header id="header" class="header-section section section-dark navbar navbar-fixed-top">
+			<header id="header" class="header-section index-header section section-dark navbar navbar-fixed-top floating">
 				<div class="container-fluid">
 					<div class="navbar-header navbar-left">
 						<!-- RESPONSIVE MENU BUTTON -->
@@ -61,8 +53,10 @@
 							<span class="icon-bar"></span>
 						</button>
 						<!-- HEADER LOGO -->
-						<a class="navbar-logo navbar-brand anchor-link" href="#hero">
-							<img src="images/logos/WCNhelp-logo-wc@2x.png" alt="WCN">
+						<a class="navbar-logo navbar-brand" href="index.html">
+							<!-- <a  href="index.html"> -->
+								<img src="images/logos/WCNhelp-logo-wc@2x.png" alt="WCN">
+							<!-- </a> -->
 						</a>
 					</div>
 
@@ -70,21 +64,25 @@
 						<!-- NAVIGATION LINKS -->
 						<ul id="header-nav" class="nav navbar-nav">
 							<li>
-								<a href="#hero" class="hidden">Top</a>
+								<a href="index.html" class="hidden">Top</a>
 							</li>
 							<li>
-								<a href="#about">About</a>
+								<a href="about.html">About Us</a>
+							</li>
+							<li class="current">
+								<a href="index.html">Professionals</a>
 							</li>
 							<li>
-								<a href="#benefits">Benefits</a>
+								<a href="mentors.html">Mentors</a>
 							</li>
 							<li>
-								<a href="#how-it-works">How It Works</a>
+								<a href="coaches.html">Coaches</a>
 							</li>
-							<!-- <li><a href="#pricing">Pricing</a></li> -->
-							<!-- HEADER ACTION BUTTON -->
+							<li>
+								<a href="therapists.html">Therapists</a>
+							</li>
 							<li class="header-action-button">
-								<a href="#" class="btn btn-primary">Join Beta</a>
+								 <a href="schedule.html" class="btn btn-primary black-btn-text">Get Started</a>
 							</li>
 						</ul>
 					</nav>
@@ -96,286 +94,86 @@
 			================================= -->
 			<section id="hero" class="hero-section hero-layout-simple hero-layout-fullscreen-subscription-form hero-fullscreen section section-dark">
 				<div class="section-background">
-					<!-- IMAGE BACKGROUND -->
-					<!-- <div class="section-background-image parallax" data-stellar-ratio="0.4">
-						<img src="images/backgrounds/rainbow-jump.jpg" alt="" style="opacity: 0.5;">
-					</div> -->
-
-					<!-- VIDEO BACKGROUND -->
-					<!-- <div class="section-background-video section-background-dot-overlay parallax" data-stellar-ratio="0.4">
-						<video preload="auto" autoplay loop muted poster="images/backgrounds/video-fallback-bg.jpg" style="opacity: 0.3;">
-							<source type="video/mp4" src="videos/video-bg.mp4">
-							<source type="video/ogg" src="videos/video-bg.ogv">
-							<source type="video/webm" src="videos/video-bg.webm">
-						</video>
-					</div> -->
-
-					<!-- SLIDESHOW BACKGROUND -->
-					<!-- <ul class="section-background-slideshow parallax" data-stellar-ratio="0.4" data-speed="800" data-timeout="4000">
-						<li><img src="images/backgrounds/hero-bg-slideshow-1.jpg" alt="" style="opacity: 0.25;"></li>
-						<li><img src="images/backgrounds/hero-bg-slideshow-2.jpg" alt="" style="opacity: 0.25;"></li>
-						<li><img src="images/backgrounds/hero-bg-slideshow-3.jpg" alt="" style="opacity: 0.2;"></li>
-					</ul> -->
 				</div>
 
 				<div class="container">
-					 <div class="hero-content">
+					<div class="hero-content">
 						<div class="hero-content-inner">
-							<div class="col-md-10 col-md-offset-1">
-								<div class="hero-heading" data-animation="fadeIn">
-									<h1 class="hero-title">
-										<img src="images/contents/WCNheader-site-whitecolor.png" class="wcn-header-logo" alt="Well Connected Now connects professionals to professional help: mentors, coaches, and therapists"/>
-									</h1>
+
+							<div class="row">
+								<div class="col-md-10 col-md-offset-1">
+									<img src="images/logos/WCN-hero-logo.png">
 									<div class="row">
-										<div class="col-md-10 col-md-offset-1">
-										<!-- <p class="hero-tagline">Mentors, Coaches, and Therapists</p> --!>
-
-										<!-- SUBSCRIPTION FORM -->
-											<form action="modules/subscribe-mailchimp.php" method="post" id="subscription-form" class="subscription-form form-ajax-submit" role="form">
-												<div class="form-validation alert"></div>
-												<div class="form-group subscription-form-wrapper">
-													<span class="subscription-form-input">
-														<input type="email" name="email" id="subscribe-form-email" class="subscribe-form-email form-control form-control-lg" placeholder="Enter email address" autocomplete="off">
-													</span>
-													<span class="subscription-form-submit">
-														<button class="btn btn-primary btn-lg" id="subscribe-form-submit" data-loading-text="Email Confirmation Sent">Request Info</button>
-													</span>
-												</div>
-											</form>
-
+										<div class="col-md-8 col-md-offset-2">
+											<p class="hero-tagline align-center">personally matches professionals to</p>
+											<p class="hero-tagline align-center">mentors, coaches, and therapists</p>
 										</div>
 									</div>
 								</div>
 							</div>
+
 						</div>
 					</div>
 				</div>
 
 				<!-- HERO START LINK -->
-				<a href="#about" class="hero-start-link anchor-link">
+				<a href="#mission" class="hero-start-link anchor-link">
 					<span class="fa fa-angle-double-down"></span>
 				</a>
 
 			</section>
+		</div>
 
-			<!-- HEADLINE
+			<!-- MISSION STATEMENT
 			================================= -->
-		<!--	<section id="headline" class="headline-section section-gray section">
+			<section id="mission" class="mission-section section">
 
 				<div class="container">
+					<h2 class="section-heading text-center">Mission</h2>
 
-					<h2 class="section-heading text-center hidden">Well Connected Now connects professionals to professional help: mentors, coaches, and therapists</h2>
+					<div class="row">
+						<div class="mission-text col-md-10 col-md-offset-1 text-center">
+							<p class="lead">Well Connected Now aspires to rebrand mental health, and make trustworthy support more accessible, especially for millennial professionals  and entrepreneurs facing career & life challenges.</p>
+						</div>
+					</div>
 
-							<div class="row">
-
-								</div>
-
-									<div class="row">
-										<div class="col-md-10 col-md-offset-1">
-											<ul>
-												<p id="worriedwell"><h2><strong>Worried Well:</strong></h2></p>
-													<p class="headline-text">
-
-														<li>Despite the misconceptions tied to the disproportionate amount of attention paid to the extreme ends of the mental health spectrum , 1 in 4 millenial professionals fall into this more mild to moderate demographic when wrestling with mental health challenges. By most means, they're doing fine - ambitious, accomplished, and perceived as wholly functional by friends and teammates. For whatever reason though, they are struggling at this point in time.</li>
-														<li>Unfortunately, unusually low self confidence and negative self-talk can spiral into early signs of depression and anxiety. If depressed and anxious, professionals can have a distorted view of danger and self-worth, which means as they replay their conversations, they learn self-defeating lessons, not helpful ones.</li>
-														<li>While the physical and emotional symptoms may start as relatively mild and manageable, extended exposure paired with a lack of social support and an unhealthy lifestyle can lead to hopeless despair and unbridled worry taking over an otherwise sharp mind.</li>
-
-												</p>
-											</ul>
-										</div>
-									</div> --!>
-
-				</div>
-			</section>
-
-			<!-- DESCRIPTION
-			================================= -->
-			<section id="about" class="about-section section">
-
-				<div class="container">
-					<h2 class="section-heading text-center">Rebranding Mental Health</h2>
-					<div class="about-row row">
+					<div class="mission-row row">
 						<!-- DESCRIPTION IMAGE -->
-						<div class="about-image col-md-6" data-animation="fadeIn">
-							<p class="talk"></p>
+						<div class="mission-image col-md-6" data-animation="fadeIn">
 							<img src="images/contents/aboutme.jpg" alt="Lisa Abdilova">
-							<div class="row">
-								<address class="contact">
-									<strong>Lisa Abdilova, Founder/CEO</strong>
-									<ul class="fa-ul">
-										<li><i class="fa-li fa fa-fax"></i><a href="http://calendly.com/abdilisa">Schedule WCN Consultation</a></li>
-										<li><i class="fa-li fa fa-home"></i>500 Yale Ave N <br> Attn: Well Connected Now <br> Seattle, WA, USA</li>
-										<li><i class="fa-li fa fa-phone"></i>415.860.5415</li>
-									</ul>
-								</address>
-								<!--- <address class="col-sm-6">
-												<strong>Workshop &amp; Store</strong>
-												<ul class="fa-ul">
-													<li><i class="fa-li fa fa-home"></i>Jalan Legian, Kuta<br>Bali, Indonesia</li>
-													<li><i class="fa-li fa fa-phone"></i>Phone: +62 109 876543</li>
-													<li><i class="fa-li fa fa-fax"></i>Fax: +62 109 876543</li>
-												</ul>
-											</address> --!>
-										</div>
+						</div>
 
-								</div>
-
-								<!-- DESCRIPTION TEXT -->
-								<div class="about-text col-md-6">
-									<p class="lead">
-										<strong>Well Connected Now connects millennials & entrepreneurs<br>to top-tier mentors, coaches, and therapists.</strong>
-									</p>
-									<p class="smallerdetails">WCN aspires to rebrand mental health, treat depression & anxiety before early symptoms spiral, and help professionals address their core career related challenges.</p>
-									<br>
-									<p class="smallerdetails">Matches specially selected by clients' circumstances, budget, & preferences. Referrals encouraged. Telehealth options available.</p>
-
-								 	<ul class="icon-list">
-										<li>
-											<span class="icon-list-icon fa fa-crosshairs" data-animation="bounceIn"></span>
-											<h4 class="icon-list-title">Cross-Industry Mentors</h4>
-											<p class="valueprop">
-												<em>Strategize your next career steps
-												<br>with a specially matched mentor.</em>
-											</p>
-										</li>
-										<li>
-											<span class="icon-list-icon fa fa-line-chart" data-animation="bounceIn"></span>
-											<h4 class="icon-list-title">Business Coaches</h4>
-											<p class="valueprop">
-												<em>Strive towards your goals
-												<br>with an experienced, certified coach.</em>
-											</p>
-									  </li>
-										<li>
-											<span class="icon-list-icon fa fa-key" data-animation="bounceIn"></span>
-											<h4 class="icon-list-title">Therapists</h4>
-											<p class="valueprop"><em>Improve your relationships
-												<br> with discreet, specially selected therapists.</em>
-											</p>
-										</li>
-									</ul>
-								</div>
-							</div>
+						<!-- DESCRIPTION TEXT -->
+						<div class="mission-text col-md-6">
+							<p>Matches specially selected by clients' circumstances, budget, & preferences. Referrals encouraged. Telehealth options available.</p>
+						 	<ul class="icon-list">
+								<li>
+									<span class="icon-list-icon fa fa-crosshairs" data-animation="bounceIn"></span>
+									<h4 class="icon-list-title">Cross-Industry Mentors</h4>
+									<p class="valueprop">Strategize your next career steps with a specially matched mentor.</p>
+								</li>
+								<br>
+								<li>
+									<span class="icon-list-icon fa fa-line-chart" data-animation="bounceIn"></span>
+									<h4 class="icon-list-title">Business Coaches</h4>
+									<p class="valueprop">Strive towards your goals with an experienced, certified coach.</p>
+							  </li>
+								<br>
+								<li>
+									<span class="icon-list-icon fa fa-key" data-animation="bounceIn"></span>
+									<h4 class="icon-list-title">Therapists</h4>
+									<p class="valueprop">Improve your relationships with discreet, specially selected therapists.</p>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
 			</section>
-
-			<!-- BENEFITS
-			================================= -->
-			<section id="benefits" class="benefits-section section-gray section">
-				<div class="container">
-					<h2 class="section-heading text-center"> WCN Benefits</h2>
-					<div class="benefits-row row">
-
-						<!-- BENEFIT 1 -->
-						<div class="col-md-4 col-sm-6">
-							<div class="benefit">
-								<h4 class="benefit-title">Feel Healthier</h4>
-								<span class="benefit-icon fa  fa-heartbeat" data-animation="bounceIn"></span>
-								<p class="benefit-description">
-									<ul class="benefitbox">
-										<li class="benefitline">Weight loss or gain.</li>
-										<li class="benefitline">Stiff neck / shoulders.</li>
-										<li class="benefitline">Back pain / muscle tension.</li>
-									</ul>
-								</p>
-							</div>
-						</div>
-
-						<!-- BENEFIT 2 -->
-						<div class="col-md-4 col-sm-6">
-							<div class="benefit">
-								<h4 class="benefit-title">Relax More</h4>
-								<span class="benefit-icon fa fa-bed" data-animation="bounceIn"></span>
-								<p class="benefit-description">
-									<ul class="benefitbox">
-										<li class="benefitline">Low energy.</li>
-										<li class="benefitline">Insomnia / lethargy.</li>
-										<li class="benefitline">Feeling wound up / on edge.</li>
-									</ul>
-								</p>
-							</div>
-						</div>
-
-						<div class="hidden-md hidden-lg clear"></div>
-
-						<!-- BENEFIT 3 -->
-						<div class="col-md-4 col-sm-6">
-							<div class="benefit">
-								<h4 class="benefit-title">Cheer Up</h4>
-								<span class="benefit-icon fa fa-smile-o" data-animation="bounceIn"></span>
-								<p class="benefit-description">
-									<ul class="benefitbox">
-										<li class="benefitline">Increased irritability.</li>
-										<li class="benefitline">Overwhelming despair.</li>
-										<li class="benefitline">Persistent negativity / worry.</li>
-									</ul>
-								</p>
-							</div>
-						</div>
-
-						<div class="hidden-sm clear"></div>
-
-						<!-- BENEFIT 4 -->
-						<div class="col-md-4 col-sm-6">
-							<div class="benefit">
-								<h4 class="benefit-title">Gain Confidence</h4>
-								<span class="benefit-icon fa fa-child" data-animation="bounceIn"></span>
-								<p class="benefit-description">
-									<ul class="benefitbox">
-										<li class="benefitline">Achieve your goals</li>
-										<li class="benefitline">Receive encouragement</li>
-										<li class="benefitline">Enjoy socializing again</li>
-										<li class="benefitline">Relieve signs of anxiety</li>
-									</ul>
-								</p>
-							</div>
-						</div>
-
-						<div class="hidden-md hidden-lg clear"></div>
-
-						<!-- BENEFIT 5 -->
-						<div class="col-md-4 col-sm-6">
-							<div class="benefit">
-								<h4 class="benefit-title">Get advice</h4>
-								<span class="benefit-icon fa fa-group" data-animation="bounceIn"></span>
-								<p class="benefit-description">
-									<ul class="benefitbox">
-										<li class="benefitline">Industry insights</li>
-										<li class="benefitline">Navigating office politics</li>
-										<li class="benefitline">Strategic career planning</li>
-										<li class="benefitline">Executive/Business skills training</li>
-									</ul>
-								</p>
-							</div>
-						</div>
-
-						<!-- BENEFIT 6 -->
-						<div class="col-md-4 col-sm-6">
-							<div class="benefit">
-								<h4 class="benefit-title">Connect Again</h4>
-								<span class="benefit-icon fa fa-user-plus" data-animation="bounceIn"></span>
-								<p class="benefit-description">
-									<ul class="benefitbox">
-										<li class="benefitline">Trusted, knowledgeable  confidant</li>
-										<li class="benefitline">Improve personal relationships</li>
-										<li class="benefitline">Expand emotional intelligence</li>
-										<li class="benefitline">Reframe negative self-talk</li>
-									</ul>
-								</p>
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</section>
-			<!-- End Benefits Section -->
-
+			<!-- End Mission -->
 
 			<!-- HOW IT WORKS
 			================================= -->
-			<section id="how-it-works" class="how-it-works-section section">
+			<section id="how-it-works" class="how-it-works-section section-gray section">
 				<div class="container-fluid">
 					<h2 class="section-heading text-center">How it Works</h2>
 					<div class="hiw-row row">
@@ -387,7 +185,7 @@
 								<div class="hiw-item-text">
 									<span class="hiw-item-icon">1</span>
 									<h4 class="hiw-item-title">WCN Consultation</h4>
-									<p class="hiw-item-description">Confidential call with trained peer counselor. Discuss circumstances, preferences, and budget. </p>
+									<p class="hiw-item-description">Confidential call discussing circumstances, budget, and preferences with trained peer counselor, Lisa Abdilova.</p>
 								</div>
 							</div>
 						</div>
@@ -399,7 +197,7 @@
 								<div class="hiw-item-text">
 									<span class="hiw-item-icon">2</span>
 									<h4 class="hiw-item-title">Personal Match</h4>
-									<p class="hiw-item-description">WCN specially selects your pre-vetted mentor, coach, or therapist. Preparation tips also provided. </p>
+									<p class="hiw-item-description">WCN specially matches you with a pre-vetted mentor, coach, or therapist--whoever could be most effective at addressing your current career & life  challenges.</p>
 								</div>
 							</div>
 						</div>
@@ -412,8 +210,8 @@
 								<img class="hiw-item-picture" src="images/contents/winterview.jpg" alt="">
 								<div class="hiw-item-text">
 									<span class="hiw-item-icon">3</span>
-									<h4 class="hiw-item-title">Informationals</h4>
-									<p class="hiw-item-description">Connect with match for informational. Discuss challenges or approach to coaching/therapy.</p>
+									<h4 class="hiw-item-title">Introduction</h4>
+									<p class="hiw-item-description">After your WCN match confirms their availability, we facilitate a warm email introduction, and share some initial background for you to build on in your next consultation.</p>
 								</div>
 							</div>
 						</div>
@@ -424,8 +222,8 @@
 								<img class="hiw-item-picture" src="images/contents/fightstigma.jpg" alt="">
 								<div class="hiw-item-text">
 									<span class="hiw-item-icon">4</span>
-									<h4 class="hiw-item-title">#FightTheStigma</h4>
-									<p class="hiw-item-description">Determine next steps. Request more matches. Manage your psychology & encourage others to get help.</p>
+									<h4 class="hiw-item-title">Compatibility Check</h4>
+									<p class="hiw-item-description">Before WCN, it took most professionals 3-5 tries to find a specialist they could trust & respect enough to follow their advice. WCN guarantees a better match faster. If something feels off, we'll find you someone else!</p>
 								</div>
 							</div>
 						</div>
@@ -435,351 +233,506 @@
 			</section>
 			<!-- End HIW Section -->
 
-			<!-- VIDEO SECTION
+			<!-- Testemonials
 			================================= -->
-			<section id="video" class="video-section section-gray section">
+			<section id="carousel" class="numbers-section section-dark section">
+				<div class="section-background">
+
+					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+					  <!-- Indicators -->
+					  <ol class="carousel-indicators">
+					    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					    <li data-target="#myCarousel" data-slide-to="1"></li>
+					    <li data-target="#myCarousel" data-slide-to="2"></li>
+					  </ol>
+
+					  <!-- Wrapper for slides -->
+					  <div class="carousel-inner" role="listbox">
+
+						  <div class="item active">
+					      <div class="carousel-caption">
+									<div class="col-md-12">
+										<p class="carousel-text">"As a life update, I actually was offered my dream PM role last week and I begin this coming Monday. Thanks again for intro'ing me to a WCN specialist a while back. That interaction and a subsequent introduction were definitely key steps in the path that ultimately led to my new employment."</p>
+										<p class="carousel-author align-center">- Former 500 Start-ups Founder, Avalara Product Manager</p>
+					      	</div>
+								</div>
+					    </div>
+
+					    <div class="item">
+					      <div class="carousel-caption">
+									<div class="col-md-12">
+						        <p class="carousel-text">"Thank you so much for setting me up with that therapist. His view was sweet! Cool guy. Made me realize there's nothing actually wrong with me.. I just need to quit my job. They can keep asking me to stay, but I am going to travel the world like I've always wanted."</p>
+										<p class="carousel-author align-center">- Amazon Engineer</p>
+									</div>
+					      </div>
+					    </div>
+
+					    <div class="item">
+					      <div class="carousel-caption">
+									<div class="col-md-12">
+						        <p class="carousel-text">"We're talking about my career here... There's no cap to how much I would invest in my <em>career</em>."</p>
+										<p class="carousel-author align-center">-  Marketing/Tradeshow Events Account Manager</p>
+									</div>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+				</div>
+			</section>
+			<!-- End Testemonials  -->
+
+			<!-- BENEFITS
+			================================= -->
+			<section id="benefits" class="benefits-section section-gray section">
 				<div class="container">
-					<h2 class="section-heading text-center">Watch the Video</h2>
-					<div class="row">
+					<h2 class="section-heading text-center"> WCN Benefits</h2>
+					<div class="benefits-row row">
 
-						<div class="col-md-10 col-md-offset-1">
-							<div class="video-embed">
-								<!-- VIDEO EMBED FROM VIMEO -->
-								<!-- <iframe class="video-async" data-source="vimeo" data-video="115134273" data-color="f3ae73" allowfullscreen></iframe>
-								<!-- VIDEO EMBED FROM YOUTUBE -->
-								<!--<iframe class="video-async" data-source="youtube" data-video="7UAy8E3e9f8" allowfullscreen></iframe> -->
-								<iframe width="420" height="315" src="https://www.youtube.com/embed/YqyCnrOu5oA" frameborder="0" allowfullscreen></iframe>
+						<!-- BENEFIT 1 -->
+						<div class="col-md-4 col-sm-6">
+							<div class="benefit">
+								<h4 class="benefit-title">Listens to You</h4>
+								<span class="benefit-icon fa  fa-heartbeat" data-animation="bounceIn"></span>
+								<p class="benefit-description">
+									<ul class="benefitbox">
+										<li class="benefitline">Completely confidentially</li>
+										<li class="benefitline">With zero conflict of interest</li>
+										<li class="benefitline">Professionally trained to ask right questions</li>
+										<li class="benefitline">Personally matched to relate to your challenges</li>
+									</ul>
+								</p>
 							</div>
 						</div>
 
-					</div>
-				</div>
-			</section>
-			<!-- End Video Section -->
-
-			<!-- TEAM
-			================================= -->
-			<section id="team" class="team-section section">
-				<div class="container-fluid">
-					<h2 class="section-heading text-center">Meet the Team</h2>
-					<div class="team-row row">
-
-						<!-- TEAM MEMBER 1 -->
-						<div class="col-lg-2 col-md-4 col-sm-6 col-xs-6" data-animation="fadeIn">
-							<div class="team-member">
-								<img class="team-member-picture" src="images/contents/LisaA.jpg" alt="">
-								<div class="team-member-text">
-									<h4 class="team-member-name">Lisa Abdilova</h4>
-									<div class="team-member-position">Founder/CEO</div>
-									<p class="team-member-description"></p>
-								</div>
-							</div>
-						</div>
-
-						<!-- TEAM MEMBER 2 -->
-						<div class="col-lg-2 col-md-4 col-sm-6 col-xs-6" data-animation="fadeIn">
-							<div class="team-member even">
-								<img class="team-member-picture" src="images/contents/SaraS.jpg" alt="">
-								<div class="team-member-text">
-									<h4 class="team-member-name">Sara Smucker Barnwell</h4>
-									<div class="team-member-position">Ethics & Compliance Director</div>
-									<p class="team-member-description"></p>
-								</div>
+						<!-- BENEFIT 2 -->
+						<div class="col-md-4 col-sm-6">
+							<div class="benefit">
+								<h4 class="benefit-title">Reassures You</h4>
+								<span class="benefit-icon fa fa-bed" data-animation="bounceIn"></span>
+								<p class="benefit-description">
+									<ul class="benefitbox">
+										<li class="benefitline">Trustworthy, knowledgeable confidant</li>
+										<li class="benefitline">Provides clarity through experienced perspectives</li>
+										<li class="benefitline">Calms you when can't sleep / wound up/ on edge</li>
+										<li class="benefitline">Relieves early signs of anxiety</li>
+									</ul>
+								</p>
 							</div>
 						</div>
 
 						<div class="hidden-md hidden-lg clear"></div>
 
-						<!-- TEAM MEMBER 3 -->
-						<div class="col-lg-2 col-md-4 col-sm-6 col-xs-6" data-animation="fadeIn">
-							<div class="team-member">
-								<img class="team-member-picture" src="images/contents/JudyB.jpg" alt="">
-								<div class="team-member-text">
-									<h4 class="team-member-name">Judy Balint</h4>
-									<div class="team-member-position">Advisor</div>
-									<p class="team-member-description"></p>
-								</div>
+						<!-- BENEFIT 3 -->
+						<div class="col-md-4 col-sm-6">
+							<div class="benefit">
+								<h4 class="benefit-title">Cheers You Up</h4>
+								<span class="benefit-icon fa fa-smile-o" data-animation="bounceIn"></span>
+								<p class="benefit-description">
+									<ul class="benefitbox">
+										<li class="benefitline">Stuck in a rut w/ life or career</li>
+										<li class="benefitline">Overwhelmed with stress or despair</li>
+										<li class="benefitline">Frequently irritable, negative, or worried</li>
+										<li class="benefitline">Relieves early signs of depression</li>
+									</ul>
+								</p>
 							</div>
 						</div>
 
-						<!-- TEAM MEMBER 4 -->
-						<div class="col-lg-2 col-md-4 col-sm-6 col-xs-6" data-animation="fadeIn">
-							<div class="team-member even">
-								<img class="team-member-picture" src="images/contents/MattM.png" alt="">
-								<div class="team-member-text">
-									<h4 class="team-member-name">Matt Murphy</h4>
-									<div class="team-member-position">Advisor</div>
-									<p class="team-member-description"></p>
-								</div>
+						<div class="hidden-sm clear"></div>
+
+						<!-- BENEFIT 4 -->
+						<div class="col-md-4 col-sm-6">
+							<div class="benefit">
+								<h4 class="benefit-title">Inspires Confidence</h4>
+								<span class="benefit-icon fa fa-child" data-animation="bounceIn"></span>
+								<p class="benefit-description">
+									<ul class="benefitbox">
+										<li class="benefitline">Provides support & encouragement</li>
+										<li class="benefitline">Reframes your negative self-talk</li>
+										<li class="benefitline">Assists your problem-solving</li>
+										<li class="benefitline">Validates your strengths</li>
+									</ul>
+								</p>
 							</div>
 						</div>
 
 						<div class="hidden-md hidden-lg clear"></div>
 
-						<!-- TEAM MEMBER 5 -->
-						<div class="col-lg-2 col-md-4 col-sm-6 col-xs-6" data-animation="fadeIn">
-							<div class="team-member">
-								<img class="team-member-picture" src="images/contents/nate.jpg" alt="">
-								<div class="team-member-text">
-									<h4 class="team-member-name">Nate Rodland</h4>
-									<div class="team-member-position">Advisor</div>
-									<p class="team-member-description"></p>
-								</div>
+						<!-- BENEFIT 5 -->
+						<div class="col-md-4 col-sm-6">
+							<div class="benefit">
+								<h4 class="benefit-title">Improves Your Health</h4>
+								<span class="benefit-icon fa fa-group" data-animation="bounceIn"></span>
+								<p class="benefit-description">
+									<ul class="benefitbox">
+										<li class="benefitline">Relaxes stiff neck & shoulders</li>
+										<li class="benefitline">Eases back pain & muscle tension</li>
+										<li class="benefitline">Stabilizes sudden weight loss or gain</li>
+										<li class="benefitline">Energizes you & counteracts lethargy</li>
+									</ul>
+								</p>
 							</div>
 						</div>
 
-						<!-- TEAM MEMBER 6 -->
-						<div class="col-lg-2 col-md-4 col-sm-6 col-xs-6" data-animation="fadeIn">
-							<div class="team-member even">
-								<img class="team-member-picture" src="images/contents/noah.jpg" alt="">
-								<div class="team-member-text">
-									<h4 class="team-member-name">Noah Heller</h4>
-									<div class="team-member-position">Advisor</div>
-									<p class="team-member-description"></p>
-								</div>
+						<!-- BENEFIT 6 -->
+						<div class="col-md-4 col-sm-6">
+							<div class="benefit">
+								<h4 class="benefit-title">Offers Advice</h4>
+								<span class="benefit-icon fa fa-user-plus" data-animation="bounceIn"></span>
+								<p class="benefit-description">
+									<ul class="benefitbox">
+										<li class="benefitline">Strategic Career Planning</li>
+										<li class="benefitline">Executive/Business Skills coaching</li>
+										<li class="benefitline">Navigating Start-ups & Office Politics</li>
+										<li class="benefitline">Improving personal & business relationships</li>
+									</ul>
+								</p>
 							</div>
 						</div>
-
 					</div>
-					<!-- End Team Row -->
 				</div>
 			</section>
-			<!-- End Team Section  -->
-
-			<!-- TWO COLS DESCRIPTION SECTION
-			================================= -->
-			<!-- <section id="two-cols-description" class="two-cols-description-section section-accent section">
-
-				<div class="container-fluid two-cols-description-row">
-
-				-->
-					<!-- TWO COLS DESCRIPTION TEXT -->
-					<!-- <div class="two-cols-description-text" data-animation="fadeInLeft">
-
-						<div class="two-cols-description-text-inner">
-
-							<h2 class="section-heading text-left">Two Columns Section</h2>
-
-							<p>Well Connected Now connects professionals to professional help: mentors, coaches, and therapists. From de-stigmatizing mental health to providing video chat access to therapists, Well Connected Now aims to resolve millennial professionals' and "worried well" entrepreneurs' core career-related challenges.</p>
-							<p>You can put image / video embed in the column to the right. If you like, you can also swap the columns, which means this text column will be on the right hand side, while the image column is on the left. While on this column, you may want to put some description paragraphs or a nice list like below:</p>
-
-							<ul class="nice-list">
-								<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-								<li>Sed feugiat arcu ut orci porta, eget porttitor felis suscipit.</li>
-								<li>Sed a nisl ullamcorper, tempus augue at, rutrum lacus. Duis et turpis eros.</li>
-							</ul>
-
-						</div>
-
-					</div>
-
-					<!-- TWO COLS DESCRIPTION IMAGE -->
-				<!--	<div class="two-cols-description-image" data-animation="fadeInRight">
-						<img src="images/backgrounds/two-cols-description-bg.jpg" alt="">
-					</div>
-
-				</div> -->
-
-			<!-- </section> -->
+			<!-- End Benefits Section -->
 
 			<!-- PRICING SECTION
 			================================= -->
-			<!-- <section id="pricing" class="pricing-section section">
-
+			<section id="pricing" class="pricing-section section">
 				<div class="container">
-
-					<h2 class="section-heading text-center">Pricing Table</h2>
-
+					<h2 class="section-heading text-center">Consultation Pricing</h2>
 					<div class="row text-center">
-						<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
-							<p>Maecenas mollis rutrum bibendum. Etiam mollis diam risus, at varius ex dapibus sed. In in leo at sapien placerat sagittis.</p>
+						<div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 text-center">
+							<div class="text-center">
+								<p class="hiw-item-title">$20  |  45min  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *first 15 minutes free!</p>
+							</div>
 						</div>
-					</div> --->
+					</div>
 
 					<!-- PRICING TABLE -->
-					<!-- <div class="pricing-table row">
+					<div class="pricing-table row">
 
 						<!-- PRICING PACKAGE 1 -->
-					<!--	<div class="col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3" data-animation="fadeInUp">
+						<div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0" data-animation="fadeInUp">
 							<div class="pricing-package">
 								<div class="pricing-package-header">
 									<h4 class="price-title">Coaches</h4>
 									<div class="price">
 										<span class="price-currency">$</span>
-										<span class="price-number">85-3K</span>
+										<span class="price-number">85</span>
+										<span class="price-number">-</span>
+										<span class="price-number">500</span>
 										<span class="price-decimal"></span>
 									</div>
-									<div class="price-description">FREE Forever</div>
+									<div class="price-description">Per Hour</div>
 								</div>
 								<ul class="pricing-package-items">
-									<li>Up to 20 Projects</li>
-									<li>500MB Harddisk Space</li>
-									<li>Up to 1000 Monthly Visitors</li>
-									<li><del>Custom Domain</del></li>
-									<li><del>Premium Themes Access</del></li>
-									<li>24/7 Customer Support</li>
+									<li>Hourly rate varies with training & experience level</li>
+									<li>Packaging offerings & focus vary by specialist level</li>
+									<li>Typically meet bi-weekly for 2-3 months</li>
 								</ul>
 							</div>
-						</div> -->
+						</div>
 
 						<!-- PRICING PACKAGE 2 -->
-						<!-- <div class="col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3" data-animation="fadeInUp">
+						<div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0" data-animation="fadeInUp">
 							<div class="pricing-package pricing-package-featured">
 								<div class="pricing-package-header">
 									<h4 class="price-title">Mentors</h4>
 									<div class="price">
 										<span class="price-currency">$</span>
 										<span class="price-number">25</span>
-										<span class="price-decimal"></span>
 									</div>
-									<div class="price-description">Billed monthly</div>
+									<div class="price-description">Per Match</div>
 									<div class="price-featured">Most Popular</div>
 								</div>
 								<ul class="pricing-package-items">
-									<li>Up to 200 Projects</li>
-									<li>5GB Harddisk Space</li>
-									<li>Unlimited Visitors</li>
-									<li>Custom Domain</li>
-									<li><del>Premium Themes Access</del></li>
-									<li>24/7 Customer Support</li>
+									<li>$10 towards mentor's Starbucks gift card</li>
+									<li>$15 towards WCN's quarterly community events</li>
+									<li>Typically meet 1-3 times over 3-6 months</li>
 								</ul>
 							</div>
-						</div> -->
+						</div>
 
 						<!-- PRICING PACKAGE 3 -->
-						<!-- <div class="col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3" data-animation="fadeInUp">
+						<div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0" data-animation="fadeInUp">
 							<div class="pricing-package">
 								<div class="pricing-package-header">
 									<h4 class="price-title">Therapists</h4>
 									<div class="price">
 										<span class="price-currency">$</span>
-										<span class="price-number">0-200</span>
-										<span class="price-decimal"></span>
+										<span class="price-number">0</span>
+										<span class="price-number">-</span>
+										<span class="price-number">200</span>
 									</div>
-									<div class="price-description">Billed monthly</div>
+									<div class="price-description">Per Hour</div>
 								</div>
 								<ul class="pricing-package-items">
-									<li>Unlimited Projects</li>
-									<li>Unlimited Harddisk Space</li>
-									<li>Unlimited Visitors</li>
-									<li>Custom Domain</li>
-									<li>Premium Themes Access</li>
-									<li>24/7 Customer Support</li>
+									<li>Hourly rate varies with experience, license, & insurance </li>
+									<li>Bound to confidentiality by HIPAA regulation</li>
+									<li>Typically meet 8-10 times over 2-5 months</li>
 								</ul>
 							</div>
 						</div>
-
 					</div>
-
 				</div>
 			</section>
--->
+			<!-- End Pricing -->
 
-			<!-- TESTIMONIALS
+			<!-- SCHEDULE AN APPT
 			================================= -->
-		<!--	<section id="testimonial" class="testimonial-section section-gray section">
+			<section id="closing" class="schedule-section section-dark section">
 
 				<div class="container">
-
-					<h2 class="section-heading text-center">Trusted by Thousands</h2>
-
-					<div class="sponsors-row" data-animation="bounceIn">
-						<img src="images/contents/sponsor-1.png" alt="">
-						<img src="images/contents/sponsor-2.png" alt="">
-						<img src="images/contents/sponsor-3.png" alt="">
-						<img src="images/contents/sponsor-4.png" alt="">
-					</div>
-
-					<div class="testimonial-row row"> -->
-
-						<!-- TESTIMONIAL ITEM 1 -->
-					<!--	<div class="col-sm-6">
-							<div class="testimonial">
-								<blockquote class="testimonial-quote">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lectus dui, volutpat sed velit congue, pulvinar tristique nisi. Maecenas mollis rutrum bibendum. Etiam mollis diam risus, at varius ex dapibus sed. In in leo at sapien placerat sagittis.</p>
-								</blockquote>
-								<span class="testimonial-ratings">
-									<span class="fa fa-star"></span>
-									<span class="fa fa-star"></span>
-									<span class="fa fa-star"></span>
-									<span class="fa fa-star"></span>
-									<span class="fa fa-star"></span>
-								</span>
-								<cite class="testimonial-cite">John Doe, Company Inc.</cite>
+					<h2 class="section-heading text-center">Find Your Match Today</h2>
+					<!-- <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1"> -->
+						<div class="closing-buttons" data-animation="tada">
+							<div class="action-buttons">
+								<a href="schedule.html" class="anchor-link btn btn-lg btn-primary">Request Consultation</a>
 							</div>
-						</div> -->
+							<div class="OR inline-block">
+								<p>OR</p>
+							</div>
+							<div class="action-buttons">
+								<a href="refer.html" class="anchor-link btn btn-lg btn-primary">Request Referral Code</a>
+							</div>
+						<!-- </div> -->
+					</div>
+				</div>
 
-						<!-- TESTIMONIAL ITEM 2 -->
-						<!-- <div class="col-sm-6">
-							<div class="testimonial">
-								<blockquote class="testimonial-quote">
-									<p>Nulla lectus dui, volutpat sed velit congue, pulvinar tristique nisi. Maecenas mollis rutrum bibendum. Etiam mollis diam risus, at varius ex dapibus sed. In in leo at sapien placerat sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-								</blockquote>
-								<span class="testimonial-ratings">
-									<span class="fa fa-star"></span>
-									<span class="fa fa-star"></span>
-									<span class="fa fa-star"></span>
-									<span class="fa fa-star"></span>
-									<span class="fa fa-star-half-o"></span>
-								</span>
-								<cite class="testimonial-cite">Dohn Joe, Internet Marketer</cite>
+			</section>
+
+			<!-- MATCHES
+			================================= -->
+			<section id="matches" class="matches-section section">
+				<div class="container-fluid">
+					<h2 class="section-heading text-center">Sample Matches</h2>
+					<div class="matches-row row">
+
+						<!-- MATCHES - ITEM 1 -->
+						<div class="col-sm-6 col-md-3 col-xs-12" data-animation="fadeIn">
+							<div class="matches-item">
+								<img class="matches-item-picture" src="images/backgrounds/citywatching.jpg" alt="">
+								<div class="matches-item-overlay"></div>
+								<div class="matches-item-text">
+									<h4 class="matches-item-title">Professionals</h4>
+									<ul>
+										<li class="matches-item-description">Ambitious, intellectually curious, and resourceful</li>
+										<li class="matches-item-description">20-30somethings navigating corporate & start-up careers</li>
+										<li class="matches-item-description">Entrepreneurs / Self-Employed / Service Providers</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- MATCHES - ITEM 2 -->
+						<div class="col-sm-6 col-md-3 col-xs-12" data-animation="fadeIn">
+							<div class="matches-item">
+								<img class="matches-item-picture" src="images/backgrounds/citywatching.jpg" alt="">
+								<div class="matches-item-overlay"></div>
+								<div class="matches-item-text">
+									<h4 class="matches-item-title">Professional Client sample</h4>
+									<ul>
+										<li class="matches-item-description">Somewhere on the spectrum of professionally dissatisfied to miserable</li>
+										<li class="matches-item-description">Want more social support and/or a healthier lifestyle - the 2 strongest resilience factors for overcoming challenges</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="hidden-md hidden-lg clear"></div>
+
+						<!-- MATCHES - ITEM 3 -->
+						<div class="col-sm-6 col-md-3 col-xs-12" data-animation="fadeIn">
+							<div class="matches-item">
+								<img class="matches-item-picture" src="images/backgrounds/citywatching.jpg" alt="">
+								<div class="matches-item-overlay"></div>
+								<div class="matches-item-text">
+									<h4 class="matches-item-title">Mentors</h4>
+									<ul>
+										<li class="matches-item-description">Accomplished & warm, with broad variety of experience levels and industries</li>
+										<li class="matches-item-description">Enjoy helping sort through personal & professional challenges</li>
+										<li class="matches-item-description">Happy to share own takeaways & missteps to support your growth</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- MATCHES - ITEM 4 -->
+						<div class="col-sm-6 col-md-3 col-xs-12" data-animation="fadeIn">
+							<div class="matches-item">
+								<img class="matches-item-picture" src="images/backgrounds/citywatching.jpg" alt="">
+								<div class="matches-item-overlay"></div>
+								<div class="matches-item-text">
+									<h4 class="matches-item-title">Mentor Match Sample</h4>
+									<ul>
+										<li class="matches-item-description">Assess circumstances for whether standard to industry cult</li>
+										<li class="matches-item-description">Learn how other roles in different organizations compare</li>
+										<li class="matches-item-description">Consider advice on strategic career and business moves</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="clear"></div>
+
+						<!-- MATCHES - ITEM 5 -->
+						<div class="col-sm-6 col-md-3 col-xs-12" data-animation="fadeIn">
+							<div class="matches-item">
+								<img class="matches-item-picture" src="images/backgrounds/citywatching.jpg" alt="">
+								<div class="matches-item-overlay"></div>
+								<div class="matches-item-text">
+									<h4 class="matches-item-title">Coaches</h4>
+									<ul>
+										<li class="matches-item-description">10+ years of relevant industry experience (i.e. former executives, start-up founders, corporate marketers..)</li>
+										<li class="matches-item-description">2Professionally  trained to listen & identify your values, passions, and motivators</li>
+										<li class="matches-item-description hide-long-li">Provide encouragement, resources, & accountability structures to achieve your dream goals, without any conflicts of interest</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- MATCHES - ITEM 6 -->
+						<div class="col-sm-6 col-md-3 col-xs-12" data-animation="fadeIn">
+							<div class="matches-item">
+								<img class="matches-item-picture" src="images/backgrounds/citywatching.jpg" alt="">
+								<div class="matches-item-overlay"></div>
+								<div class="matches-item-text">
+									<h4 class="matches-item-title">Coach Match sample</h4>
+									<ul>
+										<li class="matches-item-description">Explore new career directions with more meaning, impact, or balance</li>
+										<li class="matches-item-description">Expand business skillset (ie start-ups, management, sales, recruiting..)</li>
+										<li class="matches-item-description">Strive towards your dream goals with an industry-experienced supporter</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="hidden-md hidden-lg clear"></div>
+
+						<!-- MATCHES - ITEM 7 -->
+						<div class="col-sm-6 col-md-3 col-xs-12" data-animation="fadeIn">
+							<div class="matches-item">
+								<img class="matches-item-picture" src="images/backgrounds/citywatching.jpg" alt="">
+								<div class="matches-item-overlay"></div>
+								<div class="matches-item-text">
+									<h4 class="matches-item-title">Therapist</h4>
+									<ul>
+										<li class="matches-item-description">Practical, tech-savvy, and  non-judgmental</li>
+										<li class="matches-item-description">Specialize in mild to moderate professional & life challenges</li>
+										<li class="matches-item-description">Professionally trained in most effective evidence-based approaches</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- MATCHES - ITEM 8 -->
+						<div class="col-sm-6 col-md-3 col-xs-12" data-animation="fadeIn">
+							<div class="matches-item">
+								<img class="matches-item-picture" src="images/backgrounds/citywatching.jpg" alt="">
+								<div class="matches-item-overlay"></div>
+								<div class="matches-item-text">
+									<h4 class="matches-item-title">Therapist Match Sample</h4>
+									<ul>
+										<li class="matches-item-description">Confidentially confront personal challenges</li>
+										<li class="matches-item-description">Positively reframe negative, self-defeating thoughts</li>
+										<li class="matches-item-description">Investigate the root of your current life or career dissatisfaction</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 
 					</div>
-
 				</div>
 			</section>
-		-->
-
-
 
 			<!-- CLOSING
 			================================= -->
-			<section id="closing" class="closing-section section-dark section">
-
-				<div class="section-background">
-					<!-- IMAGE BACKGROUND -->
-					<div class="section-background-image parallax" data-stellar-ratio="0.4">
-						<img src="images/backgrounds/closing-bg.jpg" alt="" style="opacity: 0.15;">
-					</div>
-				</div>
+			<section id="closing" class="closing-section footer-padding-section section section-gray section-gray">
 
 				<div class="container">
-					<h3 class="closing-shout">Ready to get better?</h3>
-					<div class="closing-buttons" data-animation="tada">
-						<a href="#hero" class="anchor-link btn btn-lg btn-primary">Schedule Consultation</a>
-					</div>
-					<h4 class="closer">
-						<br>WCN connects smart millennials
-						<br>to mentors, coaches, and therapists
-					</h4>
-				</div>
+					<h2 class="section-heading text-center">It's Never Too Late</h2>
 
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 email-form">
+						<p class="hiw-item-title text-center">Join Our Mailing List</p>
+						<!-- SUBSCRIPTION FORM -->
+							<form action="modules/subscribe-mailchimp.js" method="post" id="subscription-form" class="subscription-form form-ajax-submit" role="form">
+								<div class="form-validation alert"></div>
+								<div class="form-group subscription-form-wrapper">
+									<span class="subscription-form-input">
+										<input type="email" name="email" class="subscribe-form-email form-control form-control-lg" placeholder="Enter email address" autocomplete="off">
+									</span>
+									<span class="subscription-form-submit">
+										<button class="btn btn-primary btn-lg" data-loading-text="Email Confirmation Sent">Submit Email</button>
+									</span>
+								</div>
+							</form>
+							<p class="hiw-item-title text-center OR">OR</p>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2">
+							<div class="closing-buttons" data-animation="tada">
+								<div class="action-buttons">
+									<a href="schedule.html" class="action-button anchor-link btn btn-lg btn-primary">Request Consultation</a>
+									<h5 class="sub-button-text text-center">F2F, Phone, Text, or Video</h5>
+								</div>
+								<div class="OR inline-block">
+								</div>
+								<div class="action-buttons">
+									<a href="refer.html" class="action-button anchor-link btn btn-lg btn-primary">Request Referral Code</a>
+									<h5 class="sub-button-text text-center">*30 min credit</h5>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
 			</section>
+			<!-- End Closing CTA -->
 
 			<!-- FOOTER
 			================================= -->
-			<section id="footer" class="footer-section section">
-				<div class="container">
-
-					<h3 class="footer-logo">
-						<img src="images/logos/footer-logo.png" srcset="images/logos/footer-logo@2x.png 2x" alt="Drew">
-					</h3>
-
-					<div class="footer-socmed">
-						<!-- <a href="#" target="_blank"><span class="fa fa-facebook"></span></a> -->
-						<a href="https://twitter.com/wellconnectdnow" target="_blank"><span class="fa fa-twitter"></span></a>
-						<!--<a href="#" target="_blank"><span class="fa fa-instagram"></span></a> -->
-						<a href="https://www.pinterest.com/wellconnectdnow" target="_blank"><span class="fa fa-pinterest"></span></a>
+			<footer id="footer" class="site-footer index-footer floating-footer">
+			  <div class=col-md-4 pull-left>
+					<div class="footer-button header-action-button">
+						<a href="refer.html" class="btn btn-primary btn-xs">Refer Someone</a>
 					</div>
-
-					<div class="footer-copyright">
-						&copy; 2015 Well Connected Now Inc
+					<div class="footer-icon">
+						<a href="https://www.facebook.com/sharer/sharer.php?u=https://www.facebook.com/wellconnectednow?" target="_blank"><i class="fa fa-facebook-square"></i></a>
 					</div>
-
+					<div class="footer-icon">
+						<a href="https://www.linkedin.com/shareArticle?mini=true&url=http://wellconnectednow.com" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+					</div>
+					<div class="footer-icon">
+						<a href="mailto:lisa@wellconnectednow.com"><i class="fa fa-3 fa-envelope-o padding-r-sm"></i></a>
+					</div>
 				</div>
-			</section>
+				<div class="col-md-4 text-center">
+					<div class="contact-text">
+						<div class="address">
+							<i class="fa fa-mobile padding-r-sm"></i>415.860.5415
+						</div>
+						<div class="address">
+							lisa@wellconnectednow.com
+						</div>
+					</div>
+				</div>
+				<div class=col-md-4  "pull-right">
+					<div class="footer-link">
+						<script src="https://platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+						<script type="IN/Share" data-url="http://www.linkedin.com/company/well-connected-now"></script>
+					</div>
+					<div class="footer-link">
+						<a href="https://twitter.com/share" class="twitter-share-button" data-url="https://twitter.com/wellconnectdnow" data-text="Check out @wellconnectdnow, a service that personally matches professionals to mentors, coaches, and therapists!" data-related="wellconnectdnow" data-count="none">Tweet</a>
+					</div>
+					<div class="footer-link pinterest">
+						<a data-pin-do="buttonFollow" href="http://www.pinterest.com/wellconnectdnow/">Follow</a>
+						<script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
+					</div>
+				</div>
+
+			</footer>
 
 			<!-- JAVASCRIPT
 			================================= -->

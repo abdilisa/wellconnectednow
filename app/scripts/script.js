@@ -85,46 +85,6 @@
 			$( '.remove-on-mobile-device' ).remove();
 		};
 
-		/* =======================================
-		 * Slideshow Background
-		 * =======================================
-		 */
-		if ( $.fn.responsiveSlides ) {
-			$body.on( 'pageStart', function() {
-				$( '.section-background-slideshow' ).responsiveSlides({
-					speed : $( this ).data( 'speed' ) ? $( this ).data( 'speed' ) : 800,
-					timeout : $( this ).data( 'timeout' ) ? $( this ).data( 'timeout' ) : 4000,
-				});
-			});
-		};
-
-		/* =======================================
-		 * Video Embed Async Load
-		 * =======================================
-		 */
-		$body.on( 'pageStart', function() {
-			$( '.video-async' ).each( function( i, el ) {
-				var $el = $( el ),
-				    source = $el.data( 'source' ),
-				    video = $el.data( 'video' ),
-				    color = $el.data( 'color' );
-
-				if ( source == 'vimeo' ) {
-					$el.attr( 'src', '//player.vimeo.com/video/' + video + ( color ? '?color=' + color : '' ) );
-				} else if ( source == 'youtube' ) {
-					$el.attr( 'src', '//www.youtube.com/embed/' + video + '?rel=0' );
-				}
-
-			});
-		});
-
-		/* =======================================
-		 * Resize Video Background
-		 * =======================================
-		 */
-		$window.on( 'resize', function() {
-			resizeBackground();
-		});
 		/**
 		 * =======================================
 		 * Initiate Stellar JS
@@ -140,32 +100,24 @@
 			});
 		};
 
-		/**
-		 * =======================================
-		 * Numbers (Counter Up)
-		 * =======================================
-		 */
-		if ( $.fn.counterUp ) {
-			$( '.counter-up' ).counterUp({
-				time: 1000,
-			});
-		};
 
 		/**
 		 * =======================================
 		 * Scroll Spy
 		 * =======================================
 		 */
-		var toggleHeaderFloating = function() {
-			// Floating Header
-			if ( $window.scrollTop() > 80 ) {
-				$( '.header-section' ).addClass( 'floating' );
-			} else {
-				$( '.header-section' ).removeClass( 'floating' );
-			};
-		};
-
-		$window.on( 'scroll', toggleHeaderFloating );
+		// var toggleHeaderFloating = function() {
+		// 	// Floating Header
+		// 	if ( $window.scrollTop() > 80 ) {
+		// 		$('.index-footer').addClass('floating-footer');
+		// 		$( '.index-header' ).addClass( 'floating' );
+		// 	} else {
+		// 		$('.index-footer').removeClass	('floating-footer');
+		// 		$( '.index-header' ).removeClass( 'floating' );
+		// 	};
+		// };
+		//
+		// $window.on( 'scroll', toggleHeaderFloating );
 
 		/**
 		 * =======================================
@@ -230,23 +182,6 @@
 			new Maplace( gmap_options ).Load();
 		};
 
-		/**
-		 * =======================================
-		 * Countdown
-		 * =======================================
-		 */
-		if ( $.fn.countdown ) {
-			$( '.countdown' ).each( function( i, el ) {
-				var $el = $ ( el ),
-				    date = $el.data( 'countdown' ),
-				    format = $el.html();
-
-				$el.countdown( date, function( e ) {
-					$( el ).html( e.strftime( format ) );
-				});
-				$el.show();
-			});
-		};
 
 		/**
 		 * =======================================
@@ -306,29 +241,34 @@
 			};
 		});
 
+
+
 		/* =======================================
-		 * Preloader
+		 * Twitter Share Plugin
 		 * =======================================
 		 */
-		if ( $.fn.jpreLoader && $body.hasClass( 'enable-preloader' ) ) {
+		!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
 
-			$body.jpreLoader({
-				showSplash : false,
-				// autoClose : false,
-			}, function() {
-				$body.trigger( 'pageStart' );
-			});
-
-			$body.on( 'pageStart', function() {
-				$body.addClass( 'done-preloader' );
-			});
-
-		} else {
-			$body.trigger( 'pageStart' );
-		};
+		/* =======================================
+		* Show/Hide Scheduling an Appointment
+		* =======================================
+		*/
 
 		$window.trigger( 'resize' );
 		$window.trigger( 'scroll' );
+
+		var newClientButton = $('.schedule-new');
+		var returnClientButton = $('.schedule-return');
+
+		newClientButton.on('click', function () {
+			$('.typeform-question').hide();
+			$('.new-client').show();
+		})
+		returnClientButton.on('click', function () {
+			$('.typeform-question').hide();
+			$('.return-client').show();
+		})
+
 
 	});
 
