@@ -157,21 +157,6 @@
 			});
 		};
 
-		/**
-		 * =======================================
-		 * Anchor Link
-		 * =======================================
-		 */
-		$body.on( 'click', 'a. ', function( e ) {
-			e.preventDefault();
-
-			var $a = $( this ),
-			    $target = $( $a.attr( 'href' ) );
-
-			if ( $target.length < 1 ) return;
-
-			$( 'html, body' ).animate({ scrollTop: Math.max( 0, $target.offset().top - drew.headerFloatingHeight ) }, 1000 );
-		});
 
 		/**
 		 * =======================================
