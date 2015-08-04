@@ -2209,7 +2209,7 @@ h5{
 	display: inline-block;
 	text-align: center;
 	vertical-align: middle;
-	color: #ccc;
+	color: #fff !important;
 	display: inline-block;
 	font-family: "Source Sans Pro", sans-serif;
 	font-size: 11px;
@@ -2217,9 +2217,6 @@ h5{
 	letter-spacing: 0.05em;
 }
 
-.contact-text > .address-text > a {
-	color: #fff;
-}
 
 .refer-button {
 	background-color: rgba(0,0,0,0);
