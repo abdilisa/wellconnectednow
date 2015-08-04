@@ -152,7 +152,7 @@ iframe {
 	position: relative;
 	padding: 10px 0 5px 110px;
 	text-align: center;
-	font-size: 13px;
+	/*font-size: 13px;*/
 }
 .icon-list-icon {
 	position: absolute;
@@ -257,6 +257,15 @@ h5{
 .align-center {
 	text-align: center !important;
 }
+
+.bottom-section {
+	padding-bottom: 160px !important;
+}
+
+.top-section {
+	padding-top: 160px !important;
+}
+
 
 /**
  * ========================================
@@ -1673,14 +1682,25 @@ h5{
  * TWO COLS DESCRIPTION
  * ========================================
  */
-.two-cols-description-image {
+
+.two-cols-description-image-about {
 	padding-top: 37.5%;
 	position: relative;
 	overflow: hidden;
 	background: url("../images/backgrounds/rainbow-jump.jpeg") no-repeat center;
 	background-size: cover;
-	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
+	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
 }
+.two-cols-description-image-opp {
+	padding-top: 37.5%;
+	position: relative;
+	overflow: hidden;
+	background: url("../images/backgrounds/standingbysm.jpg") no-repeat center;
+	background-size: cover;
+	/*box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);*/
+}
+
+
 .two-cols-description-image img {
 	position: absolute;
 	/*min-width: 100%;*/
@@ -1701,14 +1721,16 @@ h5{
 }
 
 @media ( max-width: 991px ) {
-	.two-cols-description-image {
+	.two-cols-description-image-opp,
+	.two-cols-description-image-about {
 		padding-top: 75%;
 		margin-top: -90px;
 		margin-bottom: 90px;
 		margin-left: -15px;
 		margin-right: -15px;
 	}
-	.two-cols-description-text + .two-cols-description-image {
+	.two-cols-description-text + .two-cols-description-image-opp,
+	.two-cols-description-text + .two-cols-description-image-about {
 		margin-top: 90px;
 		margin-bottom: -90px;
 	}
@@ -1726,14 +1748,19 @@ h5{
 		width: 100%;
 		padding: 0;
 	}
-	.two-cols-description-image, .two-cols-description-text {
+	.two-cols-description-image-about, .two-cols-description-text {
+		width: 50%;
+		display: table-cell;
+		float: none !important;
+	}
+	.two-cols-description-image-opp, .two-cols-description-text {
 		width: 50%;
 		display: table-cell;
 		float: none !important;
 	}
 	.two-cols-description-text {
 		vertical-align: middle;
-		padding: 90px 60px 180px 60px;
+		padding: 90px 60px;
 	}
 }
 
