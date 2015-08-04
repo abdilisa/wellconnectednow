@@ -157,21 +157,6 @@
 			});
 		};
 
-		/**
-		 * =======================================
-		 * Anchor Link
-		 * =======================================
-		 */
-		$body.on( 'click', 'a. ', function( e ) {
-			e.preventDefault();
-
-			var $a = $( this ),
-			    $target = $( $a.attr( 'href' ) );
-
-			if ( $target.length < 1 ) return;
-
-			$( 'html, body' ).animate({ scrollTop: Math.max( 0, $target.offset().top - drew.headerFloatingHeight ) }, 1000 );
-		});
 
 		/**
 		 * =======================================
@@ -247,7 +232,7 @@
 		 * Twitter Share Plugin
 		 * =======================================
 		 */
-		!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+		!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'http';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
 
 		/* =======================================
 		* Show/Hide Scheduling an Appointment

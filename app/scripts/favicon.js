@@ -3,8 +3,8 @@
 // var head = parent.document.getElementsByTagName("head")[0];
 
 // // URLs for favicons
-// var favUrl = "https://wellconnectednow2.herokuapp.com/images/favicons/favicon.ico";
-// var appUrl = "https://wellconnectednow2.herokuapp.com/images/favicons/apple-touch-icon.png";
+// var favUrl = "http://wellconnectednow2.herokuapp.com/images/favicons/favicon.ico";
+// var appUrl = "http://wellconnectednow2.herokuapp.com/images/favicons/apple-touch-icon.png";
 
 // // create new link elements
 // var link1 = document.createElement("link");
