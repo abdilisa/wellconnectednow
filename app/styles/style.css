@@ -729,10 +729,10 @@ h5{
 .header-section.navbar-inverse.floating {
 	-webkit-box-shadow: none;
 	box-shadow: none;
-	background-color: rgba(0,0,0,0.85);
+	background-color: #000;
 }
 .header-section.navbar-default.floating {
-	background-color: rgba(255,255,255,0.95);
+	background-color: #000;
 	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.1);
 	box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
@@ -2168,7 +2168,7 @@ h5{
 }
 
 .floating-footer {
-	background-color: rgba(0, 0, 0, .85);
+	background-color: #000;
 }
 
 .footer-link {
