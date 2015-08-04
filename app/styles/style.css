@@ -2215,7 +2215,9 @@ h5{
 	font-size: 11px;
 	line-height: 1.819;
 	letter-spacing: 0.05em;
-	text-transform: uppercase;
+	a {
+		color: #fff;
+	}
 }
 
 .refer-button {
