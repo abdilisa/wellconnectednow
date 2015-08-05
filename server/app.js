@@ -20,6 +20,11 @@ app.set('view engine', null);
 app.use(compression());
 
 app.use('/api/subscription', subscriptionRoute);
+app.use('/health', function(req, res, next) {
+  res.status(200).send({
+    status: 'ok'
+  });
+});
 
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {
