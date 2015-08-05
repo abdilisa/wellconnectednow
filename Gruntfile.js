@@ -301,7 +301,7 @@ module.exports = function(grunt) {
         },
         cwd: 'node_dist',
         expand: true,
-        src: ['./**/*'],
+        src: ['./**/*', 'config/*'],
         dest: '/'
       }
     },
@@ -385,12 +385,28 @@ module.exports = function(grunt) {
         src: '{,*/}*.css'
       },
       node: {
-        expand: true,
-        dot: true,
-        cwd: 'server',
-        dest: 'node_dist',
-        src: [
-          '{,*/}*.js'
+        files: [
+          {
+            expand: true,
+            dot: true,
+            cwd: 'server',
+            dest: 'node_dist',
+            src: [
+              '{,*/}*.js'
+            ]
+          },
+          {
+            expand: true,
+            dot: true,
+            cwd: getUserHome() + "/.wellconnectednow",
+            dest: 'node_dist/config',
+            rename: function(dest) {
+               return dest + '/prod.json';
+             },
+            src: [
+              "dev.json"
+            ]
+          }
         ]
       },
       node_modules: {
@@ -445,6 +461,12 @@ module.exports = function(grunt) {
         'imagemin',
         'svgmin'
       ]
+    },
+    nodemon: {
+      dev: {
+        script: 'server/app.js',
+        watch: ['server']
+      }
     }
   });
 
@@ -513,6 +535,11 @@ module.exports = function(grunt) {
     'filerev',
     'usemin',
     'htmlmin'
+  ]);
+
+  grunt.registerTask('api', [
+    'env:dev',
+    'nodemon:dev'
   ]);
 
   grunt.registerTask('default', [
