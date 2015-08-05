@@ -242,18 +242,6 @@
 		$window.trigger( 'resize' );
 		$window.trigger( 'scroll' );
 
-		var newClientButton = $('.schedule-new');
-		var returnClientButton = $('.schedule-return');
-
-		newClientButton.on('click', function () {
-			$('.typeform-question').hide();
-			$('.new-client').show();
-		})
-		returnClientButton.on('click', function () {
-			$('.typeform-question').hide();
-			$('.return-client').show();
-		})
-
 
 	});
 

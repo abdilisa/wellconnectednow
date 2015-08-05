@@ -192,20 +192,14 @@ iframe {
 .icon-list-title {
 	margin: 0 0 10px;
 	font-family: "Source Sans Pro", sans-serif;
-	/*font-weight: bold;*/
 	font-size: 18px;
 	letter-spacing: 0.05em;
-	/*text-transform: uppercase;*/
-	text-align: left;
 }
 .tab-title {
 	margin-bottom: 15px;
-	/*margin: 0 0 10px;*/
 	font-family: "Source Sans Pro", sans-serif;
-	/*font-weight: bold;*/
 	font-size: 18px;
 	letter-spacing: 0.05em;
-	/*text-transform: uppercase;*/
 	text-align: left;
 }
 .sub-tab-title {
@@ -1343,10 +1337,18 @@ h5{
 
 /**
  * ========================================
+ * CLOSING CTA
+ * ========================================
+ */
+.founder-img {
+	width: 90%;
+}
+
+/**
+ * ========================================
  * MISSION
  * ========================================
  */
-
 
 .mission-row {
 	margin-top: 30px;
@@ -1943,11 +1945,6 @@ h5{
  * ========================================
  */
 
-.new-client,
-.return-client {
-	display: none;
-}
-
 .OR {
 	padding: 35px;
 	margin: 0;
@@ -2035,8 +2032,8 @@ h5{
 	transition: all ease 1.5s;
 }
 .matches-item:hover .matches-item-picture {
-	-webkit-transform: scale(1.1,1.1);
-	transform: scale(1.1,1.1);
+	/*-webkit-transform: scale(1.1,1.1);
+	transform: scale(1.1,1.1);*/
 }
 .matches-item-overlay {
 	position: absolute;
@@ -2052,7 +2049,7 @@ h5{
 	background-color: #222;
 }
 .matches-item:hover .matches-item-overlay {
-	opacity: 0.8;
+	/*opacity: 0.8;*/
 }
 .matches-item-text {
 	width: 100% !important;
@@ -2068,6 +2065,18 @@ h5{
 	transition: all ease 0.25s;
 	-webkit-transform: translate(0,100%);
 	transform: translate(0,100%);
+}
+
+.matches-item-static-text {
+	width: 100% !important;
+	height: 100% !important;
+	border: 2px solid #ffcc00;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	padding: 30px;
+	background-color: #222;
+	color: #ccc;
 }
 
 @media ( max-width: 1694px ) and ( min-width: 1600px  ) {
@@ -2089,6 +2098,7 @@ h5{
 	.matches-item-title  {
 		margin: 0px;
 	}
+	.matches-item-static-text,
 	.matches-item-text  {
 		padding: 10px;
 	}
