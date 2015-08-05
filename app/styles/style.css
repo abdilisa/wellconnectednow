@@ -652,6 +652,13 @@ h5{
 .btn-primary {
 	color: #fff !important;
 }
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+	background-color: #ffcc00 !important;
+	color: #fff;
+	outline: none !important;
+}
+
 /* BUTTON SIZE */
 .btn-lg {
 	font-size: 15px;
