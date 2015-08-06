@@ -852,14 +852,14 @@ h5{
 	left: 0;
 	width: 100%;
 	height: 2px;
-	color: #ffcc00;
+	background-color: #ffcc00;
 }
 .navbar-nav > li.current:not(.header-action-button) > a:after,
 .navbar-inverse .navbar-nav > li.current:not(.header-action-button) > a:after {
-	color: #ffcc00;
+	background-color: #ffcc00;
 }
 .navbar-default .navbar-nav > li.current:not(.header-action-button) > a:after {
-	color: #ffcc00;
+	background-color: #ffcc00;
 }
 .navbar-logo {
 	height: 80px;
