@@ -5,7 +5,7 @@
 // =============================================
 
 // Authentication
-$api_key         = '8c6223ca80f76410c3a10774dca4fa32-us10'; // Find on your Account Settings > Extras > API Keys
+$api_key         = 'f9d80880acf0980522f97671dfb49ea1-us10'; // Find on your Account Settings > Extras > API Keys
 $list_id         = 'd24ee8d994'; // Find on your List > Settings
 
 // Validation messages
