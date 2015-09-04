@@ -5,17 +5,13 @@ var express = require('express'),
   EmailSubscriptionUtility = require('../lib/emailSubscriptionUtility'),
   googleCreds;
 
-console.log('using mailchimp key:', process.env.mailchimp_access_key);
-var mc = new mcapi.Mailchimp(process.env.mailchimp_access_key || '');
+console.log('using mailchimp key:', '8c6223ca80f76410c3a10774dca4fa32-us10');
+var mc = new mcapi.Mailchimp('8c6223ca80f76410c3a10774dca4fa32-us10');
 
-if (process.env.useConfigFile) {
- googleCreds = require('../config/prod.json');
-} else {
-  googleCreds = {
-    spreadsheet_user: process.env.spreadsheet_user,
-    spreadsheet_key: process.env.spreadsheet_key
-  };
-}
+googleCreds = {
+	spreadsheet_user: 'akaakaalex529@gmail.com',
+	spreadsheet_key: '1x9_Wen8GQV8-I3o4iEXjxs1y_B_l6VKXvyuX1IzdzGE'
+};
 
 var unverifiedSubscriptions = new EmailSubscriptionUtility(googleCreds);
 console.log('using google creds', googleCreds);
@@ -33,7 +29,7 @@ router.post('/', function(req, res, next) {
 
       unverifiedSubscriptions.addEmailSubscription(req.body.email, function(err) {
         if (err) {
-          console.log('An error occured while saving an unverified email');
+          console.log('An error occured while saving an unverified email: ' + JSON.stringify(err));
           inspect(err);
           return;
         }
