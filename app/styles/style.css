@@ -1353,11 +1353,11 @@ h5{
 .tiers-table {
 	list-style: none;
 	padding: 0;
-	margin: 60px 0 0;
+	margin: 20px 0 0;
 }
 .tiers-package {
 	position: relative;
-	margin: 40px 0 0;
+	margin: 10px 0 0;
 	background-color: #f6f6f6;
 	text-align: center;
 }
