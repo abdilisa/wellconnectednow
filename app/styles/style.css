@@ -301,10 +301,10 @@ h5{
 .section-heading {
 	position: relative;
 	padding-bottom: 20px;
-	margin: 0 0 30px;
+	margin: 0 0 10px;
 	font-family: "Source Sans Pro", sans-serif;
 	/*font-family: "Montserrat", sans-serif;*/
-	font-size: 28px;
+	font-size: 25px;
 	font-weight: 600;
   letter-spacing: 0.07em;
 	/*text-transform: uppercase;*/
@@ -367,7 +367,7 @@ h5{
 }
 
 #hero {
-	background: url("../images/backgrounds/green-journey.jpg") no-repeat center;
+	background: url("../images/backgrounds/greenroadway.jpg") no-repeat center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -1394,7 +1394,7 @@ h5{
 	border-bottom-style: solid;
 	border-bottom-color: rgba(255,255,255,0.1);
 	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 18px;
+	font-size: 20px;
 	letter-spacing: 0.05em;
 	/*text-transform: uppercase;*/
 	color: black;
@@ -1432,13 +1432,13 @@ h5{
 .tier-specifics{
 	list-style: none;
 	margin: 0;
-	padding: 25px;
+	padding: 5px;
 	text-align: center;
 }
 .tier-question {
 	font-family: 'Source Sans Pro', serif;
 	font-style: italic;
-	font-size: 13px;
+	font-size: 14px;
 	padding-left: 10px;
 	padding-right: 10px;
 	border-top-width: 0px;
