@@ -1522,9 +1522,12 @@ h5{
  * ========================================
  */
 .benefit {
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 13px;
+	letter-spacing: 0.05em;
 	min-height: 345px;
 	text-align: left;
-	padding: 25px;
+	padding: 35px;
 	background-color: #f6f6f6;
 	margin: 15px 0;
 }
@@ -1565,7 +1568,8 @@ h5{
 	padding-left: 10px;
 }
 .benefitbox {
-	padding-left: 55px;
+	padding-left: 45px;
+	padding-right: 45px;
 }
 .section-accent .benefit-icon {
 	color: #444;
