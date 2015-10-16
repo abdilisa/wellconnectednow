@@ -43,60 +43,21 @@
   ga('send', 'pageview');
   			</script>
 
+  			<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+				<script> 
+				$(function(){
+				  $("#header").load("header.html"); 
+				  $("#footer").load("footer.html"); 
+				});
+				</script> 
+
 	</head>
 
   <body class="enable-animations  ">
     <div id="document" class="document">
 
     <!-- HEADER -->
-    <header id="header" class="header-section section section-dark navbar navbar-fixed-top floating">
-      <div class="container-fluid">
-        <div class="navbar-header navbar-left">
-          <!-- RESPONSIVE MENU BUTTON -->
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <!-- HEADER LOGO -->
-          <a class="navbar-logo navbar-brand" href="index.html">
-            <img src="images/logos/WCNhelp-logo-wc@2x.png" alt="WCN">
-          </a>
-        </div>
-
-				<nav id="navigation" class="navigation navbar-collapse collapse navbar-right">
-					<!-- NAVIGATION LINKS -->
-					<ul id="header-nav" class="nav navbar-nav">
-						<li>
-							<a href="index.html" class="hidden">Top</a>
-						</li>
-						<li>
-							<a href="index.html">Professionals</a>
-						</li>
-						<li>
-							<a href="mentors.html">Mentors</a>
-						</li>
-						<li>
-							<a href="coaches.html">Coaches</a>
-						</li>
-						<li>
-							<a href="therapists.html">Therapists</a>
-						</li>
-						<li>
-							<a href="https://blog.wellconnectednow.com" target="_blank">Blog</a>
-						</li>
-						<li>
-							<a href="faq.html">FAQ</a>
-						</li>
-						<li class="header-action-button hide-header-action-button">
-							 <a href="schedule.html" class="btn btn-primary black-btn-text">Get Started</a>
-						</li>
-					</ul>
-				</nav>
-
-      </div>
-    </header>
+    <div id="header"></div>
 
     <!-- Begin Typeform -->
 				<!-- New Client Form -->
@@ -107,56 +68,7 @@
   	<!-- End Typeform -->
 
 		<!-- FOOTER -->
-		<footer id="footer" class="site-footer index-footer floating-footer">
-			<div class="col-md-4 col-xs-4 pull-left">
-				<div class="footer-button header-action-button">
-					<a href="refer.html" class="btn btn-primary refer-button btn-xs">Refer Someone</a>
-				</div>
-				<div class="footer-icon footer-section-hide">
-					<a href="https://www.facebook.com/sharer/sharer.php?u=https://www.facebook.com/wellconnectednow?" target="_blank"><i class="fa fa-facebook-square"></i></a>
-				</div>
-				<div class="footer-icon footer-section-hide">
-					<a href="https://www.linkedin.com/shareArticle?mini=true&url=https://wellconnectednow.com" target="_blank"><i class="fa fa-linkedin-square"></i></a>
-				</div>
-				<div class="footer-icon footer-section-hide">
-					<a href="mailto:lisa@wellconnectednow.com"><i class="fa fa-3 fa-envelope-o padding-r-sm"></i></a>
-				</div>
-			</div>
-			<div class="col-md-4 col-xs-4 text-center">
-				<div class="footer-icon footer-icon-mobile mobile-phone-icon">
-					<a href="tel:+14158605415"><i class="fa fa-3 fa-mobile padding-r-sm"></i></a>
-				</div>
-				<div class="footer-icon footer-icon-mobile">
-					<a href="mailto:lisa@wellconnectednow.com"><i class="fa fa-3 fa-envelope-o padding-r-sm"></i></a>
-				</div>
-				<div class="contact-text footer-section-hide">
-					<div class="address">
-						<i class="fa fa-mobile padding-r-sm"></i><a href="tel:+14158605415">415.860.5415</a>
-					</div>
-					<div class="address footer-section-hide">
-						<a href="mailto:lisa@wellconnectednow.com">lisa@wellconnectednow.com</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4 col-xs-4 pull-right align-right">
-				<div class="footer-icon footer-section-hide">
-					<a href="https://instagram.com/wellconnectednow/" target="_blank"><i class="fa fa-instagram"></i></a>
-				</div>
-				<div class="footer-icon footer-section-hide">
-					<a href="https://twitter.com/wellconnectdnow/" target="_blank">
-						<i class="fa fa-twitter-square"></i>
-					</a>
-				</div>
-				<div class="footer-icon footer-section-hide">
-					<a href="https://www.pinterest.com/wellconnectdnow/" target="_blank">
-						<i class="fa fa-pinterest-square"></i>
-					</a>
-				</div>
-				<div class="footer-button header-action-button">
-					<a href="schedule.html" class="btn btn-primary btn-xs black-btn-text">Get Started</a>
-				</div>
-			</div>
-		</footer>
+		<div id="footer"></div>
 
 			<!-- JAVASCRIPT
 			================================= -->
