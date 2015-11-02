@@ -484,7 +484,7 @@ h5{
 }
 
 .email-form {
-	padding-top: 20px;
+	padding-top: 50px;
 }
 .form-heading {
 	position: relative;
@@ -585,7 +585,7 @@ h5{
 	border-color: #3c763d;
 }
 .subscription-form {
-	padding: 0px;
+	padding-left: 15px;
 }
 .wide-break {
 	font-size: 18px;
@@ -2284,12 +2284,18 @@ h5{
  * CLOSING
  * ========================================
  */
+.closing-item-title {
+	text-align: left;
+	padding-left: 20px;
+	font-family: Source Sans Pro, sans-serif;
+	font-size: 20px;
+}
 .closing-shout, .closing-buttons {
 	text-align: center;
 	font-family: Source Sans Pro, sans-serif;
 }
 .closing-shout {
-	font-size: 24px;
+	font-size: 18px;
 	margin-bottom: 40px;
 }
 .closer {
