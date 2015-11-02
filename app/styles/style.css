@@ -329,7 +329,7 @@ h5{
 .section-heading:after {
 	content: "";
 	position: absolute;
-	left: 0;
+	right: 0;
 	bottom: 0;
 	display: block;
 	height: 2px;
@@ -2285,7 +2285,7 @@ h5{
  * ========================================
  */
 .closing-item-title {
-	text-align: left;
+	text-align: center;
 	padding-left: 20px;
 	font-family: Source Sans Pro, sans-serif;
 	font-size: 20px;
