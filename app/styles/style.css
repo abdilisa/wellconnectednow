@@ -2038,7 +2038,7 @@ h5{
 	border-top-width: 1px;
 	border-top-style: solid;
 	border-top-color: rgba(0,0,0,0.05);
-	text-align: left;
+	text-align: center;
 }
 .pricing-package-items li:first-child {
 	border-top: none;
@@ -2148,6 +2148,7 @@ h5{
  */
 .matches-section {
 	padding-bottom: 0;
+	padding-top: 0;
 }
 .matches-row {
 	margin-top: 50px;
