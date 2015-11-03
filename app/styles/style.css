@@ -2318,6 +2318,31 @@ h5{
 
 /**
  * ========================================
+ * SECONDARY CTA
+ * ========================================
+ */
+
+.learn-more-btn {
+	width: 350px;
+	margin-left: 300px;
+	background-color: #ffcc00;
+	margin-top: 20px;
+}
+
+.specialists-button {
+	border: 1px dotted transparent;
+	border-color:#ffcc00;
+	background-color: rgba(0,0,0,0);
+	font-size: 15px;
+	line-height: 30px;
+	padding: 14px 24px;
+	border-radius: 0;
+	width: 350px;
+	margin-left: 300px;
+	margin-top: 35px;
+}
+/**
+ * ========================================
  * FOOTER
  * ========================================
  */
