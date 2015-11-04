@@ -1439,7 +1439,7 @@ h5{
 	padding-left: 10px;
 	padding-right: 10px;
 	border-top-width: 0px;
-	border-top-style: solid;
+	border-top-style: none;
 	border-top-color: rgba(0,0,0,0.05);
 }
 .tier-question :first-child {
@@ -1459,9 +1459,11 @@ h5{
 @media ( max-width: 991px ) {
 	.tiers-package {
 		margin-top: 40px;
+		border-style: none;
 	}
 	.tiers-table > *:first-child > .tiers-package {
 		margin-top: 0;
+		border-style: none;
 	}
 }
 
