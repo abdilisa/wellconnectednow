@@ -46,9 +46,26 @@
         <script src="//code.jquery.com/jquery-1.10.2.js"></script>
         <script> 
         $(function(){
+
+          var acuityIframe = document.getElementById('acuityscheduling-iframe');
+          var firstName = getParameterByName('first_name');
+          var lastName = getParameterByName('last_name');
+          var email = getParameterByName('email');
+
+          var iframeSrc = acuityIframe.getAttribute('src') + '&first_name=' + firstName + '&last_name=' + lastName + '&email=' + email;
+          acuityIframe.setAttribute('src', iframeSrc);
+
           $("#header").load("header.html"); 
           $("#footer").load("footer.html"); 
         });
+
+        function getParameterByName(name) {
+          name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+          var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+          return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+        }
+
         </script> 
 
   </head>
@@ -70,7 +87,7 @@
         <!-- New Client Form -->
 
         <div class="new-client">
-          <iframe src="https://wcn.acuityscheduling.com/schedule.php?appointmentType=373010" width="100%" height="800" frameBorder="0"></iframe>
+          <iframe src="https://wcn.acuityscheduling.com/schedule.php?appointmentType=373010" width="100%" height="800" frameBorder="0" id="acuityscheduling-iframe"></iframe>
           <script src="https://d3gxy7nm8y4yjr.cloudfront.net/js/embed.js" type="text/javascript"></script>
         </div>
       </div>
