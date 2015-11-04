@@ -1375,7 +1375,7 @@ h5{
 .tiers-package-header {
 	background-color: white;
 	border-top-width: .5px;
-	border-top-style: solid;
+	border-top-style: none;
 }
 .tiers-package.tiers-package-header {
 	border-top-width: 15px;
@@ -1388,7 +1388,7 @@ h5{
 	margin: 0;
 	padding: 10px;
 	border-bottom-width: 1px;
-	border-bottom-style: solid;
+	border-bottom-style: none;
 	border-bottom-color: rgba(255,255,255,0.1);
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 20px;
