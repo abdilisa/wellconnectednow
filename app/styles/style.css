@@ -348,6 +348,12 @@ h5{
 #second-cta.section-heading:after{
 	background-color: rgba(0,0,0,0);
 }
+
+#secondary-cta{
+	padding-top: 45px;
+	padding-bottom: 65px;
+}
+
 /* SECTION COLOR */
 .section-gray {
 	background-color: #f6f6f6;
@@ -2296,6 +2302,7 @@ h5{
 .closing-shout, .closing-buttons {
 	text-align: center;
 	font-family: Source Sans Pro, sans-serif;
+	padding-bottom: 25px;
 }
 .closing-shout {
 	font-size: 18px;
