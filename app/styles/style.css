@@ -600,6 +600,15 @@ h5{
 .wide-break {
 	font-size: 18px;
 }
+
+#video{
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+#video-headline{
+	padding: 5px;
+}
+
 @media ( max-width: 767px ) {
 	.subscription-form-input > * {
 		text-align: center;
@@ -634,6 +643,7 @@ h5{
 		width: 100%;
 	}
 }
+
 
 /**
  * ========================================
