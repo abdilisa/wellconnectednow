@@ -336,6 +336,7 @@ h5{
 	width: 120px;
 	background-color: rgba(0,0,0,0.1);
 }
+
 .section-heading.text-center:after {
 	left: 50%;
 	margin-left: -60px;
@@ -343,6 +344,9 @@ h5{
 .section-dark .section-heading:after,
 .section-accent .section-heading:after {
 	background-color: rgba(255,255,255,0.2);
+}
+#second-cta.section-heading:after{
+	background-color: rgba(0,0,0,0);
 }
 /* SECTION COLOR */
 .section-gray {
@@ -2303,6 +2307,7 @@ h5{
 }
 .action-buttons {
 	display: inline-block;
+
 }
 
 @media ( max-width: 592px ) {
@@ -2323,10 +2328,13 @@ h5{
 
 .get-started-lg-btn {
 	width: 350px;
-	margin-left: 300px;
 	background-color: #ffcc00;
 	margin-top: 20px;
 	color:black;
+	left: 50%;
+	right: 50%;
+	text-align: center;
+	margin: auto;
 }
 
 .specialists-button {
@@ -2341,6 +2349,11 @@ h5{
 	margin-left: 300px;
 	margin-top: 35px;
 }
+
+@media ( max-width: 891px ) {
+	.get-started-lg-btn {
+		
+} }
 /**
  * ========================================
  * FOOTER
