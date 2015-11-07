@@ -389,9 +389,10 @@ h5{
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
+	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
 	padding-bottom: 20px;
 }
+
 #hero-coach {
 	background: url("../images/backgrounds/journaling.jpg") no-repeat center;
 	-webkit-background-size: cover;
@@ -1086,8 +1087,8 @@ h5{
 	height: 100%;
 }
 
-.hero-section.hero-halfscreen-sreen {
-	height: 40%;
+.hero-section.hero-halfscreen-screen {
+	height: 50%;
 }
 .hero-section .container {
 	position: relative;
