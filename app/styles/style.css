@@ -1916,7 +1916,7 @@ h5{
 	position: relative;
 	max-width: none;
 	min-height: 100%;
-	margin-left: 100%;
+	margin-left: 70%;
 }
 
 @media ( min-width: 1200px ) {
