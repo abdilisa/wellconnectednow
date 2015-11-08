@@ -202,6 +202,11 @@ iframe {
 	letter-spacing: 0.05em;
 	text-align: left;
 }
+.tab-content {
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 16px;
+}
+
 .sub-tab-title {
 	text-align: left;
 	margin-bottom: 0;
