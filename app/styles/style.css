@@ -1909,6 +1909,15 @@ h5{
 	max-width: 720px;
 	margin-left: auto;
 }
+#tabs {
+	padding-top: 10px;
+}
+.specialists-consult-button {
+	position: relative;
+	max-width: none;
+	min-height: 100%;
+	margin-left: 100%;
+}
 
 @media ( min-width: 1200px ) {
 	.team-member-text {
