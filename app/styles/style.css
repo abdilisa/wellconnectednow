@@ -508,6 +508,11 @@ h5{
 	overflow: hidden;
 }
 
+#refer-someone {
+	width: 100%;
+	height: 100%;
+}
+
 .email-form {
 	padding-top: 50px;
 }
