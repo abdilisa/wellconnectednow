@@ -1874,6 +1874,8 @@ h5{
 	position: relative;
 	margin-top: 20px;
 	padding-top: 20px;
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 14px;
 }
 .team-member-description:after {
 	content: "";
