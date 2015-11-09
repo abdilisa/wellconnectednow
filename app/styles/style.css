@@ -495,6 +495,15 @@ h5{
 		top: 0 !important;
 	}
 }
+@media ( max-width: 768px) {
+	#hero {
+		background: url("../images/backgrounds/greenroadway-smaller.jpeg") no-repeat center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+}
 
 /**
  * ========================================
