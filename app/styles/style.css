@@ -2580,6 +2580,10 @@ h5{
 	margin: 0 0 15px;
 }
 
+.faq-item-text{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
 /**
  * ========================================
  * PUBLICATIONS
