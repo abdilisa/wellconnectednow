@@ -1788,35 +1788,37 @@ h5{
 
 @media ( max-width: 1280px ) {
 	.carousel-indicators {
-		display: none;
+		display: inline-block;
 	}
 }
 
 @media ( max-width: 992px ) {
 	#carousel {
-		padding: 250px;
+		padding: 150px;
 	}
 	.carousel-inner{
 		height: 520px;
 	}
 	.carousel-text {
-		font-size: 17px;
+		font-size: 16px;
 	}
 	.carousel-caption {
 		top: 4em;
 	}
+	.carousel-author {
+		font-size: 13px;
+	}
 	.carousel-indicators {
-		display: none;
+		display: inline-block;
 	}
 }
 
 @media ( max-width: 450px ) {
 	#carousel {
-		padding: 220px 0;
+		padding: 180px;
 	}
 	.carousel-text {
-		font-size: 13px;
-		margin-bottom: 0px;
+		font-size: 16px;
 	}
 	.carousel-caption {
 		padding: 0px;
@@ -1826,7 +1828,7 @@ h5{
 		font-size: 13px;
 	}
 	.carousel-indicators {
-		display: none;
+		display: inline-block;
 	}
 
 }
