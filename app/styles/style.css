@@ -1747,6 +1747,7 @@ h5{
 
 #carousel {
 	padding: 200px 0px;
+	padding-bottom: 200px;
 }
 
 .carousel-inner{
@@ -1787,6 +1788,10 @@ h5{
 }
 
 @media ( max-width: 1280px ) {
+	#carousel {
+		padding: 150px;
+		padding-bottom: 240px;
+	}
 	.carousel-indicators {
 		display: inline-block;
 	}
@@ -1795,9 +1800,10 @@ h5{
 @media ( max-width: 992px ) {
 	#carousel {
 		padding: 150px;
+		padding-bottom: 200px;
 	}
 	.carousel-inner{
-		height: 520px;
+		height: 350px;
 	}
 	.carousel-text {
 		font-size: 16px;
@@ -1816,6 +1822,10 @@ h5{
 @media ( max-width: 450px ) {
 	#carousel {
 		padding: 180px;
+		padding-bottom: 200px;
+	}
+	.carousel-inner{
+		height: 400px;
 	}
 	.carousel-text {
 		font-size: 16px;
