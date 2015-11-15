@@ -1800,13 +1800,13 @@ h5{
 @media ( max-width: 992px ) {
 	#carousel {
 		padding: 150px;
-		padding-bottom: 200px;
+		padding-bottom: 250px;
 	}
 	.carousel-inner{
-		height: 350px;
+		height: 400px;
 	}
 	.carousel-text {
-		font-size: 16px;
+		font-size: 15px;
 	}
 	.carousel-caption {
 		top: 4em;
