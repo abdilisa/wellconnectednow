@@ -1792,6 +1792,10 @@ h5{
 		padding: 150px;
 		padding-bottom: 240px;
 	}
+	.carousel-caption{
+		text-shadow: none;
+  	top: 5em;
+}
 	.carousel-indicators {
 		display: inline-block;
 	}
@@ -1804,6 +1808,10 @@ h5{
 	}
 	.carousel-inner{
 		height: 400px;
+	}
+	.carousel-caption{
+		text-shadow: none;
+  	top: 4em;
 	}
 	.carousel-text {
 		font-size: 15px;
@@ -1823,6 +1831,10 @@ h5{
 	}
 	.carousel-inner{
 		height: 400px;
+	}
+	.carousel-caption{
+		text-shadow: none;
+  	top: 3em;
 	}
 	.carousel-text {
 		font-size: 15px;
