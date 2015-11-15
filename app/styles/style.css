@@ -1761,14 +1761,14 @@ h5{
 
 .carousel-caption{
 	text-shadow: none;
-  top: 6em;
+  top: 2em;
 }
 
 .carousel-text {
 	color: #fff;
 	font-family: "Merriweather", sans-serif;
   position: relative;
-  font-size: 17px;
+  font-size: 16px;
 	text-shadow: 0px;
 
 }
@@ -1777,11 +1777,11 @@ h5{
 	font-family: "Source Sans Pro";
 	/*text-transform: uppercase;*/
 	position: relative;
-	font-size: 17px;
+	font-size: 14px;
 	line-height: inherit;
 	/*font-style: italic;*/
 	/*font-weight: 600;*/
-	padding: 20px 10px 0px 10px;
+	padding: 20px 10px 10px 10px;
 	text-align: left;
 	text-shadow: 0px;
 
@@ -1808,14 +1808,11 @@ h5{
 	.carousel-text {
 		font-size: 15px;
 	}
-	.carousel-caption {
-		top: 4em;
-	}
 	.carousel-author {
-		font-size: 13px;
+		font-size: 14px;
 	}
 	.carousel-indicators {
-		display: inline-block;
+		display: none;
 	}
 }
 
@@ -1828,17 +1825,13 @@ h5{
 		height: 400px;
 	}
 	.carousel-text {
-		font-size: 16px;
-	}
-	.carousel-caption {
-		padding: 0px;
-		top: 2em;
+		font-size: 15px;
 	}
 	.carousel-author {
-		font-size: 13px;
+		font-size: 14px;
 	}
 	.carousel-indicators {
-		display: inline-block;
+		display: none;
 	}
 
 }
