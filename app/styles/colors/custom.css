@@ -62,6 +62,7 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
 	background-color: #ffcc00;
+	cursor: pointer;
 }
 .btn-primary .badge {
 	color: #ffcc00;
