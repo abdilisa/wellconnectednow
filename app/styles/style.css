@@ -14,7 +14,7 @@ html {
 }
 body {
 	height: 100%;
-	font-family: 'Merriweather', serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 14px;
 	line-height: 1.715;
 	background-color: #fff;
@@ -632,8 +632,6 @@ h5{
 }
 
 #main-cta-wrapper{
-	width: 730px;
-	margin-left: 220px;
 	margin-top: 10px;
 }
 
@@ -651,8 +649,10 @@ h5{
 #video-headline{
 	padding: 5px;
 }
-
-@media ( max-width: 767px ) {
+@media ( min-width: 991px ) {
+#main-cta-wrapper{
+	;
+}
 	.subscription-form-input > * {
 		text-align: center;
 	}
@@ -668,6 +668,9 @@ h5{
 	}
 }
 @media ( min-width: 768px ) {
+#main-cta-wrapper{
+	;
+}
 	.subscription-form-wrapper {
 		display: table;
 		width: 100%;
@@ -685,6 +688,25 @@ h5{
 		vertical-align: middle;
 		width: 100%;
 	}
+@media ( max-width: 767px ) {
+#main-cta-wrapper{
+	margin-bottom: 10px;
+}
+	.subscription-form-input > * {
+		text-align: center;
+	}
+	.subscription-form-submit {
+		display: block;
+		margin-top: 15px;
+	}
+	.subscription-form-submit > * {
+		width: 100%;
+	}
+	.wide-break {
+		display: none;
+	}
+}
+
 }
 
 
@@ -721,6 +743,7 @@ h5{
 	font-size: 15px;
 	line-height: 30px;
 	padding: 14px 20px;
+	margin-top: 10px;
 }
 /* BUTTON COLOR */
 .btn-default {
