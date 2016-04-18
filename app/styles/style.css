@@ -630,6 +630,13 @@ h5{
 	background-color: rgba(60,118,61,0.8);
 	border-color: #3c763d;
 }
+
+#main-cta-wrapper{
+	width: 730px;
+	margin-left: 230px;
+	margin-top: 10px;
+}
+
 .subscription-form {
 	padding-left: 15px;
 }
@@ -713,7 +720,7 @@ h5{
 .btn-lg {
 	font-size: 15px;
 	line-height: 30px;
-	padding: 14px 24px;
+	padding: 14px 20px;
 }
 /* BUTTON COLOR */
 .btn-default {

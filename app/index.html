@@ -81,29 +81,16 @@ $(function(){
 								</div>
 							</div>
 							<div class="row">
-										<div class="col-md-10 col-md-offset-1">
-										<!-- <p class="hero-tagline">Mentors, Coaches, and Therapists</p> --!>
-										<!-- SUBSCRIPTION FORM 
+										<div class="col-md-10 col-md-offset-1" id="main-cta-wrapper">
 										
-											<form action="modules/subscribe-mailchimp.php" method="post" id="subscription-form" class="subscription-form form-ajax-submit" role="form">
-												<div class="form-validation alert"></div>
-												<div class="form-group subscription-form-wrapper">
-													<span class="subscription-form-input">
-														<input type="email" name="email" id="subscribe-form-email" class="subscribe-form-email form-control form-control-lg" placeholder="Enter email address" autocomplete="off">
-													</span>
-													<span class="subscription-form-submit">
-														<button class="btn btn-primary btn-lg" id="subscribe-form-submit" data-loading-text="Email Confirmation Sent">Request Info</button>
-													</span>
-												</div>
-											</form>-->
 											<form action="/api/subscription" method="post" id="subscription-form" class="subscription-form form-ajax-submit" role="form">
 		                    <div class="form-validation alert"></div>
 		                    <div class="form-group subscription-form-wrapper">
 		                      <span class="subscription-form-input">
-		                        <input type="email" name="email" class="subscribe-form-email form-control form-control-lg" placeholder="Enter email address" autocomplete="off">
+		                        <input type="email" name="email" class="subscribe-form-email form-control form-control-lg" placeholder="Enter your email address" autocomplete="on">
 		                      </span>
 		                      <span class="subscription-form-submit">
-		                        <button class="btn btn-primary btn-lg" data-loading-text="Please Check Your Email">Learn More</button>
+		                        <button class="btn btn-primary btn-lg" data-loading-text="Please Check Your Email">Get Priceless Life & Career Satisfaction Tips</button>
 		                      </span>
 		                    </div>
 		                  </form>
