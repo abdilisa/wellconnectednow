@@ -61,7 +61,7 @@ body {
 }
 
 a {
-  color:#F56A6A;
+  color:#FFF600;
   text-decoration:none
 }
 
@@ -1070,7 +1070,7 @@ ul.children li, ul.sub-menu li {
   background-image: none;
   border: 1px solid transparent;
   border-radius: 4px;
-  background: #f56a6a;
+  background: #FFF600;
   color: white;
   outline: 0;
   text-decoration: none;
@@ -1142,7 +1142,7 @@ ul.children li, ul.sub-menu li {
 }
 
 .widget a:hover {
-  color: #f56a6a;
+  color: #FFF600;
 }
 
 .widget-title {
@@ -1325,7 +1325,7 @@ ul.children li, ul.sub-menu li {
 }
 
 .btn-search {
-  background-color: #F56A6A;
+  background-color: #FFF600;
   border: 0 none !important;
   color: #fff !important;
   float: right;
@@ -1418,7 +1418,7 @@ ul.children li, ul.sub-menu li {
 }
 
 .widget_newsletter input[type="submit"] {
-  background: none repeat scroll 0 0 #f56a6a;
+  background: none repeat scroll 0 0 #FFF600;
   border-radius: 0;
   color: #fff;
   font-size: 14px;
