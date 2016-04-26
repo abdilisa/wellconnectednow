@@ -582,6 +582,7 @@ ul.children li, ul.sub-menu li {
 
 .blog-logo img {
   max-height: 100px;
+  display: none;
 }
 
 /* ------------------------------------------- */
