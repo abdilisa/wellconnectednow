@@ -362,7 +362,7 @@ button:hover, .btn:hover {
   padding-right:40px;
   position:relative;
   text-decoration:none;
-  text-transform: uppercase
+  text-transform: none;
 }
 
 .footer a:after {
@@ -373,14 +373,14 @@ button:hover, .btn:hover {
   position:absolute;
   right:0;
   top:50%;
-  width:1px
+  width:1px;
 }
 
 .footer span {
   color:#b1b1b1;
   font-size:12px;
   font-weight:400;
-  margin-left:40px
+  margin-left:40px;
 }
 
 
@@ -643,7 +643,7 @@ ul.children li, ul.sub-menu li {
   letter-spacing: 1px;
   line-height: 1.5em;
   margin: 20px auto 5px;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .page-title p {
@@ -778,7 +778,7 @@ ul.children li, ul.sub-menu li {
   letter-spacing: 1px;
   line-height: 1.5em;
   margin: 20px auto 5px;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .single-blog-header .header-content h2, .single-page-header .header-content h2 {
@@ -1152,7 +1152,7 @@ ul.children li, ul.sub-menu li {
   font-weight: 700;
   letter-spacing: 1px;
   margin-bottom: 30px;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 
@@ -1530,7 +1530,7 @@ ul.children li, ul.sub-menu li {
   padding-bottom: 50px;
   position: relative;
   text-align: left;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .single-blog-header .blog-title, .single-page-header .blog-title {
@@ -1582,7 +1582,7 @@ ul.children li, ul.sub-menu li {
   font-weight: bold;
   margin-bottom: 5px;
   margin-top: 10px;
-  text-transform: uppercase;
+  text-transform: none;
   text-align: center;
 }
 
