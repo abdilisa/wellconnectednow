@@ -1,38 +1,7 @@
 <aside>
     <div class="col-md-4 col-md-pull-8 sidebar-container">
-
-        <div class="widget widget_text">
-            <h1 class="widget-title">Let's Talk About Anything</h1>
-            <img src="{{asset "img/bg-3.jpg"}}">
-            <p>Well Connected Now (WCN)'s mission is to rebrand mental health, and make trustworthy support more accessible, especially for professionals and entrepreneurs. If you're searching for more life or career satisfaction, please read on for more specially curated content by WCN Founder/CEO Lisa Abdilova and our community. </p>
-        </div><!-- Single sidebar panel -->
-
-
-        <div class="widget widget_tag_cloud">
-            <div class="panel-body">
-                <h1 class="widget-title">Tags</h1>
-                <div class="tagcloud">
-                    {{#foreach posts}}
-                        {{#if tags}}
-                            {{tags separator=""}}
-                        {{/if}}
-                    {{/foreach}}
-                </div>
-            </div>
-        </div><!-- Single sidebar panel -->
-
-        <div class="widget widget_social">
-            <div class="panel-body">
-                <h2 class="widget-title">Follow Our Specially Curated Content</h2>
-                <div class="blog-post">
-                    <ul>
-                        <li><a href="https://facebook.com/wellconnectednow"><i class="fa fa-facebook fa-2x fa-fw"></i></a></li>
-                        <li><a href="https://twitter.com/WellConnectdNow"><i class="fa fa-twitter fa-2x fa-fw"></i></a></li>
-                        <li><a href="https://pinterest.com/wellconnectdnow/"><i class="fa fa-pinterest fa-2x fa-fw"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div><!-- Single sidebar panel -->
+       
+       <!-- Single sidebar panel -->
 
         <div class="widget widget_newsletter">
             <div class="panel-body">
@@ -65,14 +34,53 @@
                 </div><!-- Newsletter container -->
                 </div>
             </div>
-        </div><!-- Single sidebar panel -->
+        </div> <!-- Single sidebar panel -->
+        <div class="widget widget_tag_cloud">
+            <div class="panel-body">
+                <h1 class="widget-title">Tags</h1>
+                <div class="tagcloud">
+                    {{#foreach posts}}
+                        {{#if tags}}
+                            {{tags separator=""}}
+                        {{/if}}
+                    {{/foreach}}
+                </div>
+            </div>
+        </div> <!-- Single sidebar panel -->
 
+        <div class="widget widget_text">
+            <h1 class="widget-title">Let's Talk About Anything</h1>
+            <img src="{{asset "img/bg-3.jpg"}}">
+            <p>Well Connected Now (WCN)'s mission is to rebrand mental health, and make trustworthy support more accessible, especially for professionals and entrepreneurs. If you're searching for more life or career satisfaction, please read on for more specially curated content by WCN Founder/CEO Lisa Abdilova and our community. </p>
+        </div><!-- Single sidebar panel -->
 
         <div class="widget widget_facebook">
             <div class="panel-body">
                 <h2 class="widget-title">Like us on Facebook</h2>
                 <div class="blog-post">
                    <div class="fb-page" data-href="https://www.facebook.com/wellconnectednow" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"></div>
+                </div>
+            </div>
+        </div><!-- Single sidebar panel -->
+  <div class="widget widget_social">
+            <div class="panel-body">
+                <h2 class="widget-title">Follow Our Specially Curated Content</h2>
+                <div class="blog-post">
+                    <ul>
+                        <li><a href="https://facebook.com/wellconnectednow"><i class="fa fa-facebook fa-2x fa-fw"></i></a></li>
+                        <li><a href="https://twitter.com/WellConnectdNow"><i class="fa fa-twitter fa-2x fa-fw"></i></a></li>
+                        <li><a href="https://pinterest.com/wellconnectdnow/"><i class="fa fa-pinterest fa-2x fa-fw"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div><!-- Single sidebar panel -->
+        <!-- Single sidebar panel -->
+
+        <div class="widget widget_instagram">
+            <div class="panel-body">
+                <h2 class="widget-title">Instagram</h2>
+                <div class="blog-post">
+                    <div id="instafeed"></div>
                 </div>
             </div>
         </div><!-- Single sidebar panel -->
