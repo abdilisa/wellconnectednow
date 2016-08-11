@@ -16,7 +16,7 @@ var unverifiedSubscriptions = new EmailSubscriptionUtility(googleCreds);
 
 router.post('/', function(req, res, next) {
   mc.lists.subscribe({
-      id: 'd24ee8d994',
+      id: 'd34d0ad559',
       email: {
         email: req.body.email
       }
