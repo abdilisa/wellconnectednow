@@ -4,9 +4,6 @@
 {{! The big featured header }}
 <header class="blog-header {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
     <div class="header-inner">
-        <a href="{{@blog.url}}" class="btn back-to-home">
-        <img src="/content/images/2016/04/WCNmct-200px-1.png" alt="Well Connected Now">
-        </a>
             <div class="header-content">
                 {{#if @blog.logo}}
                     <a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>

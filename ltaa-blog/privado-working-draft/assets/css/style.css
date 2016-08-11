@@ -691,7 +691,7 @@ ul.children li, ul.sub-menu li {
 
 .blog-header {
   background: url("../img/blog-bg.jpg") no-repeat fixed center center / cover  rgba(0, 0, 0, 0);
-  height: 100vh;
+  height: 55vh;
   position: relative;
   width: 100%;
 }
@@ -723,6 +723,7 @@ ul.children li, ul.sub-menu li {
 
 .blog-header h2{
   font-size: 24px;
+  color: white;
 }
 
 .back-to-home {
@@ -759,6 +760,7 @@ ul.children li, ul.sub-menu li {
   line-height: 1.2;
   opacity: 0.6;
   padding: 0.5em 2em;
+  color: white;
 }
 
 .header-content {
