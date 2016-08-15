@@ -8,4 +8,13 @@ node.zip
 bower_components
 npm-debug.log
 
+<<<<<<< HEAD
+=======
+ltaa-blog/ignore/privado-working-draft 3.zip
+
+ltaa-blog/ignore/privado-working-draft-old.zip
+
+>>>>>>> ltaa-blog-test
+*.zip
+
 *.zip

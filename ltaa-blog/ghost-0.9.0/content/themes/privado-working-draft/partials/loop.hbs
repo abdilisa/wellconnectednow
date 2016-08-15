@@ -1,0 +1,48 @@
+<div class="col-md-8 col-md-push-4 blog-list-container">
+
+{{! This is the post loop - each post will be output using this markup }}
+
+{{! Show featured posts first }}
+
+{{#foreach posts}}
+{{#if featured}}
+<article class="{{post_class}}">
+    <header class="single-blog-meta">
+        <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}"><i class="fa fa-clock-o fa-fw"></i>{{date format="DD MMMM YYYY"}}</time>
+        {{#if tags}}
+        <span class="tags"><i class="fa fa-tags fa-fw"></i> {{tags}}</span>
+        {{/if}}
+    </header>
+    <h2 class="blog-title"><a href="{{url}}">{{{title}}}</a></h2>
+    <section class="post-content">
+        <p>{{excerpt words="100"}}</p>
+    </section>
+    <a href="{{url}}" class="btn btn-read-more">Continue Reading</a>
+</article>
+{{/if}}
+{{/foreach}}
+
+{{! Show other posts }}
+
+{{#foreach posts}}
+{{#unless featured}}
+<article class="{{post_class}}">
+    <header class="single-blog-meta">
+        <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}"><i class="fa fa-clock-o fa-fw"></i>{{date format="DD MMMM YYYY"}}</time>
+        {{#if tags}}
+        <span class="tags"><i class="fa fa-tags fa-fw"></i> {{tags}}</span>
+        {{/if}}
+    </header>
+    <h2 class="blog-title"><a href="{{url}}">{{{title}}}</a></h2>
+    <section class="post-content">
+        <p>{{excerpt words="100"}}</p>
+    </section>
+    <a href="{{url}}" class="btn btn-read-more">Continue Reading</a>
+</article>
+{{/unless}}
+{{/foreach}}
+
+{{! Previous/next page links - displayed on every page }}
+{{pagination}}
+
+</div><!-- Blog List end -->
