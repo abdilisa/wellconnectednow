@@ -7,3 +7,9 @@ node.zip
 .DS_Store
 bower_components
 npm-debug.log
+
+ltaa-blog/ignore/privado-working-draft 3.zip
+
+ltaa-blog/ignore/privado-working-draft-old.zip
+
+*.zip
