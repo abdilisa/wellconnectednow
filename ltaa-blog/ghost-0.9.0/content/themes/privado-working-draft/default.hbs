@@ -55,7 +55,7 @@
     <!-- Compressing Images -->
     
     <script>
-        
+
         //Grab the width of the screen /
         { var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 
@@ -80,12 +80,6 @@
     </script>
 
 <!-- Compressing Images End -->
-
-        {{! The tag below includes the footer - partials/footer.hbs }}
-    {{> "footer"}}
-
-    {{! Ghost outputs important scripts and data with this tag }}
-    {{ghost_foot}}
 
     {{! The main JavaScript file for Casper }}
     <script type="text/javascript" src="{{asset "js/jquery-2.1.1.js"}}"></script>
@@ -117,6 +111,10 @@
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
     </script>
-
 </body>
+{{! The tag below includes the footer - partials/footer.hbs }}
+    {{> "footer"}}
+
+    {{! Ghost outputs important scripts and data with this tag }}
+    {{ghost_foot}}
 </html>
