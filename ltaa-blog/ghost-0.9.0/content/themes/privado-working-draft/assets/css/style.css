@@ -61,7 +61,7 @@ body {
 }
 
 a {
-  color:#FFF600;
+  color:#00a65c;
   text-decoration:none
 }
 
@@ -278,16 +278,16 @@ input, textarea{
 }
 
 button, .btn {
-  background: none repeat scroll 0 0 #f2f2f2;
-  border: 1px solid #3f3f46;
+  background: none repeat scroll 0 0 #fff600;
+  border: 1px solid #fff600;
   border-radius: 0;
-  color: #3f3f46;
-  font-size: 13px;
+  color: #fff600;
+  font-size: 16px;
   font-weight: bold;
   letter-spacing: 1px;
-  margin: 10px auto;
-  padding: 10px 20px;
-  text-transform: uppercase;
+  margin: 10px 10px;
+  padding: 10px 10px;
+  text-transform: none;
   -webkit-transition: all .2s;
   -moz-transition: all .2s;
   -ms-transition: all .2s;
