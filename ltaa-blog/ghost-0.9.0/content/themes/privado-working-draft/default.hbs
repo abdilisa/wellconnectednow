@@ -29,28 +29,60 @@
 
   ga('create', 'UA-59676347-1', 'auto');
   ga('send', 'pageview');
+    </script>
+
+    </head>
 
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
-</head>
-<body class="{{body_class}} nav-closed">
-
-    <!-- Navigation menu -->
     {{> "header"}}
     
-    </div><!-- Navigation menu end -->
+    <!-- Navigation menu -->
+    <body class="{{body_class}} nav-closed">
+    </div>
+    <!-- Navigation menu end -->
 
 
     <!-- Main Content-->
     <main id="content" class="blog-container" role="main">
 
         {{! Everything else gets inserted here }}
-        {{{body}}}
+        {{{body}}}  
+
+    </main> 
+    <!-- Main Content end-->
+
+    <!-- Compressing Images -->
+    
+    <script>
+        
+        //Grab the width of the screen /
+        { var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+
+
+        //if the width is less than 550px, append '-small' to the end of the source /
+        } if (width < 550) {
+               var images = document.getElementsByTagName("img");
+               for(var i = 0; i < images.length; i++) {
+                   var imageSource = images[i].getAttribute('data-img');
+                   imageSource = imageSource.slice(0, -4);
+                    imageSource = imageSource + "-small.jpg";
+                    images[i].src = imageSource;
+                } 
+        } else {
+            //if the width is greater than 550px, then just transfer the data-img as it is to the source /
+            var images = document.getElementsByTagName("img");
+            for(var i = 0; i < images.length; i++) {
+                var imageSource = images[i].getAttribute('data-img');
+                images[i].src = imageSource;
+            }
+        }
+    </script>
+
+<!-- Compressing Images End -->
 
         {{! The tag below includes the footer - partials/footer.hbs }}
-        {{> "footer"}}
-
-    </main><!-- Main Content end-->
+    {{> "footer"}}
 
     {{! Ghost outputs important scripts and data with this tag }}
     {{ghost_foot}}
