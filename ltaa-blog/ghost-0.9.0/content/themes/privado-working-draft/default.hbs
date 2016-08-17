@@ -50,7 +50,14 @@
         {{{body}}}  
 
     </main> 
+    </body>
     <!-- Main Content end-->
+
+{{! The tag below includes the footer - partials/footer.hbs }}
+    {{> "footer"}}
+
+    {{! Ghost outputs important scripts and data with this tag }}
+    {{ghost_foot}}
 
     <!-- Compressing Images -->
     
@@ -111,10 +118,5 @@
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
     </script>
-</body>
-{{! The tag below includes the footer - partials/footer.hbs }}
-    {{> "footer"}}
 
-    {{! Ghost outputs important scripts and data with this tag }}
-    {{ghost_foot}}
 </html>
