@@ -285,8 +285,8 @@ button, .btn {
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 1px;
-  margin: 10px 10px;
-  padding: 10px 10px;
+  margin: 10px 20px;
+  padding: 10px 50px;
   text-transform: none;
   -webkit-transition: all .2s;
   -moz-transition: all .2s;
@@ -356,9 +356,9 @@ button:hover, .btn:hover {
 }
 
 .footer a {
-  color:#3f3f46;
-  font-size:13px;
-  font-weight:700;
+  color:#fff600;
+  font-size:14px;
+  font-weight:300;
   padding-right:40px;
   position:relative;
   text-decoration:none;
@@ -366,7 +366,7 @@ button:hover, .btn:hover {
 }
 
 .footer a:after {
-  background:none repeat scroll 0 0 #3f3f46;
+  background:none repeat scroll 0 0 #fff600;
   content:"";
   height:10px;
   margin:-5px 0 0;
@@ -378,8 +378,8 @@ button:hover, .btn:hover {
 
 .footer span {
   color:#b1b1b1;
-  font-size:12px;
-  font-weight:400;
+  font-size:14px;
+  font-weight:300;
   margin-left:40px;
 }
 
@@ -1025,7 +1025,7 @@ ul.children li, ul.sub-menu li {
   right: 20px;
   width: 28px;
   height: 28px;
-  background: #f54128;
+  background: #0089FF;
   border-radius: 50%;
   text-align: center;
   line-height: 30px;
@@ -1411,12 +1411,12 @@ ul.children li, ul.sub-menu li {
 /* Newsletter Widget */
 
 .widget_newsletter p {
-  margin-bottom: 10px; 
+  margin-bottom: 5px; 
 }
 
 .widget_newsletter input {
-  margin: 8px auto;
-  padding: 8px 10px;
+  margin: 3px auto;
+  padding: 8px 5px;
   width: 100%;
 }
 
@@ -1424,10 +1424,10 @@ ul.children li, ul.sub-menu li {
   background: none repeat scroll 0 0 #FFF600;
   border-radius: 0;
   color: #000;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
   letter-spacing: 1px;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 /* Instagram Widget */
@@ -1489,7 +1489,7 @@ ul.children li, ul.sub-menu li {
 }
 
 .meta-date i, .meta-comments i, .meta-cat i{
-  color: #F54128;
+  color: #0089FF;
   font-size: 20px;
 }
 
@@ -1784,7 +1784,7 @@ ul.children li, ul.sub-menu li {
 
 
 .post-tags ul li a {
-  color: #f54128;
+  color: #0089FF;
   font-family: "Merriweather";
   font-size: 13px;
   font-weight: lighter;
