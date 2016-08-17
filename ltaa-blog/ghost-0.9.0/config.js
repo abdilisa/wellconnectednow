@@ -10,7 +10,8 @@ config = {
     // ### Production
     // When running Ghost in the wild, use the production environment.
     // Configure your URL and mail settings here
-    production: {
+
+production: {
         url: 'https://blog.wellconnectednow.com',
         mail: {
               transport: 'SMTP',
@@ -31,8 +32,10 @@ config = {
         },
 
         server: {
-            host: '127.0.0.1',
-            port: '2368'
+            // Host to be passed to node's `net.Server#listen()`
+        host: 'localhost',
+            // Port to be passed to node's `net.Server#listen()`, for iisnode set this to `process.env.PORT`
+        port: '8000'
         }
     },
 
@@ -40,7 +43,7 @@ config = {
     development: {
         // The url to use when providing links to the site, E.g. in RSS and email.
         // Change this to your Ghost blog's published URL.
-        url: 'http://localhost:2368',
+        url: 'http://localhost:8000',
 
         // Example refferer policy
         // Visit https://www.w3.org/TR/referrer-policy/ for instructions
@@ -72,7 +75,7 @@ config = {
             // Host to be passed to node's `net.Server#listen()`
             host: '127.0.0.1',
             // Port to be passed to node's `net.Server#listen()`, for iisnode set this to `process.env.PORT`
-            port: '2368'
+            port: '8000'
         },
         // #### Paths
         // Specify where your content directory lives
