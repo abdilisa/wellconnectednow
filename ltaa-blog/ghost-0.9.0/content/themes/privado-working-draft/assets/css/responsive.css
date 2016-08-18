@@ -178,9 +178,8 @@ ul.social-share-links li {
 
 .back-to-home {
   position: absolute;
-  top: 40px;
-  left: 10px;
-  width: 100%;
+  padding: 10px 10px;
+  width: 30%;
   margin-top: 40px;
 }
 
@@ -473,7 +472,8 @@ ul.social-share-links li {
 }
 
 .back-to-home {
-  width: 100%;
+  padding: 10px 10px;
+  width: 30%;
   margin-top: 40px;
 }
 

@@ -661,9 +661,9 @@ ul.children li, ul.sub-menu li {
   background: url("../img/icons/icon-arrow-desktop.svg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
   bottom: 50px;
   display: block;
-  height: 44px;
+  height: 30px;
   left: 50%;
-  margin: 0 auto;
+  margin: 1px;
   position: absolute;
   text-align: center;
   width: 44px;
