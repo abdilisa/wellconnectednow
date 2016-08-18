@@ -179,8 +179,9 @@ ul.social-share-links li {
 .back-to-home {
   position: absolute;
   top: 40px;
-  left: calc(50% - 85px);
-  width: 170px;
+  left: 10px;
+  width: 100%;
+  margin-top: 40px;
 }
 
 .single-blog-header {
@@ -466,9 +467,14 @@ ul.social-share-links li {
   width: 80%;
 }
 
-.page-content .back-to-home {
+.page-content {
   width: 100%;
   margin: 10px auto;
+}
+
+.back-to-home {
+  width: 100%;
+  margin-top: 40px;
 }
 
 
