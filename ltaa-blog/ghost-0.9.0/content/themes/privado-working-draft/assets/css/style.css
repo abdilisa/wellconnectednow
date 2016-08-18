@@ -709,14 +709,14 @@ ul.children li, ul.sub-menu li {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 500px;
+  height: 300px;
   position: relative;
   width: 100%;
 }
 
 .single-page-header {
   background-color: #28292e;
-  height: 275px;
+  height: 300px;
   position: relative;
   width: 100%;
 }
@@ -740,6 +740,7 @@ ul.children li, ul.sub-menu li {
   text-transform: uppercase;
   top: 40px;
   z-index: 99;
+  margin-top: 100px;
 }
 
 .back-to-home:hover {
