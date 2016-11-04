@@ -19,7 +19,19 @@
   "main": "./core/index",
   "scripts": {
     "preinstall": "node core/server/utils/npm/preinstall.js",
+<<<<<<< HEAD
     "start": "node index",
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    "start": "node index.js",
+=======
+    "start": "node index",
+>>>>>>> yeoman-test
+=======
+    "start": "node index",
+>>>>>>> master
+>>>>>>> ltaa-blog-test
     "test": "grunt validate --verbose"
   },
   "engines": {

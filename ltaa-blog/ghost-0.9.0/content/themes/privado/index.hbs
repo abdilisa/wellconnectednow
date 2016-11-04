@@ -1,0 +1,32 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+{{! The big featured header }}
+<header class="blog-header {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
+    <div class="header-inner">
+        <a href="{{@blog.url}}" class="btn back-to-home"><i class="fa fa-home fa-fw"></i>Home</a>
+            <div class="header-content">
+                {{#if @blog.logo}}
+                    <a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>
+                {{else}}
+                    <span><i class="fa fa-pencil fa-3x"></i></span>
+                {{/if}}
+                <h2>{{@blog.title}}</h2>
+                <p class="blog-desc">{{@blog.description}}</p>
+            </div>
+
+        <a href="#blog-list" class="scroll-down"></a>
+    </div>
+</header>
+
+{{! The main content area on the homepage }}
+ 
+<section id="blog-list">
+
+    {{! The tag below includes the post loop - partials/loop.hbs }}
+    {{> "loop"}}
+
+</section>
+
+    {{! The tag below includes the sidebar - partials/sidebar.hbs }}
+    {{> "sidebar"}}

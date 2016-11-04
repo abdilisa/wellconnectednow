@@ -4,19 +4,34 @@ dist
 dist.zip
 node.zip
 .tmp
-.DS_Store
 bower_components
 npm-debug.log
 
 <<<<<<< HEAD
 =======
-ltaa-blog/ignore/privado-working-draft 3.zip
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> yeoman-test
+=======
+>>>>>>> master
 
-ltaa-blog/ignore/privado-working-draft-old.zip
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+*.zip
+
+
+=======
+=======
+>>>>>>> master
 >>>>>>> ltaa-blog-test
 *.zip
 
 *.zip
 
 *.zip
+<<<<<<< HEAD
+>>>>>>> yeoman-test
+=======
+>>>>>>> master

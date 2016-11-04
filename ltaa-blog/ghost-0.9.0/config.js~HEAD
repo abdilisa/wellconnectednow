@@ -10,17 +10,8 @@ config = {
     // ### Production
     // When running Ghost in the wild, use the production environment.
     // Configure your URL and mail settings here
-<<<<<<< HEAD
-<<<<<<< HEAD
-    production: {
-=======
 
 production: {
->>>>>>> yeoman-test
-=======
-
-production: {
->>>>>>> master
         url: 'https://blog.wellconnectednow.com',
         mail: {
               transport: 'SMTP',

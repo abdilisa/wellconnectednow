@@ -1,0 +1,32 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+{{! Everything inside the #post tags pulls data from the post }}
+{{#post}}
+
+<header class="single-page-header {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
+    <div class="header-inner">
+        <a href="{{@blog.url}}" class="btn back-to-home"><i class="fa fa-arrow-left fa-fw"></i>Back to Home</a>
+        <div class="header-content">
+            <h1 class="blog-title container">{{title}}</h1>
+        </div>
+    </div>
+</header>
+
+
+<section>
+    <div class="container single-page-container">
+        <article class="{{post_class}}">
+
+            <section class="post-content">
+                {{content}}
+            </section> <!-- post content-->
+        </article><!--Single blog--> 
+    </div><!-- Blog List end -->
+</section>
+ <!-- #Blog List end-->
+
+{{/post}}
+
