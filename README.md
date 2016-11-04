@@ -1,32 +1,41 @@
-# php-getting-started
+# wellconnectednow
 
-A barebones PHP app that makes use of the [Silex](http://silex.sensiolabs.org/) web framework, which can easily be deployed to Heroku.
+### Getting a local environment set up
 
-This application supports the [Getting Started with PHP on Heroku](https://devcenter.heroku.com/articles/getting-started-with-php) article - check it out.
+`npm install -g yo bower grunt-cli`
+This will install the necessary command libraries
 
-## Running Locally
+`npm install && bower install`
+That will install the local libraries specific to the project
 
-Make sure you have PHP, Apache and Composer installed.  Also, install the [Heroku Toolbelt](https://toolbelt.heroku.com/).
+You'll then copy the credentials file that has been shared with you and place in your user's home directory.
 
-```sh
-$ git clone git@github.com:heroku/php-getting-started.git # or clone your own fork
-$ cd php-getting-started
-$ composer update
-$ foreman start web
-```
+`mkdir ~/.wellconnectednow && mv shared_credentials_file.json ~/.wellconnectednow/dev.json`
 
-Your app should now be running on [localhost:5000](http://localhost:5000/).
+### Developing locally
 
-## Deploying to Heroku
+Within the project directory, run the command
 
-```
-$ heroku create
-$ git push heroku master
-$ heroku open
-```
+`grunt server`
 
-## Documentation
+to run the project in dev mode. Any change you make to the source code will be automatically recompiled and displayed within the browser.
 
-For more information about using PHP on Heroku, see these Dev Center articles:
+In order to run the api server locally, run the command
 
-- [PHP on Heroku](https://devcenter.heroku.com/categories/php)
+`grunt api`
+
+This will launch a node server that listens on port 3000. Any changes to the source will automatically refresh the server.
+
+### Deploying changes
+
+To deploy front end changes to AWS
+
+`grunt deployFrontEnd`
+
+To deploy the api to AWS
+
+`grunt deployServer`
+
+
+
+

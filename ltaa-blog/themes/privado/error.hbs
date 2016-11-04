@@ -1,0 +1,24 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+
+<div class="error-container {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
+	<a class="btn back-to-home" href="{{@blog.url}}"><i class="fa fa-home fa-fw"></i>Back to Home</a>
+    <section class="error-404 not-found text-center">
+        <header class="error-header">
+            <div class="error-image">
+                <img alt="404" src="{{asset "img/anonymous.png"}}">
+            </div>
+            <h1 class="error-title"><p>Oops! That page can’t be found.</p> </h1>
+        </header>
+        <!-- .page-header -->
+
+        <div class="page-content">
+            <p>It looks like nothing was found at this location.</p>
+        </div>
+
+    </section>
+    <!-- .error-404 -->
+</div>

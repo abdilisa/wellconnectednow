@@ -1,0 +1,29 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+<header class="single-page-header {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
+    <div class="header-inner">
+        <a href="{{@blog.url}}" class="btn back-to-home"><i class="fa fa-arrow-left fa-fw"></i>Back to Blog</a>
+        <div class="header-content">
+            <h1 class="blog-title container">{{tag.name}}</h1>
+            <p class="blog-desc">
+                {{#if tag.description}}
+                    {{tag.description}}
+                {{else}}
+                    A {{pagination.total}}-post collection
+                {{/if}}
+            </p>
+        </div>
+    </div>
+</header>
+
+{{! The main content area on the homepage }}
+<section id="blog-list">
+
+    {{! The tag below includes the post loop - partials/loop.hbs }}
+    {{> "loop"}}
+
+</section>
+
+    {{! The tag below includes the sidebar - partials/sidebar.hbs }}
+    {{> "sidebar"}}
