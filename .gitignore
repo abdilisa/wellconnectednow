@@ -7,11 +7,7 @@ node.zip
 .DS_Store
 bower_components
 npm-debug.log
-
-ltaa-blog/ignore/privado-working-draft 3.zip
-
-ltaa-blog/ignore/privado-working-draft-old.zip
-
 *.zip
-
-ltaa-blog/ghost-0.9.0/content/themes/lets-talk-about-anything.ghost.2016-08-17.json
+*.svg
+*.jpg
+*.png

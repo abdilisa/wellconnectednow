@@ -40,7 +40,8 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test",
+    "start": "node index.js"
   },
   "dependencies": {
     "eyes": "^0.1.8",
