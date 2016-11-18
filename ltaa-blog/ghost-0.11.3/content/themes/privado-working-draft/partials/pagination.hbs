@@ -1,0 +1,13 @@
+<!-- Pagination -->
+<nav class="pagination-container">
+
+    <ul class="pagination" role="pagination">
+    {{#if prev}}
+       <li><a class="prev" href="{{page_url prev}}"><i class="fa fa-angle-left"></i></a></li> 
+    {{/if}}
+    <li class="active"><span class="page-number">Page {{page}} of {{pages}}</span></li>
+    {{#if next}}
+        <li><a class="next" href="{{page_url next}}"><i class="fa fa-angle-right"></i></a></li>
+    {{/if}}
+    </ul>
+</nav><!-- Pagination end -->
