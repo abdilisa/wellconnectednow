@@ -73,7 +73,7 @@ a:hover, a:active, a:focus {
 
 
 h1,h2{
-  font-family:"Lobster Two", cursive;
+  font-family:"Lobster Two", sans-serif;
 }
 
 h3,h4,h5,h6 {
@@ -652,7 +652,7 @@ ul.children li, ul.sub-menu li {
 
 .page-title p {
   font-size:1.4rem;
-  font-family:"Lobster Two",cursive;
+  font-family:"Lobster Two",sans-serif;
   font-style:italic;
   line-height:1.2;
   padding:.5em 2em;
@@ -779,7 +779,7 @@ ul.children li, ul.sub-menu li {
 }
 
 .header-content h2 {
-  font-family: "Lobster Two",cursive;
+  font-family: "Lobster Two",sans-serif;
   font-size: 3em;
   font-weight: 700;
   letter-spacing: 1px;
@@ -1529,7 +1529,7 @@ ul.children li, ul.sub-menu li {
 
 .blog-title {
   color: #202021;
-  font-family: "Lobster Two",cursive;
+  font-family: "Lobster Two",sans-serif;
   font-size: 42px;
   font-weight: 700;
   line-height: 48px;
