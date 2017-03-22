@@ -1,0 +1,174 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+{{! Everything inside the #post tags pulls data from the post }}
+{{#post}}
+
+<header class="single-blog-header {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
+    <div class="header-inner">
+        <a href="{{@blog.url}}" class="btn back-to-home"><i class="fa fa-arrow-left fa-fw"></i>Back to Blog</a>
+        <div class="header-content">
+            <h1 class="blog-title container">{{title}}</h1>
+
+            {{#author}}
+            <div class="blog-author">
+                <div class="media author-avatar">
+                    {{#if image}}
+                    <figure class="author-image">
+                        <img src="{{image}}" alt="">
+                    </figure>
+                    {{/if}}
+                    <div class="media-body">
+                        <h4 class="media-heading">{{name}}</h4>
+                    </div>
+                </div>
+            </div>
+            {{/author}}
+        </div>
+    </div>
+</header>
+
+<div class="single-blog-meta">
+    <div class="col-sm-4 meta-date">
+        <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}"><i class="fa fa-clock-o fa-fw"></i> {{date format="DD MMMM YYYY"}}</time>
+    </div>
+    <div class="col-sm-4 meta-comments">
+        <span><i class="fa fa-comments fa-fw"></i><a class="scroll-to-comments" href="{{url}}#disqus_thread">Comments</a></span>
+    </div>
+    <div class="col-sm-4 meta-cat">
+        <span><i class="fa fa-tag fa-fw"></i> 
+        {{#if tags}}
+            {{tags}}
+        {{else}}
+            Uncategorized
+        {{/if}}
+        </span>
+    </div>
+</div>
+
+
+<section>
+    <div class="container single-blog-container">
+        <article class="{{post_class}}">
+
+            <section class="post-content">
+                {{content}}
+            </section> <!-- post content-->
+
+            <div class="col-md-12 post-tags">
+                <ul>
+                    {{#foreach tags}}
+                    <li><a href="{{url}}">{{name}}</a></li>
+                    {{/foreach}}
+                </ul>
+            </div><!-- Post Tags-->
+
+
+        {{! Everything inside the #author tags pulls data from the author }}
+        {{#author}}
+            <!-- Post author -->
+            <div class="col-md-12 post-author">
+                <div class="panel-body ">
+                    <div class="media author-avatar">
+                        <div class="pull-left avatar-container">
+                            {{#if image}}
+                            <figure class="author-image">
+                                <img src="{{image}}" alt="">
+                            </figure>
+                            {{/if}}
+                        </div>
+
+                        <div class="media-body">
+                            <span>Author</span>
+                            <h4 class="media-heading">
+                                <a href="{{url}}">{{name}}</a> 
+                            </h4>
+                            {{#if bio}}
+                                <h5>{{bio}}</h5>
+                            {{else}}
+                                <h5>Read <a href="{{url}}">more posts</a> by this author.</h5>
+                            {{/if}}
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- Author end -->
+        {{/author}}
+
+            <!-- Social Share-->
+            <div class="col-sm-12 col-md-12 social-share">
+                <div class="col-sm-12 col-md-3">
+                    <h5>Share This Story</h5>
+                </div>
+                <div class="col-sm-12 col-md-9">
+                    <ul class="social-share-links">
+                        <li><a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
+                        onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><i class="fa fa-2x fa-fw fa-facebook"></i></a></li>
+
+                        <li><a href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}"
+                        onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"><i class="fa fa-2x fa-fw fa-twitter"></i></a></li>
+
+                        <li><a href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{url absolute="true"}}"
+                       onclick="window.open(this.href, 'linkedin-share', 'width=490,height=530');return false;"><i class="fa fa-2x fa-fw fa-linkedin"></i></a></li>
+
+                        <li><a href="https://plus.google.com/share?url={{url absolute="true"}}"
+                       onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;"><i class="fa fa-2x fa-fw fa-google-plus"></i></a></li>
+
+                        <li><a href="https://pinterest.com/pin/create/button/?url={{url absolute="true"}}"
+                       onclick="window.open(this.href, 'pinterest-share', 'width=490,height=530');return false;"><i class="fa fa-2x fa-fw fa-pinterest"></i></a></li>
+
+                    </ul>
+                </div>
+            </div> <!-- Social Share-->
+
+        </article><!--Single blog--> 
+    </div><!-- Blog List end -->
+</section>
+ <!-- #Blog List end-->
+
+
+<!-- Next/Prev post Navigation-->
+<nav role="navigation" class="navigation post-navigation next-prev">
+    <span id="curr-post-uuid" style="visibility: hidden; display: none;">{{uuid}}</span>
+    <div class="nav-links">
+        <a class="prev-post nav-previous">Read Previous Post</a>
+        <a class="next-post nav-next">Read Next Post</a>
+    </div>
+</nav><!-- Next/Prev post Navigation end -->
+
+<!-- Comment Section-->
+<section id="comments">
+    <div class="container comments-container">
+        <h2 class="comments-headline">Share Your Thoughts</h2>
+        <div class="comments-area col-md-12 panel">
+
+
+        {{! Discuss Comment Integration}}
+            <section class="post-comment">
+                <div id="disqus_thread"></div>
+                    <div id="disqus_thread"></div>
+                    <script type="text/javascript">
+                        /* * * CONFIGURATION VARIABLES * * */
+                        var disqus_shortname = 'privado-ghost';
+                        
+                        /* * * DON'T EDIT BELOW THIS LINE * * */
+                        (function() {
+                            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                        })();
+                    </script>
+                    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+                <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                <a href="http://disqus.com" class="dsq-brlink">Leave a Reply <span class="logo-disqus"></span></a>
+            </section> <!-- Discuss Comment End -->
+
+        </div>
+        <!-- comments area -->
+    </div>
+    <!-- .comments container -->
+</section><!-- Comment Section-->
+
+{{/post}}
+
