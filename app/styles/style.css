@@ -294,7 +294,7 @@ h5{
 	background-color: #fff;
 	color: inherit;
 	position: relative;
-	padding: 90px 0;
+	padding: 70px 0;
 	overflow: hidden;
 }
 .footer-padding-section {
@@ -357,6 +357,10 @@ h5{
 #secondary-cta{
 	padding-top: 45px;
 	padding-bottom: 65px;
+}
+
+.get-started {
+    background-color:black;
 }
 
 /* SECTION COLOR */
