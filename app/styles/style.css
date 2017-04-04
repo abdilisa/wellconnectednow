@@ -359,6 +359,10 @@ h5{
 	padding-bottom: 65px;
 }
 
+.get-started {
+    background-color:black;
+}
+
 /* SECTION COLOR */
 .section-gray {
 	background-color: #f6f6f6;
