@@ -37,20 +37,19 @@
     
     {{! The tag below includes the footer - partials/header.hbs
     {{> "header"}}
+    
     <!-- Navigation menu -->
     <body class="{{body_class}} nav-closed">
     
     <!-- Navigation menu end -->
-
 
     <!-- Main Content-->
     <main id="content" class="blog-container" role="main">
 
         {{! Everything else gets inserted here }}
         {{{body}}}  
-
-    </main> 
-    </body>
+   
+    
     <!-- Main Content end-->
 
 {{! The tag below includes the footer - partials/footer.hbs 
@@ -59,8 +58,15 @@
     {{! Ghost outputs important scripts and data with this tag }}
     {{ghost_foot}}
 
-    <!-- Compressing Images 
 
+    {{! The main JavaScript file for Casper }}
+    <script type="text/javascript" src="{{asset "js/jquery-2.1.1.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/instafeed.min.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/scripts.js"}}"></script>
+
+         <!-- Compressing Images -- >
+    
     <script>
 
         //Grab the width of the screen /
@@ -86,14 +92,8 @@
         }
     </script>
 
- Compressing Images End -->
-
-    {{! The main JavaScript file for Casper }}
-    <script type="text/javascript" src="{{asset "js/jquery-2.1.1.js"}}"></script>
-    <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
-    <script type="text/javascript" src="{{asset "js/instafeed.min.js"}}"></script>
-    <script type="text/javascript" src="{{asset "js/scripts.js"}}"></script>
-
+    <! -- Compressing Images End -->
+        
     <!-- Disqus comment configuration-->
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES * * */
@@ -119,4 +119,7 @@
     }(document, 'script', 'facebook-jssdk'));
     </script>
 
+    </main> 
+    </body>
+    
 </html>
